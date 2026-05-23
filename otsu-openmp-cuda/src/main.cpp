@@ -8,6 +8,8 @@
 #include <iomanip>
 #include <omp.h>
 
+extern "C" void testCudaFromCpp();
+
 namespace fs = std::filesystem;
 
 struct Image {
@@ -477,6 +479,7 @@ void processImage(
 int main() {
     try {
         std::cout << "Otsu OpenMP CUDA benchmark started!" << std::endl;
+        testCudaFromCpp();
 
         fs::create_directories("results");
 

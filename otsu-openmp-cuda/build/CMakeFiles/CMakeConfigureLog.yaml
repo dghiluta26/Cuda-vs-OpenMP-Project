@@ -88,7 +88,7 @@ events:
       The output was:
       0
       MSBuild version 17.14.40+3e7442088 for .NET Framework
-      Build started 5/23/2026 10:27:25 PM.
+      Build started 5/23/2026 11:28:34 PM.
       
       Project "C:\\Users\\denis\\OneDrive\\Desktop\\Facultate\\PDA\\Cuda vs OpenMP Project\\otsu-openmp-cuda\\build\\CMakeFiles\\4.3.3\\CompilerIdCXX\\CompilerIdCXX.vcxproj" on node 1 (default targets).
       PrepareForBuild:
@@ -117,7 +117,7 @@ events:
           0 Warning(s)
           0 Error(s)
       
-      Time Elapsed 00:00:00.42
+      Time Elapsed 00:00:00.44
       
       
       Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.exe"
@@ -838,6 +838,597 @@ events:
   -
     kind: "find-v1"
     backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCompilerId.cmake:468 (find_file)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCompilerId.cmake:506 (CMAKE_DETERMINE_COMPILER_ID_WRITE)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCompilerId.cmake:8 (CMAKE_DETERMINE_COMPILER_ID_BUILD)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCompilerId.cmake:53 (__determine_compiler_id_test)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCUDACompiler.cmake:163 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:3 (project)"
+    mode: "file"
+    variable: "src_in"
+    description: "Path to a file."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "CMakeCUDACompilerId.cu.in"
+    candidate_directories:
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/"
+    found: "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeCUDACompilerId.cu.in"
+    search_context:
+      ENV{PATH}:
+        - "c:\\Users\\denis\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
+        - "c:\\Users\\denis\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\copilotCli"
+        - "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.2\\bin\\x64"
+        - "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.2\\bin"
+        - "C:\\Program Files\\Microsoft MPI\\Bin\\"
+        - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\java8path"
+        - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath"
+        - "C:\\Python314\\Scripts\\"
+        - "C:\\Python314\\"
+        - "C:\\Windows\\system32"
+        - "C:\\Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\Windows\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\ProgramData\\chocolatey\\bin"
+        - "C:\\Program Files\\Microsoft SQL Server\\170\\Tools\\Binn\\"
+        - "C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\Microsoft SQL Server\\170\\DTS\\Binn\\"
+        - "C:\\Program Files\\nodejs\\"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Users\\denis\\AppData\\Roaming\\npm"
+        - "C:\\Program Files\\NVIDIA Corporation\\Nsight Compute 2026.1.1\\"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Program Files\\MySQL\\MySQL Shell 8.0\\bin\\"
+        - "C:\\Users\\denis\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\denis\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\msys64\\mingw64\\bin"
+        - "C:\\Users\\denis\\.dotnet\\tools"
+        - "C:\\OJI\\FP\\bin\\i386-Win32"
+        - "C:\\Users\\denis\\AppData\\Local\\GitHubDesktop\\bin"
+        - "C:\\Users\\denis\\.dotnet\\tools"
+        - "C:\\Users\\denis\\AppData\\Roaming\\npm"
+        - "C:\\texlive\\2026\\bin\\windows"
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCompilerId.cmake:53 (__determine_compiler_id_test)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCUDACompiler.cmake:163 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Compiling the CUDA compiler identification source file "CMakeCUDACompilerId.cu" succeeded.
+      Compiler:  
+      Build flags: 
+      Id flags: --keep;--keep-dir;tmp -v
+      
+      The output was:
+      0
+      MSBuild version 17.14.40+3e7442088 for .NET Framework
+      Build started 5/23/2026 11:28:34 PM.
+      
+      Project "C:\\Users\\denis\\OneDrive\\Desktop\\Facultate\\PDA\\Cuda vs OpenMP Project\\otsu-openmp-cuda\\build\\CMakeFiles\\4.3.3\\CompilerIdCUDA\\CompilerIdCUDA.vcxproj" on node 1 (default targets).
+      PrepareForBuild:
+        Creating directory "Debug\\".
+        Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+        Creating directory "Debug\\CompilerIdCUDA.tlog\\".
+      InitializeBuildStatus:
+        Creating "Debug\\CompilerIdCUDA.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+        Touching "Debug\\CompilerIdCUDA.tlog\\unsuccessfulbuild".
+      AddCudaCompileDeps:
+        C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\cl.exe /E /nologo /showIncludes /TP /D__CUDACC__ /D__CUDACC_VER_MAJOR__=13 /D__CUDACC_VER_MINOR__=2 /D_MBCS /I"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.2\\include" /I"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.2\\bin\\x64" /I"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.2\\include" /I. /FIcuda_runtime.h /c "C:\\Users\\denis\\OneDrive\\Desktop\\Facultate\\PDA\\Cuda vs OpenMP Project\\otsu-openmp-cuda\\build\\CMakeFiles\\4.3.3\\CompilerIdCUDA\\CMakeCUDACompilerId.cu" 
+      Project "C:\\Users\\denis\\OneDrive\\Desktop\\Facultate\\PDA\\Cuda vs OpenMP Project\\otsu-openmp-cuda\\build\\CMakeFiles\\4.3.3\\CompilerIdCUDA\\CompilerIdCUDA.vcxproj" (1) is building "C:\\Users\\denis\\OneDrive\\Desktop\\Facultate\\PDA\\Cuda vs OpenMP Project\\otsu-openmp-cuda\\build\\CMakeFiles\\4.3.3\\CompilerIdCUDA\\CompilerIdCUDA.vcxproj" (1:2) on node 1 (CudaBuildCore target(s)).
+      CudaBuildCore:
+        Compiling CUDA source file CMakeCUDACompilerId.cu...
+        Creating directory "C:\\Users\\denis\\OneDrive\\Desktop\\Facultate\\PDA\\Cuda vs OpenMP Project\\otsu-openmp-cuda\\build\\CMakeFiles\\4.3.3\\CompilerIdCUDA\\CompilerIdCUDA\\x64\\Debug".
+        cmd.exe /C "C:\\Users\\denis\\AppData\\Local\\Temp\\tmp37752cb7b21746c7a4fd7c6f4ae5fccb.cmd"
+        "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.2\\bin\\nvcc.exe" -gencode=arch=compute_75,code=\\"sm_75,compute_75\\" --use-local-env -ccbin "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64" -x cu   -I"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.2\\include" -I"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.2\\include"  -G   --keep-dir CompilerIdCUDA\\x64\\Debug  -maxrregcount=0    --machine 64 --compile -cudart hybrid -v -allow-unsupported-compiler -g  -D_MBCS -Xcompiler "/EHsc /W0 /nologo /Od /FS /Zi /RTC1 /MDd " -Xcompiler "/FdDebug\\vc143.pdb" -o "C:\\Users\\denis\\OneDrive\\Desktop\\Facultate\\PDA\\Cuda vs OpenMP Project\\otsu-openmp-cuda\\build\\CMakeFiles\\4.3.3\\CompilerIdCUDA\\CompilerIdCUDA\\x64\\Debug\\CMakeCUDACompilerId.cu.obj" "C:\\Users\\denis\\OneDrive\\Desktop\\Facultate\\PDA\\Cuda vs OpenMP Project\\otsu-openmp-cuda\\build\\CMakeFiles\\4.3.3\\CompilerIdCUDA\\CMakeCUDACompilerId.cu"
+        
+        C:\\Users\\denis\\OneDrive\\Desktop\\Facultate\\PDA\\Cuda vs OpenMP Project\\otsu-openmp-cuda\\build\\CMakeFiles\\4.3.3\\CompilerIdCUDA>"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.2\\bin\\nvcc.exe" -gencode=arch=compute_75,code=\\"sm_75,compute_75\\" --use-local-env -ccbin "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64" -x cu   -I"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.2\\include" -I"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.2\\include"  -G   --keep-dir CompilerIdCUDA\\x64\\Debug  -maxrregcount=0    --machine 64 --compile -cudart hybrid -v -allow-unsupported-compiler -g  -D_MBCS -Xcompiler "/EHsc /W0 /nologo /Od /FS /Zi /RTC1 /MDd " -Xcompiler "/FdDebug\\vc143.pdb" -o "C:\\Users\\denis\\OneDrive\\Desktop\\Facultate\\PDA\\Cuda vs OpenMP Project\\otsu-openmp-cuda\\build\\CMakeFiles\\4.3.3\\CompilerIdCUDA\\CompilerIdCUDA\\x64\\Debug\\CMakeCUDACompilerId.cu.obj" "C:\\Users\\denis\\OneDrive\\Desktop\\Facultate\\PDA\\Cuda vs OpenMP Project\\otsu-openmp-cuda\\build\\CMakeFiles\\4.3.3\\CompilerIdCUDA\\CMakeCUDACompilerId.cu" 
+        #$ _NVVM_BRANCH_=nvvm
+        #$ _SPACE_= 
+        #$ _CUDART_=cudart
+        #$ CUDA_ROOT=C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.2\\bin
+        #$ _HERE_=C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.2\\bin
+        #$ _THERE_=C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.2\\bin
+        #$ _TARGET_SIZE_=
+        #$ _TARGET_DIR_=
+        #$ _TARGET_SIZE_=64
+        #$ _WIN_PLATFORM_=x64
+        #$ TOP=C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.2\\bin/..
+        #$ CICC_PATH=C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.2\\bin/../nvvm/bin
+        #$ NVVMIR_LIBRARY_DIR=C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.2\\bin/../nvvm/libdevice
+        #$ PATH=C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.2\\bin/../nvvm/bin;C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.2\\bin;C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.2\\bin/../lib;C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64;C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\x64;;C:\\Program Files (x86)\\Microsoft SDKs\\Windows\\v10.0A\\bin\\NETFX 4.8 Tools\\x64;C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\x86;;C:\\Program Files (x86)\\Microsoft SDKs\\Windows\\v10.0A\\bin\\NETFX 4.8 Tools;C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\tools;C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\ide;C:\\Program Files (x86)\\HTML Help Workshop;;C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\MSBuild\\Current\\Bin\\amd64;C:\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\;C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\;C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\MSBuild\\Current\\Bin;C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\;;c:\\Users\\denis\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand;c:\\Users\\denis\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\copilotCli;C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.2\\bin\\x64;C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.2\\bin;C:\\Program Files\\Microsoft MPI\\Bin\\;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\java8path;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Python314\\Scripts\\;C:\\Python314\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files\\Microsoft SQL Server\\170\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\;C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Microsoft SQL Server\\170\\DTS\\Binn\\;C:\\Program Files\\nodejs\\;C:\\Program Files\\dotnet\\;C:\\Users\\denis\\AppData\\Roaming\\npm;C:\\Program Files\\NVIDIA Corporation\\Nsight Compute 2026.1.1\\;C:\\Program Files\\CMake\\bin;C:\\Program Files\\MySQL\\MySQL Shell 8.0\\bin\\;C:\\Users\\denis\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\denis\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\msys64\\mingw64\\bin;C:\\Users\\denis\\.dotnet\\tools;C:\\OJI\\FP\\bin\\i386-Win32;C:\\Users\\denis\\AppData\\Local\\GitHubDesktop\\bin;C:\\Users\\denis\\.dotnet\\tools;C:\\Users\\denis\\AppData\\Roaming\\npm;C:\\texlive\\2026\\bin\\windows;
+        #$ INCLUDES="-IC:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.2\\bin/../include" "-IC:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.2\\bin/../include/cccl"  
+        #$ SYSTEM_INCLUDES= 
+        #$ LIBRARIES=  "/LIBPATH:C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.2\\bin/../lib/x64"
+        #$ CUDAFE_FLAGS=--sdk_dir "C:\\Program Files (x86)\\Windows Kits\\10"
+        #$ PTXAS_FLAGS=
+        CMakeCUDACompilerId.cu
+        #$ resource file C:\\Users\\denis\\AppData\\Local\\Temp/tmpxft_00005358_00000000-8.res: [-D__CUDA_ARCH_LIST__=750 -nologo -E -TP -EHsc -D__CUDACC__ -D__NVCC__ -D__CUDACC_DEBUG__  /EHsc /W0 /nologo /Od /FS /Zi /RTC1 /MDd /FdDebug\\vc143.pdb -I"C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v13.2/include" -I"C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v13.2/include" "-IC:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.2\\bin/../include" "-IC:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.2\\bin/../include/cccl"      -D "_MBCS" -D__CUDACC_VER_MAJOR__=13 -D__CUDACC_VER_MINOR__=2 -D__CUDACC_VER_BUILD__=78 -D__CUDA_API_VER_MAJOR__=13 -D__CUDA_API_VER_MINOR__=2 -D__NVCC_DIAG_PRAGMA_SUPPORT__=1 -D__CUDACC_DEVICE_ATOMIC_BUILTINS__=1 -FI "cuda_runtime.h" -Zi "C:\\Users\\denis\\OneDrive\\Desktop\\Facultate\\PDA\\Cuda vs OpenMP Project\\otsu-openmp-cuda\\build\\CMakeFiles\\4.3.3\\CompilerIdCUDA\\CMakeCUDACompilerId.cu" ]
+        #$ cl.exe -D__NV_NO_HOST_COMPILER_CHECK=1 @"C:\\Users\\denis\\AppData\\Local\\Temp/tmpxft_00005358_00000000-8.res" > "C:/Users/denis/AppData/Local/Temp/tmpxft_00005358_00000000-6_CMakeCUDACompilerId.cpp4.ii" 
+        CMakeCUDACompilerId.cu
+        #$ erase C:\\Users\\denis\\AppData\\Local\\Temp/tmpxft_00005358_00000000-8.res
+        #$ cudafe++ --ms_c++14 --static-host-stub --device-hidden-visibility --microsoft_version=1944 --msvc_target_version=1944 --compiler_bindir "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/Tools/MSVC/14.44.35207/bin/HostX64/x64/../../../../../../.." --display_error_number --orig_src_file_name "C:/Users/denis/OneDrive/Desktop/Facultate/PDA/Cuda vs OpenMP Project/otsu-openmp-cuda/build/CMakeFiles/4.3.3/CompilerIdCUDA/CMakeCUDACompilerId.cu" --orig_src_path_name "C:\\Users\\denis\\OneDrive\\Desktop\\Facultate\\PDA\\Cuda vs OpenMP Project\\otsu-openmp-cuda\\build\\CMakeFiles\\4.3.3\\CompilerIdCUDA\\CMakeCUDACompilerId.cu" --allow_managed --debug_mode --sdk_dir "C:\\Program Files (x86)\\Windows Kits\\10" --m64 --parse_templates --gen_c_file_name "C:/Users/denis/AppData/Local/Temp/tmpxft_00005358_00000000-7_CMakeCUDACompilerId.cudafe1.cpp" --stub_file_name "tmpxft_00005358_00000000-7_CMakeCUDACompilerId.cudafe1.stub.c" --gen_module_id_file --module_id_file_name "C:/Users/denis/AppData/Local/Temp/tmpxft_00005358_00000000-5_CMakeCUDACompilerId.module_id" "C:/Users/denis/AppData/Local/Temp/tmpxft_00005358_00000000-6_CMakeCUDACompilerId.cpp4.ii" 
+        #$ resource file C:\\Users\\denis\\AppData\\Local\\Temp/tmpxft_00005358_00000000-10.res: [-D__CUDA_ARCH__=750 -D__CUDA_ARCH_LIST__=750 -nologo -E -TP  -DCUDA_DOUBLE_MATH_FUNCTIONS -EHsc -D__CUDACC__ -D__NVCC__ -D__CUDACC_DEBUG__  /EHsc /W0 /nologo /Od /FS /Zi /RTC1 /MDd /FdDebug\\vc143.pdb -I"C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v13.2/include" -I"C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v13.2/include" "-IC:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.2\\bin/../include" "-IC:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.2\\bin/../include/cccl"      -D "_MBCS" -D__CUDACC_VER_MAJOR__=13 -D__CUDACC_VER_MINOR__=2 -D__CUDACC_VER_BUILD__=78 -D__CUDA_API_VER_MAJOR__=13 -D__CUDA_API_VER_MINOR__=2 -D__NVCC_DIAG_PRAGMA_SUPPORT__=1 -D__CUDACC_DEVICE_ATOMIC_BUILTINS__=1 -FI "cuda_runtime.h" -Zi "C:\\Users\\denis\\OneDrive\\Desktop\\Facultate\\PDA\\Cuda vs OpenMP Project\\otsu-openmp-cuda\\build\\CMakeFiles\\4.3.3\\CompilerIdCUDA\\CMakeCUDACompilerId.cu" ]
+        #$ cl.exe -D__NV_NO_HOST_COMPILER_CHECK=1 @"C:\\Users\\denis\\AppData\\Local\\Temp/tmpxft_00005358_00000000-10.res" > "C:/Users/denis/AppData/Local/Temp/tmpxft_00005358_00000000-9_CMakeCUDACompilerId.cpp1.ii" 
+        CMakeCUDACompilerId.cu
+        #$ erase C:\\Users\\denis\\AppData\\Local\\Temp/tmpxft_00005358_00000000-10.res
+        #$ ""%CICC_PATH%\\cicc" --ms_c++14 --static-host-stub --device-hidden-visibility --microsoft_version=1944 --msvc_target_version=1944 --compiler_bindir "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/Tools/MSVC/14.44.35207/bin/HostX64/x64/../../../../../../.." --display_error_number --orig_src_file_name "C:/Users/denis/OneDrive/Desktop/Facultate/PDA/Cuda vs OpenMP Project/otsu-openmp-cuda/build/CMakeFiles/4.3.3/CompilerIdCUDA/CMakeCUDACompilerId.cu" --orig_src_path_name "C:\\Users\\denis\\OneDrive\\Desktop\\Facultate\\PDA\\Cuda vs OpenMP Project\\otsu-openmp-cuda\\build\\CMakeFiles\\4.3.3\\CompilerIdCUDA\\CMakeCUDACompilerId.cu" --allow_managed --debug_mode --sdk_dir "C:\\Program Files (x86)\\Windows Kits\\10"  -arch compute_75 -m64 --no-version-ident -ftz=0 -prec_div=1 -prec_sqrt=1 -fmad=1 --include_file_name "tmpxft_00005358_00000000-4_CMakeCUDACompilerId.fatbin.c"  -g -O0 -tused --module_id_file_name "C:/Users/denis/AppData/Local/Temp/tmpxft_00005358_00000000-5_CMakeCUDACompilerId.module_id" --gen_c_file_name "C:/Users/denis/AppData/Local/Temp/tmpxft_00005358_00000000-7_CMakeCUDACompilerId.cudafe1.c" --stub_file_name "C:/Users/denis/AppData/Local/Temp/tmpxft_00005358_00000000-7_CMakeCUDACompilerId.cudafe1.stub.c" --gen_device_file_name "C:/Users/denis/AppData/Local/Temp/tmpxft_00005358_00000000-7_CMakeCUDACompilerId.cudafe1.gpu"  "C:/Users/denis/AppData/Local/Temp/tmpxft_00005358_00000000-9_CMakeCUDACompilerId.cpp1.ii" -o "C:/Users/denis/AppData/Local/Temp/tmpxft_00005358_00000000-7_CMakeCUDACompilerId.ptx""
+        #$ ptxas -arch=sm_75 -m64 -g --dont-merge-basicblocks --return-at-end "C:/Users/denis/AppData/Local/Temp/tmpxft_00005358_00000000-7_CMakeCUDACompilerId.ptx"  -o "C:/Users/denis/AppData/Local/Temp/tmpxft_00005358_00000000-11_CMakeCUDACompilerId.sm_75.cubin" 
+        #$ fatbinary -64 --ident="C:/Users/denis/OneDrive/Desktop/Facultate/PDA/Cuda vs OpenMP Project/otsu-openmp-cuda/build/CMakeFiles/4.3.3/CompilerIdCUDA/CMakeCUDACompilerId.cu" --cmdline="-g --dont-merge-basicblocks --return-at-end " --cicc-cmdline="-ftz=0 -prec_div=1 -prec_sqrt=1 -fmad=1 " -g "--image3=kind=elf,sm=75,file=C:/Users/denis/AppData/Local/Temp/tmpxft_00005358_00000000-11_CMakeCUDACompilerId.sm_75.cubin" "--image3=kind=ptx,sm=75,file=C:/Users/denis/AppData/Local/Temp/tmpxft_00005358_00000000-7_CMakeCUDACompilerId.ptx" --embedded-fatbin="C:/Users/denis/AppData/Local/Temp/tmpxft_00005358_00000000-4_CMakeCUDACompilerId.fatbin.c" 
+        #$ erase C:/Users/denis/AppData/Local/Temp/tmpxft_00005358_00000000-4_CMakeCUDACompilerId.fatbin
+        #$ resource file C:\\Users\\denis\\AppData\\Local\\Temp/tmpxft_00005358_00000000-12.res: [-D__CUDA_ARCH__=750 -D__CUDA_ARCH_LIST__=750 -nologo -c -TP  -DCUDA_DOUBLE_MATH_FUNCTIONS -EHsc /EHsc /W0 /nologo /Od /FS /Zi /RTC1 /MDd /FdDebug\\vc143.pdb -I"C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v13.2/include" -I"C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v13.2/include" "-IC:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.2\\bin/../include" "-IC:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.2\\bin/../include/cccl"     -Zi "C:\\Users\\denis\\AppData\\Local\\Temp\\tmpxft_00005358_00000000-7_CMakeCUDACompilerId.cudafe1.cpp" ]
+        #$ cl.exe @"C:\\Users\\denis\\AppData\\Local\\Temp/tmpxft_00005358_00000000-12.res" -Fo"C:/Users/denis/OneDrive/Desktop/Facultate/PDA/Cuda vs OpenMP Project/otsu-openmp-cuda/build/CMakeFiles/4.3.3/CompilerIdCUDA/CompilerIdCUDA/x64/Debug/CMakeCUDACompilerId.cu.obj" 
+        tmpxft_00005358_00000000-7_CMakeCUDACompilerId.cudafe1.cpp
+        #$ erase C:\\Users\\denis\\AppData\\Local\\Temp/tmpxft_00005358_00000000-12.res
+      Done Building Project "C:\\Users\\denis\\OneDrive\\Desktop\\Facultate\\PDA\\Cuda vs OpenMP Project\\otsu-openmp-cuda\\build\\CMakeFiles\\4.3.3\\CompilerIdCUDA\\CompilerIdCUDA.vcxproj" (CudaBuildCore target(s)).
+      Link:
+        C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:".\\CompilerIdCUDA.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.2\\lib\\x64" cudart_static.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\\CompilerIdCUDA.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\\CompilerIdCUDA.lib" /MACHINE:X64 "C:\\Users\\denis\\OneDrive\\Desktop\\Facultate\\PDA\\Cuda vs OpenMP Project\\otsu-openmp-cuda\\build\\CMakeFiles\\4.3.3\\CompilerIdCUDA\\CompilerIdCUDA\\x64\\Debug\\CMakeCUDACompilerId.cu.obj"
+           Creating library .\\CompilerIdCUDA.lib and object .\\CompilerIdCUDA.exp
+      LINK : warning LNK4098: defaultlib 'LIBCMT' conflicts with use of other libs; use /NODEFAULTLIB:library [C:\\Users\\denis\\OneDrive\\Desktop\\Facultate\\PDA\\Cuda vs OpenMP Project\\otsu-openmp-cuda\\build\\CMakeFiles\\4.3.3\\CompilerIdCUDA\\CompilerIdCUDA.vcxproj]
+        CompilerIdCUDA.vcxproj -> C:\\Users\\denis\\OneDrive\\Desktop\\Facultate\\PDA\\Cuda vs OpenMP Project\\otsu-openmp-cuda\\build\\CMakeFiles\\4.3.3\\CompilerIdCUDA\\CompilerIdCUDA.exe
+      PostBuildEvent:
+        echo CMAKE_CUDA_COMPILER=C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.2\\bin\\nvcc.exe
+        :VCEnd
+        CMAKE_CUDA_COMPILER=C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.2\\bin\\nvcc.exe
+      FinalizeBuildStatus:
+        Deleting file "Debug\\CompilerIdCUDA.tlog\\unsuccessfulbuild".
+        Touching "Debug\\CompilerIdCUDA.tlog\\CompilerIdCUDA.lastbuildstate".
+      Done Building Project "C:\\Users\\denis\\OneDrive\\Desktop\\Facultate\\PDA\\Cuda vs OpenMP Project\\otsu-openmp-cuda\\build\\CMakeFiles\\4.3.3\\CompilerIdCUDA\\CompilerIdCUDA.vcxproj" (default targets).
+      
+      Build succeeded.
+      
+      "C:\\Users\\denis\\OneDrive\\Desktop\\Facultate\\PDA\\Cuda vs OpenMP Project\\otsu-openmp-cuda\\build\\CMakeFiles\\4.3.3\\CompilerIdCUDA\\CompilerIdCUDA.vcxproj" (default target) (1) ->
+      (Link target) -> 
+        LINK : warning LNK4098: defaultlib 'LIBCMT' conflicts with use of other libs; use /NODEFAULTLIB:library [C:\\Users\\denis\\OneDrive\\Desktop\\Facultate\\PDA\\Cuda vs OpenMP Project\\otsu-openmp-cuda\\build\\CMakeFiles\\4.3.3\\CompilerIdCUDA\\CompilerIdCUDA.vcxproj]
+      
+          1 Warning(s)
+          0 Error(s)
+      
+      Time Elapsed 00:00:02.04
+      
+      
+      Compilation of the CUDA compiler identification source "CMakeCUDACompilerId.cu" produced "CompilerIdCUDA.exe"
+      
+      Compilation of the CUDA compiler identification source "CMakeCUDACompilerId.cu" produced "CompilerIdCUDA.exp"
+      
+      Compilation of the CUDA compiler identification source "CMakeCUDACompilerId.cu" produced "CompilerIdCUDA.lib"
+      
+      Compilation of the CUDA compiler identification source "CMakeCUDACompilerId.cu" produced "CompilerIdCUDA.vcxproj"
+      
+      The CUDA compiler identification is NVIDIA, found in:
+        C:/Users/denis/OneDrive/Desktop/Facultate/PDA/Cuda vs OpenMP Project/otsu-openmp-cuda/build/CMakeFiles/4.3.3/CompilerIdCUDA/CompilerIdCUDA.exe
+      The host compiler identification is MSVC
+      
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeFindBinUtils.cmake:37 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeFindBinUtils.cmake:65 (__resolve_tool_path)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeFindBinUtils.cmake:104 (__resolve_linker_path)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCUDACompiler.cmake:186 (include)"
+      - "CMakeLists.txt:3 (project)"
+    mode: "program"
+    variable: "_CMAKE_TOOL_WITH_PATH"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "lld-link"
+    candidate_directories:
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/"
+      - "C:/Users/denis/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "C:/Users/denis/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v13.2/bin/x64/"
+      - "C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v13.2/bin/"
+      - "C:/Program Files/Microsoft MPI/Bin/"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/java8path/"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/"
+      - "C:/Python314/Scripts/"
+      - "C:/Python314/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/"
+      - "C:/ProgramData/chocolatey/bin/"
+      - "C:/Program Files/Microsoft SQL Server/170/Tools/Binn/"
+      - "C:/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Program Files/Microsoft SQL Server/170/DTS/Binn/"
+      - "C:/Program Files/nodejs/"
+      - "C:/Program Files/dotnet/"
+      - "C:/Users/denis/AppData/Roaming/npm/"
+      - "C:/Program Files/NVIDIA Corporation/Nsight Compute 2026.1.1/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Program Files/MySQL/MySQL Shell 8.0/bin/"
+      - "C:/Users/denis/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/denis/AppData/Local/Programs/Microsoft VS Code/bin/"
+      - "C:/msys64/mingw64/bin/"
+      - "C:/Users/denis/.dotnet/tools/"
+      - "C:/OJI/FP/bin/i386-win32/"
+      - "C:/Users/denis/AppData/Local/GitHubDesktop/bin/"
+      - "C:/texlive/2026/bin/windows/"
+    searched_directories:
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/lld-link.com"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/lld-link.exe"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/lld-link"
+      - "C:/Users/denis/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/lld-link.com"
+      - "C:/Users/denis/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/lld-link.exe"
+      - "C:/Users/denis/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/lld-link"
+      - "C:/Users/denis/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/lld-link.com"
+      - "C:/Users/denis/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/lld-link.exe"
+      - "C:/Users/denis/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/lld-link"
+      - "C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v13.2/bin/x64/lld-link.com"
+      - "C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v13.2/bin/x64/lld-link.exe"
+      - "C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v13.2/bin/x64/lld-link"
+      - "C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v13.2/bin/lld-link.com"
+      - "C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v13.2/bin/lld-link.exe"
+      - "C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v13.2/bin/lld-link"
+      - "C:/Program Files/Microsoft MPI/Bin/lld-link.com"
+      - "C:/Program Files/Microsoft MPI/Bin/lld-link.exe"
+      - "C:/Program Files/Microsoft MPI/Bin/lld-link"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/java8path/lld-link.com"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/java8path/lld-link.exe"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/java8path/lld-link"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/lld-link.com"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/lld-link.exe"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/lld-link"
+      - "C:/Python314/Scripts/lld-link.com"
+      - "C:/Python314/Scripts/lld-link.exe"
+      - "C:/Python314/Scripts/lld-link"
+      - "C:/Python314/lld-link.com"
+      - "C:/Python314/lld-link.exe"
+      - "C:/Python314/lld-link"
+      - "C:/Windows/System32/lld-link.com"
+      - "C:/Windows/System32/lld-link.exe"
+      - "C:/Windows/System32/lld-link"
+      - "C:/Windows/lld-link.com"
+      - "C:/Windows/lld-link.exe"
+      - "C:/Windows/lld-link"
+      - "C:/Windows/System32/wbem/lld-link.com"
+      - "C:/Windows/System32/wbem/lld-link.exe"
+      - "C:/Windows/System32/wbem/lld-link"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/lld-link.com"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/lld-link.exe"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/lld-link"
+      - "C:/Windows/System32/OpenSSH/lld-link.com"
+      - "C:/Windows/System32/OpenSSH/lld-link.exe"
+      - "C:/Windows/System32/OpenSSH/lld-link"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/lld-link.com"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/lld-link.exe"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/lld-link"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/lld-link.com"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/lld-link.exe"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/lld-link"
+      - "C:/ProgramData/chocolatey/bin/lld-link.com"
+      - "C:/ProgramData/chocolatey/bin/lld-link.exe"
+      - "C:/ProgramData/chocolatey/bin/lld-link"
+      - "C:/Program Files/Microsoft SQL Server/170/Tools/Binn/lld-link.com"
+      - "C:/Program Files/Microsoft SQL Server/170/Tools/Binn/lld-link.exe"
+      - "C:/Program Files/Microsoft SQL Server/170/Tools/Binn/lld-link"
+      - "C:/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/lld-link.com"
+      - "C:/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/lld-link.exe"
+      - "C:/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/lld-link"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/lld-link.com"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/lld-link.exe"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/lld-link"
+      - "C:/Program Files/Git/cmd/lld-link.com"
+      - "C:/Program Files/Git/cmd/lld-link.exe"
+      - "C:/Program Files/Git/cmd/lld-link"
+      - "C:/Program Files/Microsoft SQL Server/170/DTS/Binn/lld-link.com"
+      - "C:/Program Files/Microsoft SQL Server/170/DTS/Binn/lld-link.exe"
+      - "C:/Program Files/Microsoft SQL Server/170/DTS/Binn/lld-link"
+      - "C:/Program Files/nodejs/lld-link.com"
+      - "C:/Program Files/nodejs/lld-link.exe"
+      - "C:/Program Files/nodejs/lld-link"
+      - "C:/Program Files/dotnet/lld-link.com"
+      - "C:/Program Files/dotnet/lld-link.exe"
+      - "C:/Program Files/dotnet/lld-link"
+      - "C:/Users/denis/AppData/Roaming/npm/lld-link.com"
+      - "C:/Users/denis/AppData/Roaming/npm/lld-link.exe"
+      - "C:/Users/denis/AppData/Roaming/npm/lld-link"
+      - "C:/Program Files/NVIDIA Corporation/Nsight Compute 2026.1.1/lld-link.com"
+      - "C:/Program Files/NVIDIA Corporation/Nsight Compute 2026.1.1/lld-link.exe"
+      - "C:/Program Files/NVIDIA Corporation/Nsight Compute 2026.1.1/lld-link"
+      - "C:/Program Files/CMake/bin/lld-link.com"
+      - "C:/Program Files/CMake/bin/lld-link.exe"
+      - "C:/Program Files/CMake/bin/lld-link"
+      - "C:/Program Files/MySQL/MySQL Shell 8.0/bin/lld-link.com"
+      - "C:/Program Files/MySQL/MySQL Shell 8.0/bin/lld-link.exe"
+      - "C:/Program Files/MySQL/MySQL Shell 8.0/bin/lld-link"
+      - "C:/Users/denis/AppData/Local/Microsoft/WindowsApps/lld-link.com"
+      - "C:/Users/denis/AppData/Local/Microsoft/WindowsApps/lld-link.exe"
+      - "C:/Users/denis/AppData/Local/Microsoft/WindowsApps/lld-link"
+      - "C:/Users/denis/AppData/Local/Programs/Microsoft VS Code/bin/lld-link.com"
+      - "C:/Users/denis/AppData/Local/Programs/Microsoft VS Code/bin/lld-link.exe"
+      - "C:/Users/denis/AppData/Local/Programs/Microsoft VS Code/bin/lld-link"
+      - "C:/msys64/mingw64/bin/lld-link.com"
+      - "C:/msys64/mingw64/bin/lld-link.exe"
+      - "C:/msys64/mingw64/bin/lld-link"
+      - "C:/Users/denis/.dotnet/tools/lld-link.com"
+      - "C:/Users/denis/.dotnet/tools/lld-link.exe"
+      - "C:/Users/denis/.dotnet/tools/lld-link"
+      - "C:/OJI/FP/bin/i386-win32/lld-link.com"
+      - "C:/OJI/FP/bin/i386-win32/lld-link.exe"
+      - "C:/OJI/FP/bin/i386-win32/lld-link"
+      - "C:/Users/denis/AppData/Local/GitHubDesktop/bin/lld-link.com"
+      - "C:/Users/denis/AppData/Local/GitHubDesktop/bin/lld-link.exe"
+      - "C:/Users/denis/AppData/Local/GitHubDesktop/bin/lld-link"
+      - "C:/texlive/2026/bin/windows/lld-link.com"
+      - "C:/texlive/2026/bin/windows/lld-link.exe"
+      - "C:/texlive/2026/bin/windows/lld-link"
+    found: false
+    search_context:
+      ENV{PATH}:
+        - "c:\\Users\\denis\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
+        - "c:\\Users\\denis\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\copilotCli"
+        - "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.2\\bin\\x64"
+        - "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.2\\bin"
+        - "C:\\Program Files\\Microsoft MPI\\Bin\\"
+        - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\java8path"
+        - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath"
+        - "C:\\Python314\\Scripts\\"
+        - "C:\\Python314\\"
+        - "C:\\Windows\\system32"
+        - "C:\\Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\Windows\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\ProgramData\\chocolatey\\bin"
+        - "C:\\Program Files\\Microsoft SQL Server\\170\\Tools\\Binn\\"
+        - "C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\Microsoft SQL Server\\170\\DTS\\Binn\\"
+        - "C:\\Program Files\\nodejs\\"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Users\\denis\\AppData\\Roaming\\npm"
+        - "C:\\Program Files\\NVIDIA Corporation\\Nsight Compute 2026.1.1\\"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Program Files\\MySQL\\MySQL Shell 8.0\\bin\\"
+        - "C:\\Users\\denis\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\denis\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\msys64\\mingw64\\bin"
+        - "C:\\Users\\denis\\.dotnet\\tools"
+        - "C:\\OJI\\FP\\bin\\i386-Win32"
+        - "C:\\Users\\denis\\AppData\\Local\\GitHubDesktop\\bin"
+        - "C:\\Users\\denis\\.dotnet\\tools"
+        - "C:\\Users\\denis\\AppData\\Roaming\\npm"
+        - "C:\\texlive\\2026\\bin\\windows"
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/Internal/CMakeNVCCParseImplicitInfo.cmake:149 (message)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCUDACompiler.cmake:295 (cmake_nvcc_parse_implicit_info)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Parsed CUDA nvcc implicit link information:
+        found 'PATH=' string: [C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.2\\bin/../nvvm/bin;C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.2\\bin;C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.2\\bin/../lib;C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64;C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\x64;;C:\\Program Files (x86)\\Microsoft SDKs\\Windows\\v10.0A\\bin\\NETFX 4.8 Tools\\x64;C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\x86;;C:\\Program Files (x86)\\Microsoft SDKs\\Windows\\v10.0A\\bin\\NETFX 4.8 Tools;C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\tools;C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\ide;C:\\Program Files (x86)\\HTML Help Workshop;;C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\MSBuild\\Current\\Bin\\amd64;C:\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\;C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\;C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\MSBuild\\Current\\Bin;C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\;;c:\\Users\\denis\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand;c:\\Users\\denis\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\copilotCli;C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.2\\bin\\x64;C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.2\\bin;C:\\Program Files\\Microsoft MPI\\Bin\\;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\java8path;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Python314\\Scripts\\;C:\\Python314\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files\\Microsoft SQL Server\\170\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\;C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Microsoft SQL Server\\170\\DTS\\Binn\\;C:\\Program Files\\nodejs\\;C:\\Program Files\\dotnet\\;C:\\Users\\denis\\AppData\\Roaming\\npm;C:\\Program Files\\NVIDIA Corporation\\Nsight Compute 2026.1.1\\;C:\\Program Files\\CMake\\bin;C:\\Program Files\\MySQL\\MySQL Shell 8.0\\bin\\;C:\\Users\\denis\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\denis\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\msys64\\mingw64\\bin;C:\\Users\\denis\\.dotnet\\tools;C:\\OJI\\FP\\bin\\i386-Win32;C:\\Users\\denis\\AppData\\Local\\GitHubDesktop\\bin;C:\\Users\\denis\\.dotnet\\tools;C:\\Users\\denis\\AppData\\Roaming\\npm;C:\\texlive\\2026\\bin\\windows;]
+        found 'LIBRARIES=' string: ["/LIBPATH:C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.2\\bin/../lib/x64"]
+        found 'INCLUDES=' string: ["-IC:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.2\\bin/../include" "-IC:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.2\\bin/../include/cccl"  ]
+        found 'SYSTEM_INCLUDES=' string: []
+        considering line: [MSBuild version 17.14.40+3e7442088 for .NET Framework]
+        considering line: [Build started 5/23/2026 11:28:34 PM.]
+        considering line: [Project "C:\\Users\\denis\\OneDrive\\Desktop\\Facultate\\PDA\\Cuda vs OpenMP Project\\otsu-openmp-cuda\\build\\CMakeFiles\\4.3.3\\CompilerIdCUDA\\CompilerIdCUDA.vcxproj" on node 1 (default targets).]
+        considering line: [PrepareForBuild:]
+        considering line: [  Creating directory "Debug\\".]
+        considering line: [  Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.]
+        considering line: [  Creating directory "Debug\\CompilerIdCUDA.tlog\\".]
+        considering line: [InitializeBuildStatus:]
+        considering line: [  Creating "Debug\\CompilerIdCUDA.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.]
+        considering line: [  Touching "Debug\\CompilerIdCUDA.tlog\\unsuccessfulbuild".]
+        considering line: [AddCudaCompileDeps:]
+        considering line: [  C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\cl.exe /E /nologo /showIncludes /TP /D__CUDACC__ /D__CUDACC_VER_MAJOR__=13 /D__CUDACC_VER_MINOR__=2 /D_MBCS /I"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.2\\include" /I"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.2\\bin\\x64" /I"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.2\\include" /I. /FIcuda_runtime.h /c "C:\\Users\\denis\\OneDrive\\Desktop\\Facultate\\PDA\\Cuda vs OpenMP Project\\otsu-openmp-cuda\\build\\CMakeFiles\\4.3.3\\CompilerIdCUDA\\CMakeCUDACompilerId.cu" ]
+        considering line: [Project "C:\\Users\\denis\\OneDrive\\Desktop\\Facultate\\PDA\\Cuda vs OpenMP Project\\otsu-openmp-cuda\\build\\CMakeFiles\\4.3.3\\CompilerIdCUDA\\CompilerIdCUDA.vcxproj" (1) is building "C:\\Users\\denis\\OneDrive\\Desktop\\Facultate\\PDA\\Cuda vs OpenMP Project\\otsu-openmp-cuda\\build\\CMakeFiles\\4.3.3\\CompilerIdCUDA\\CompilerIdCUDA.vcxproj" (1:2) on node 1 (CudaBuildCore target(s)).]
+        considering line: [CudaBuildCore:]
+        considering line: [  Compiling CUDA source file CMakeCUDACompilerId.cu...]
+        considering line: [  Creating directory "C:\\Users\\denis\\OneDrive\\Desktop\\Facultate\\PDA\\Cuda vs OpenMP Project\\otsu-openmp-cuda\\build\\CMakeFiles\\4.3.3\\CompilerIdCUDA\\CompilerIdCUDA\\x64\\Debug".]
+        considering line: [  cmd.exe /C "C:\\Users\\denis\\AppData\\Local\\Temp\\tmp37752cb7b21746c7a4fd7c6f4ae5fccb.cmd"]
+        considering line: [  "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.2\\bin\\nvcc.exe" -gencode=arch=compute_75,code=\\"sm_75,compute_75\\" --use-local-env -ccbin "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64" -x cu   -I"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.2\\include" -I"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.2\\include"  -G   --keep-dir CompilerIdCUDA\\x64\\Debug  -maxrregcount=0    --machine 64 --compile -cudart hybrid -v -allow-unsupported-compiler -g  -D_MBCS -Xcompiler "/EHsc /W0 /nologo /Od /FS /Zi /RTC1 /MDd " -Xcompiler "/FdDebug\\vc143.pdb" -o "C:\\Users\\denis\\OneDrive\\Desktop\\Facultate\\PDA\\Cuda vs OpenMP Project\\otsu-openmp-cuda\\build\\CMakeFiles\\4.3.3\\CompilerIdCUDA\\CompilerIdCUDA\\x64\\Debug\\CMakeCUDACompilerId.cu.obj" "C:\\Users\\denis\\OneDrive\\Desktop\\Facultate\\PDA\\Cuda vs OpenMP Project\\otsu-openmp-cuda\\build\\CMakeFiles\\4.3.3\\CompilerIdCUDA\\CMakeCUDACompilerId.cu"]
+        considering line: [  ]
+        considering line: [  C:\\Users\\denis\\OneDrive\\Desktop\\Facultate\\PDA\\Cuda vs OpenMP Project\\otsu-openmp-cuda\\build\\CMakeFiles\\4.3.3\\CompilerIdCUDA>"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.2\\bin\\nvcc.exe" -gencode=arch=compute_75,code=\\"sm_75,compute_75\\" --use-local-env -ccbin "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64" -x cu   -I"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.2\\include" -I"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.2\\include"  -G   --keep-dir CompilerIdCUDA\\x64\\Debug  -maxrregcount=0    --machine 64 --compile -cudart hybrid -v -allow-unsupported-compiler -g  -D_MBCS -Xcompiler "/EHsc /W0 /nologo /Od /FS /Zi /RTC1 /MDd " -Xcompiler "/FdDebug\\vc143.pdb" -o "C:\\Users\\denis\\OneDrive\\Desktop\\Facultate\\PDA\\Cuda vs OpenMP Project\\otsu-openmp-cuda\\build\\CMakeFiles\\4.3.3\\CompilerIdCUDA\\CompilerIdCUDA\\x64\\Debug\\CMakeCUDACompilerId.cu.obj" "C:\\Users\\denis\\OneDrive\\Desktop\\Facultate\\PDA\\Cuda vs OpenMP Project\\otsu-openmp-cuda\\build\\CMakeFiles\\4.3.3\\CompilerIdCUDA\\CMakeCUDACompilerId.cu" ]
+        considering line: [                                        CMakeCUDACompilerId.cu]
+        considering line: [  #$ resource file C:\\Users\\denis\\AppData\\Local\\Temp/tmpxft_00005358_00000000-8.res: [-D__CUDA_ARCH_LIST__=750 -nologo -E -TP -EHsc -D__CUDACC__ -D__NVCC__ -D__CUDACC_DEBUG__  /EHsc /W0 /nologo /Od /FS /Zi /RTC1 /MDd /FdDebug\\vc143.pdb -I"C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v13.2/include" -I"C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v13.2/include" "-IC:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.2\\bin/../include" "-IC:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.2\\bin/../include/cccl"      -D "_MBCS" -D__CUDACC_VER_MAJOR__=13 -D__CUDACC_VER_MINOR__=2 -D__CUDACC_VER_BUILD__=78 -D__CUDA_API_VER_MAJOR__=13 -D__CUDA_API_VER_MINOR__=2 -D__NVCC_DIAG_PRAGMA_SUPPORT__=1 -D__CUDACC_DEVICE_ATOMIC_BUILTINS__=1 -FI "cuda_runtime.h" -Zi "C:\\Users\\denis\\OneDrive\\Desktop\\Facultate\\PDA\\Cuda vs OpenMP Project\\otsu-openmp-cuda\\build\\CMakeFiles\\4.3.3\\CompilerIdCUDA\\CMakeCUDACompilerId.cu" ]]
+        considering line: [  #$ cl.exe -D__NV_NO_HOST_COMPILER_CHECK=1 @"C:\\Users\\denis\\AppData\\Local\\Temp/tmpxft_00005358_00000000-8.res" > "C:/Users/denis/AppData/Local/Temp/tmpxft_00005358_00000000-6_CMakeCUDACompilerId.cpp4.ii" ]
+        considering line: [  CMakeCUDACompilerId.cu]
+        considering line: [  #$ erase C:\\Users\\denis\\AppData\\Local\\Temp/tmpxft_00005358_00000000-8.res]
+        considering line: [  #$ cudafe++ --ms_c++14 --static-host-stub --device-hidden-visibility --microsoft_version=1944 --msvc_target_version=1944 --compiler_bindir "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/Tools/MSVC/14.44.35207/bin/HostX64/x64/../../../../../../.." --display_error_number --orig_src_file_name "C:/Users/denis/OneDrive/Desktop/Facultate/PDA/Cuda vs OpenMP Project/otsu-openmp-cuda/build/CMakeFiles/4.3.3/CompilerIdCUDA/CMakeCUDACompilerId.cu" --orig_src_path_name "C:\\Users\\denis\\OneDrive\\Desktop\\Facultate\\PDA\\Cuda vs OpenMP Project\\otsu-openmp-cuda\\build\\CMakeFiles\\4.3.3\\CompilerIdCUDA\\CMakeCUDACompilerId.cu" --allow_managed --debug_mode --sdk_dir "C:\\Program Files (x86)\\Windows Kits\\10" --m64 --parse_templates --gen_c_file_name "C:/Users/denis/AppData/Local/Temp/tmpxft_00005358_00000000-7_CMakeCUDACompilerId.cudafe1.cpp" --stub_file_name "tmpxft_00005358_00000000-7_CMakeCUDACompilerId.cudafe1.stub.c" --gen_module_id_file --module_id_file_name "C:/Users/denis/AppData/Local/Temp/tmpxft_00005358_00000000-5_CMakeCUDACompilerId.module_id" "C:/Users/denis/AppData/Local/Temp/tmpxft_00005358_00000000-6_CMakeCUDACompilerId.cpp4.ii" ]
+        considering line: [  #$ resource file C:\\Users\\denis\\AppData\\Local\\Temp/tmpxft_00005358_00000000-10.res: [-D__CUDA_ARCH__=750 -D__CUDA_ARCH_LIST__=750 -nologo -E -TP  -DCUDA_DOUBLE_MATH_FUNCTIONS -EHsc -D__CUDACC__ -D__NVCC__ -D__CUDACC_DEBUG__  /EHsc /W0 /nologo /Od /FS /Zi /RTC1 /MDd /FdDebug\\vc143.pdb -I"C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v13.2/include" -I"C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v13.2/include" "-IC:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.2\\bin/../include" "-IC:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.2\\bin/../include/cccl"      -D "_MBCS" -D__CUDACC_VER_MAJOR__=13 -D__CUDACC_VER_MINOR__=2 -D__CUDACC_VER_BUILD__=78 -D__CUDA_API_VER_MAJOR__=13 -D__CUDA_API_VER_MINOR__=2 -D__NVCC_DIAG_PRAGMA_SUPPORT__=1 -D__CUDACC_DEVICE_ATOMIC_BUILTINS__=1 -FI "cuda_runtime.h" -Zi "C:\\Users\\denis\\OneDrive\\Desktop\\Facultate\\PDA\\Cuda vs OpenMP Project\\otsu-openmp-cuda\\build\\CMakeFiles\\4.3.3\\CompilerIdCUDA\\CMakeCUDACompilerId.cu" ]]
+        considering line: [  #$ cl.exe -D__NV_NO_HOST_COMPILER_CHECK=1 @"C:\\Users\\denis\\AppData\\Local\\Temp/tmpxft_00005358_00000000-10.res" > "C:/Users/denis/AppData/Local/Temp/tmpxft_00005358_00000000-9_CMakeCUDACompilerId.cpp1.ii" ]
+        considering line: [  CMakeCUDACompilerId.cu]
+        considering line: [  #$ erase C:\\Users\\denis\\AppData\\Local\\Temp/tmpxft_00005358_00000000-10.res]
+        considering line: [  #$ ""%CICC_PATH%\\cicc" --ms_c++14 --static-host-stub --device-hidden-visibility --microsoft_version=1944 --msvc_target_version=1944 --compiler_bindir "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/Tools/MSVC/14.44.35207/bin/HostX64/x64/../../../../../../.." --display_error_number --orig_src_file_name "C:/Users/denis/OneDrive/Desktop/Facultate/PDA/Cuda vs OpenMP Project/otsu-openmp-cuda/build/CMakeFiles/4.3.3/CompilerIdCUDA/CMakeCUDACompilerId.cu" --orig_src_path_name "C:\\Users\\denis\\OneDrive\\Desktop\\Facultate\\PDA\\Cuda vs OpenMP Project\\otsu-openmp-cuda\\build\\CMakeFiles\\4.3.3\\CompilerIdCUDA\\CMakeCUDACompilerId.cu" --allow_managed --debug_mode --sdk_dir "C:\\Program Files (x86)\\Windows Kits\\10"  -arch compute_75 -m64 --no-version-ident -ftz=0 -prec_div=1 -prec_sqrt=1 -fmad=1 --include_file_name "tmpxft_00005358_00000000-4_CMakeCUDACompilerId.fatbin.c"  -g -O0 -tused --module_id_file_name "C:/Users/denis/AppData/Local/Temp/tmpxft_00005358_00000000-5_CMakeCUDACompilerId.module_id" --gen_c_file_name "C:/Users/denis/AppData/Local/Temp/tmpxft_00005358_00000000-7_CMakeCUDACompilerId.cudafe1.c" --stub_file_name "C:/Users/denis/AppData/Local/Temp/tmpxft_00005358_00000000-7_CMakeCUDACompilerId.cudafe1.stub.c" --gen_device_file_name "C:/Users/denis/AppData/Local/Temp/tmpxft_00005358_00000000-7_CMakeCUDACompilerId.cudafe1.gpu"  "C:/Users/denis/AppData/Local/Temp/tmpxft_00005358_00000000-9_CMakeCUDACompilerId.cpp1.ii" -o "C:/Users/denis/AppData/Local/Temp/tmpxft_00005358_00000000-7_CMakeCUDACompilerId.ptx""]
+        considering line: [  #$ ptxas -arch=sm_75 -m64 -g --dont-merge-basicblocks --return-at-end "C:/Users/denis/AppData/Local/Temp/tmpxft_00005358_00000000-7_CMakeCUDACompilerId.ptx"  -o "C:/Users/denis/AppData/Local/Temp/tmpxft_00005358_00000000-11_CMakeCUDACompilerId.sm_75.cubin" ]
+        considering line: [  #$ fatbinary -64 --ident="C:/Users/denis/OneDrive/Desktop/Facultate/PDA/Cuda vs OpenMP Project/otsu-openmp-cuda/build/CMakeFiles/4.3.3/CompilerIdCUDA/CMakeCUDACompilerId.cu" --cmdline="-g --dont-merge-basicblocks --return-at-end " --cicc-cmdline="-ftz=0 -prec_div=1 -prec_sqrt=1 -fmad=1 " -g "--image3=kind=elf,sm=75,file=C:/Users/denis/AppData/Local/Temp/tmpxft_00005358_00000000-11_CMakeCUDACompilerId.sm_75.cubin" "--image3=kind=ptx,sm=75,file=C:/Users/denis/AppData/Local/Temp/tmpxft_00005358_00000000-7_CMakeCUDACompilerId.ptx" --embedded-fatbin="C:/Users/denis/AppData/Local/Temp/tmpxft_00005358_00000000-4_CMakeCUDACompilerId.fatbin.c" ]
+        considering line: [  #$ erase C:/Users/denis/AppData/Local/Temp/tmpxft_00005358_00000000-4_CMakeCUDACompilerId.fatbin]
+        considering line: [  #$ resource file C:\\Users\\denis\\AppData\\Local\\Temp/tmpxft_00005358_00000000-12.res: [-D__CUDA_ARCH__=750 -D__CUDA_ARCH_LIST__=750 -nologo -c -TP  -DCUDA_DOUBLE_MATH_FUNCTIONS -EHsc /EHsc /W0 /nologo /Od /FS /Zi /RTC1 /MDd /FdDebug\\vc143.pdb -I"C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v13.2/include" -I"C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v13.2/include" "-IC:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.2\\bin/../include" "-IC:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.2\\bin/../include/cccl"     -Zi "C:\\Users\\denis\\AppData\\Local\\Temp\\tmpxft_00005358_00000000-7_CMakeCUDACompilerId.cudafe1.cpp" ]]
+        considering line: [  #$ cl.exe @"C:\\Users\\denis\\AppData\\Local\\Temp/tmpxft_00005358_00000000-12.res" -Fo"C:/Users/denis/OneDrive/Desktop/Facultate/PDA/Cuda vs OpenMP Project/otsu-openmp-cuda/build/CMakeFiles/4.3.3/CompilerIdCUDA/CompilerIdCUDA/x64/Debug/CMakeCUDACompilerId.cu.obj" ]
+        considering line: [  tmpxft_00005358_00000000-7_CMakeCUDACompilerId.cudafe1.cpp]
+        considering line: [  #$ erase C:\\Users\\denis\\AppData\\Local\\Temp/tmpxft_00005358_00000000-12.res]
+        considering line: [Done Building Project "C:\\Users\\denis\\OneDrive\\Desktop\\Facultate\\PDA\\Cuda vs OpenMP Project\\otsu-openmp-cuda\\build\\CMakeFiles\\4.3.3\\CompilerIdCUDA\\CompilerIdCUDA.vcxproj" (CudaBuildCore target(s)).]
+        considering line: [Link:]
+        considering line: [  C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:".\\CompilerIdCUDA.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.2\\lib\\x64" cudart_static.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\\CompilerIdCUDA.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\\CompilerIdCUDA.lib" /MACHINE:X64 "C:\\Users\\denis\\OneDrive\\Desktop\\Facultate\\PDA\\Cuda vs OpenMP Project\\otsu-openmp-cuda\\build\\CMakeFiles\\4.3.3\\CompilerIdCUDA\\CompilerIdCUDA\\x64\\Debug\\CMakeCUDACompilerId.cu.obj"]
+          extracted link line: [link.exe /ERRORREPORT:QUEUE /OUT:".\\CompilerIdCUDA.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.2\\lib\\x64" cudart_static.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\\CompilerIdCUDA.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\\CompilerIdCUDA.lib" /MACHINE:X64 "C:\\Users\\denis\\OneDrive\\Desktop\\Facultate\\PDA\\Cuda vs OpenMP Project\\otsu-openmp-cuda\\build\\CMakeFiles\\4.3.3\\CompilerIdCUDA\\CompilerIdCUDA\\x64\\Debug\\CMakeCUDACompilerId.cu.obj"]
+        considering line: [     Creating library .\\CompilerIdCUDA.lib and object .\\CompilerIdCUDA.exp]
+        considering line: [LINK : warning LNK4098: defaultlib 'LIBCMT' conflicts with use of other libs]
+        considering line: [ use /NODEFAULTLIB:library [C:\\Users\\denis\\OneDrive\\Desktop\\Facultate\\PDA\\Cuda vs OpenMP Project\\otsu-openmp-cuda\\build\\CMakeFiles\\4.3.3\\CompilerIdCUDA\\CompilerIdCUDA.vcxproj]]
+        considering line: [  CompilerIdCUDA.vcxproj -> C:\\Users\\denis\\OneDrive\\Desktop\\Facultate\\PDA\\Cuda vs OpenMP Project\\otsu-openmp-cuda\\build\\CMakeFiles\\4.3.3\\CompilerIdCUDA\\CompilerIdCUDA.exe]
+        considering line: [PostBuildEvent:]
+        considering line: [  echo CMAKE_CUDA_COMPILER=C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.2\\bin\\nvcc.exe]
+        considering line: [  :VCEnd]
+        considering line: [  CMAKE_CUDA_COMPILER=C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.2\\bin\\nvcc.exe]
+        considering line: [FinalizeBuildStatus:]
+        considering line: [  Deleting file "Debug\\CompilerIdCUDA.tlog\\unsuccessfulbuild".]
+        considering line: [  Touching "Debug\\CompilerIdCUDA.tlog\\CompilerIdCUDA.lastbuildstate".]
+        considering line: [Done Building Project "C:\\Users\\denis\\OneDrive\\Desktop\\Facultate\\PDA\\Cuda vs OpenMP Project\\otsu-openmp-cuda\\build\\CMakeFiles\\4.3.3\\CompilerIdCUDA\\CompilerIdCUDA.vcxproj" (default targets).]
+        considering line: [Build succeeded.]
+        considering line: ["C:\\Users\\denis\\OneDrive\\Desktop\\Facultate\\PDA\\Cuda vs OpenMP Project\\otsu-openmp-cuda\\build\\CMakeFiles\\4.3.3\\CompilerIdCUDA\\CompilerIdCUDA.vcxproj" (default target) (1) ->]
+        considering line: [(Link target) -> ]
+        considering line: [  LINK : warning LNK4098: defaultlib 'LIBCMT' conflicts with use of other libs]
+        considering line: [ use /NODEFAULTLIB:library [C:\\Users\\denis\\OneDrive\\Desktop\\Facultate\\PDA\\Cuda vs OpenMP Project\\otsu-openmp-cuda\\build\\CMakeFiles\\4.3.3\\CompilerIdCUDA\\CompilerIdCUDA.vcxproj]]
+        considering line: [    1 Warning(s)]
+        considering line: [    0 Error(s)]
+        considering line: [Time Elapsed 00:00:02.04]
+        considering line: []
+      
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|link\\.exe|lld-link(\\.exe)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        link line: [cuda-fake-ld link.exe /ERRORREPORT:QUEUE /OUT:".\\CompilerIdCUDA.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.2\\lib\\x64" cudart_static.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\\CompilerIdCUDA.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\\CompilerIdCUDA.lib" /MACHINE:X64 "C:\\Users\\denis\\OneDrive\\Desktop\\Facultate\\PDA\\Cuda vs OpenMP Project\\otsu-openmp-cuda\\build\\CMakeFiles\\4.3.3\\CompilerIdCUDA\\CompilerIdCUDA\\x64\\Debug\\CMakeCUDACompilerId.cu.obj"]
+          arg [cuda-fake-ld] ==> ignore
+          arg [link.exe] ==> ignore
+          arg [/ERRORREPORT:QUEUE] ==> ignore
+          arg [/OUT:.\\CompilerIdCUDA.exe] ==> ignore
+          arg [/INCREMENTAL:NO] ==> ignore
+          arg [/NOLOGO] ==> ignore
+          arg [/LIBPATH:C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.2\\lib\\x64] ==> dir [C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.2\\lib\\x64]
+          arg [cudart_static.lib] ==> lib [cudart_static.lib]
+          arg [/MANIFEST] ==> ignore
+          arg [/MANIFESTUAC:level='asInvoker' uiAccess='false'] ==> ignore
+          arg [/manifest:embed] ==> ignore
+          arg [/PDB:.\\CompilerIdCUDA.pdb] ==> ignore
+          arg [/SUBSYSTEM:CONSOLE] ==> ignore
+          arg [/TLBID:1] ==> ignore
+          arg [/DYNAMICBASE] ==> ignore
+          arg [/NXCOMPAT] ==> ignore
+          arg [/IMPLIB:.\\CompilerIdCUDA.lib] ==> ignore MSVC link option
+          arg [/MACHINE:X64] ==> ignore
+          arg [C:\\Users\\denis\\OneDrive\\Desktop\\Facultate\\PDA\\Cuda vs OpenMP Project\\otsu-openmp-cuda\\build\\CMakeFiles\\4.3.3\\CompilerIdCUDA\\CompilerIdCUDA\\x64\\Debug\\CMakeCUDACompilerId.cu.obj] ==> ignore
+        collapse library dir [C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.2\\lib\\x64] ==> [C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v13.2/lib/x64]
+        implicit libs: [cudart_static.lib]
+        implicit objs: []
+        implicit dirs: [C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v13.2/lib/x64]
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/Internal/CMakeNVCCParseImplicitInfo.cmake:178 (message)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCUDACompiler.cmake:295 (cmake_nvcc_parse_implicit_info)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Parsed CUDA nvcc include information:
+        found 'PATH=' string: [C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.2\\bin/../nvvm/bin;C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.2\\bin;C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.2\\bin/../lib;C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64;C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\x64;;C:\\Program Files (x86)\\Microsoft SDKs\\Windows\\v10.0A\\bin\\NETFX 4.8 Tools\\x64;C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\x86;;C:\\Program Files (x86)\\Microsoft SDKs\\Windows\\v10.0A\\bin\\NETFX 4.8 Tools;C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\tools;C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\ide;C:\\Program Files (x86)\\HTML Help Workshop;;C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\MSBuild\\Current\\Bin\\amd64;C:\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\;C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\;C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\MSBuild\\Current\\Bin;C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\;;c:\\Users\\denis\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand;c:\\Users\\denis\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\copilotCli;C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.2\\bin\\x64;C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.2\\bin;C:\\Program Files\\Microsoft MPI\\Bin\\;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\java8path;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Python314\\Scripts\\;C:\\Python314\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files\\Microsoft SQL Server\\170\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\;C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Microsoft SQL Server\\170\\DTS\\Binn\\;C:\\Program Files\\nodejs\\;C:\\Program Files\\dotnet\\;C:\\Users\\denis\\AppData\\Roaming\\npm;C:\\Program Files\\NVIDIA Corporation\\Nsight Compute 2026.1.1\\;C:\\Program Files\\CMake\\bin;C:\\Program Files\\MySQL\\MySQL Shell 8.0\\bin\\;C:\\Users\\denis\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\denis\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\msys64\\mingw64\\bin;C:\\Users\\denis\\.dotnet\\tools;C:\\OJI\\FP\\bin\\i386-Win32;C:\\Users\\denis\\AppData\\Local\\GitHubDesktop\\bin;C:\\Users\\denis\\.dotnet\\tools;C:\\Users\\denis\\AppData\\Roaming\\npm;C:\\texlive\\2026\\bin\\windows;]
+        found 'LIBRARIES=' string: ["/LIBPATH:C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.2\\bin/../lib/x64"]
+        found 'INCLUDES=' string: ["-IC:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.2\\bin/../include" "-IC:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.2\\bin/../include/cccl"  ]
+        found 'SYSTEM_INCLUDES=' string: []
+        considering line: [MSBuild version 17.14.40+3e7442088 for .NET Framework]
+        considering line: [Build started 5/23/2026 11:28:34 PM.]
+        considering line: [Project "C:\\Users\\denis\\OneDrive\\Desktop\\Facultate\\PDA\\Cuda vs OpenMP Project\\otsu-openmp-cuda\\build\\CMakeFiles\\4.3.3\\CompilerIdCUDA\\CompilerIdCUDA.vcxproj" on node 1 (default targets).]
+        considering line: [PrepareForBuild:]
+        considering line: [  Creating directory "Debug\\".]
+        considering line: [  Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.]
+        considering line: [  Creating directory "Debug\\CompilerIdCUDA.tlog\\".]
+        considering line: [InitializeBuildStatus:]
+        considering line: [  Creating "Debug\\CompilerIdCUDA.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.]
+        considering line: [  Touching "Debug\\CompilerIdCUDA.tlog\\unsuccessfulbuild".]
+        considering line: [AddCudaCompileDeps:]
+        considering line: [  C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\cl.exe /E /nologo /showIncludes /TP /D__CUDACC__ /D__CUDACC_VER_MAJOR__=13 /D__CUDACC_VER_MINOR__=2 /D_MBCS /I"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.2\\include" /I"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.2\\bin\\x64" /I"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.2\\include" /I. /FIcuda_runtime.h /c "C:\\Users\\denis\\OneDrive\\Desktop\\Facultate\\PDA\\Cuda vs OpenMP Project\\otsu-openmp-cuda\\build\\CMakeFiles\\4.3.3\\CompilerIdCUDA\\CMakeCUDACompilerId.cu" ]
+        considering line: [Project "C:\\Users\\denis\\OneDrive\\Desktop\\Facultate\\PDA\\Cuda vs OpenMP Project\\otsu-openmp-cuda\\build\\CMakeFiles\\4.3.3\\CompilerIdCUDA\\CompilerIdCUDA.vcxproj" (1) is building "C:\\Users\\denis\\OneDrive\\Desktop\\Facultate\\PDA\\Cuda vs OpenMP Project\\otsu-openmp-cuda\\build\\CMakeFiles\\4.3.3\\CompilerIdCUDA\\CompilerIdCUDA.vcxproj" (1:2) on node 1 (CudaBuildCore target(s)).]
+        considering line: [CudaBuildCore:]
+        considering line: [  Compiling CUDA source file CMakeCUDACompilerId.cu...]
+        considering line: [  Creating directory "C:\\Users\\denis\\OneDrive\\Desktop\\Facultate\\PDA\\Cuda vs OpenMP Project\\otsu-openmp-cuda\\build\\CMakeFiles\\4.3.3\\CompilerIdCUDA\\CompilerIdCUDA\\x64\\Debug".]
+        considering line: [  cmd.exe /C "C:\\Users\\denis\\AppData\\Local\\Temp\\tmp37752cb7b21746c7a4fd7c6f4ae5fccb.cmd"]
+        considering line: [  "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.2\\bin\\nvcc.exe" -gencode=arch=compute_75,code=\\"sm_75,compute_75\\" --use-local-env -ccbin "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64" -x cu   -I"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.2\\include" -I"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.2\\include"  -G   --keep-dir CompilerIdCUDA\\x64\\Debug  -maxrregcount=0    --machine 64 --compile -cudart hybrid -v -allow-unsupported-compiler -g  -D_MBCS -Xcompiler "/EHsc /W0 /nologo /Od /FS /Zi /RTC1 /MDd " -Xcompiler "/FdDebug\\vc143.pdb" -o "C:\\Users\\denis\\OneDrive\\Desktop\\Facultate\\PDA\\Cuda vs OpenMP Project\\otsu-openmp-cuda\\build\\CMakeFiles\\4.3.3\\CompilerIdCUDA\\CompilerIdCUDA\\x64\\Debug\\CMakeCUDACompilerId.cu.obj" "C:\\Users\\denis\\OneDrive\\Desktop\\Facultate\\PDA\\Cuda vs OpenMP Project\\otsu-openmp-cuda\\build\\CMakeFiles\\4.3.3\\CompilerIdCUDA\\CMakeCUDACompilerId.cu"]
+        considering line: [  ]
+        considering line: [  C:\\Users\\denis\\OneDrive\\Desktop\\Facultate\\PDA\\Cuda vs OpenMP Project\\otsu-openmp-cuda\\build\\CMakeFiles\\4.3.3\\CompilerIdCUDA>"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.2\\bin\\nvcc.exe" -gencode=arch=compute_75,code=\\"sm_75,compute_75\\" --use-local-env -ccbin "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64" -x cu   -I"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.2\\include" -I"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.2\\include"  -G   --keep-dir CompilerIdCUDA\\x64\\Debug  -maxrregcount=0    --machine 64 --compile -cudart hybrid -v -allow-unsupported-compiler -g  -D_MBCS -Xcompiler "/EHsc /W0 /nologo /Od /FS /Zi /RTC1 /MDd " -Xcompiler "/FdDebug\\vc143.pdb" -o "C:\\Users\\denis\\OneDrive\\Desktop\\Facultate\\PDA\\Cuda vs OpenMP Project\\otsu-openmp-cuda\\build\\CMakeFiles\\4.3.3\\CompilerIdCUDA\\CompilerIdCUDA\\x64\\Debug\\CMakeCUDACompilerId.cu.obj" "C:\\Users\\denis\\OneDrive\\Desktop\\Facultate\\PDA\\Cuda vs OpenMP Project\\otsu-openmp-cuda\\build\\CMakeFiles\\4.3.3\\CompilerIdCUDA\\CMakeCUDACompilerId.cu" ]
+        considering line: [                                        CMakeCUDACompilerId.cu]
+        considering line: [  #$ resource file C:\\Users\\denis\\AppData\\Local\\Temp/tmpxft_00005358_00000000-8.res: [-D__CUDA_ARCH_LIST__=750 -nologo -E -TP -EHsc -D__CUDACC__ -D__NVCC__ -D__CUDACC_DEBUG__  /EHsc /W0 /nologo /Od /FS /Zi /RTC1 /MDd /FdDebug\\vc143.pdb -I"C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v13.2/include" -I"C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v13.2/include" "-IC:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.2\\bin/../include" "-IC:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.2\\bin/../include/cccl"      -D "_MBCS" -D__CUDACC_VER_MAJOR__=13 -D__CUDACC_VER_MINOR__=2 -D__CUDACC_VER_BUILD__=78 -D__CUDA_API_VER_MAJOR__=13 -D__CUDA_API_VER_MINOR__=2 -D__NVCC_DIAG_PRAGMA_SUPPORT__=1 -D__CUDACC_DEVICE_ATOMIC_BUILTINS__=1 -FI "cuda_runtime.h" -Zi "C:\\Users\\denis\\OneDrive\\Desktop\\Facultate\\PDA\\Cuda vs OpenMP Project\\otsu-openmp-cuda\\build\\CMakeFiles\\4.3.3\\CompilerIdCUDA\\CMakeCUDACompilerId.cu" ]]
+        considering line: [  #$ cl.exe -D__NV_NO_HOST_COMPILER_CHECK=1 @"C:\\Users\\denis\\AppData\\Local\\Temp/tmpxft_00005358_00000000-8.res" > "C:/Users/denis/AppData/Local/Temp/tmpxft_00005358_00000000-6_CMakeCUDACompilerId.cpp4.ii" ]
+        considering line: [  CMakeCUDACompilerId.cu]
+        considering line: [  #$ erase C:\\Users\\denis\\AppData\\Local\\Temp/tmpxft_00005358_00000000-8.res]
+        considering line: [  #$ cudafe++ --ms_c++14 --static-host-stub --device-hidden-visibility --microsoft_version=1944 --msvc_target_version=1944 --compiler_bindir "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/Tools/MSVC/14.44.35207/bin/HostX64/x64/../../../../../../.." --display_error_number --orig_src_file_name "C:/Users/denis/OneDrive/Desktop/Facultate/PDA/Cuda vs OpenMP Project/otsu-openmp-cuda/build/CMakeFiles/4.3.3/CompilerIdCUDA/CMakeCUDACompilerId.cu" --orig_src_path_name "C:\\Users\\denis\\OneDrive\\Desktop\\Facultate\\PDA\\Cuda vs OpenMP Project\\otsu-openmp-cuda\\build\\CMakeFiles\\4.3.3\\CompilerIdCUDA\\CMakeCUDACompilerId.cu" --allow_managed --debug_mode --sdk_dir "C:\\Program Files (x86)\\Windows Kits\\10" --m64 --parse_templates --gen_c_file_name "C:/Users/denis/AppData/Local/Temp/tmpxft_00005358_00000000-7_CMakeCUDACompilerId.cudafe1.cpp" --stub_file_name "tmpxft_00005358_00000000-7_CMakeCUDACompilerId.cudafe1.stub.c" --gen_module_id_file --module_id_file_name "C:/Users/denis/AppData/Local/Temp/tmpxft_00005358_00000000-5_CMakeCUDACompilerId.module_id" "C:/Users/denis/AppData/Local/Temp/tmpxft_00005358_00000000-6_CMakeCUDACompilerId.cpp4.ii" ]
+        considering line: [  #$ resource file C:\\Users\\denis\\AppData\\Local\\Temp/tmpxft_00005358_00000000-10.res: [-D__CUDA_ARCH__=750 -D__CUDA_ARCH_LIST__=750 -nologo -E -TP  -DCUDA_DOUBLE_MATH_FUNCTIONS -EHsc -D__CUDACC__ -D__NVCC__ -D__CUDACC_DEBUG__  /EHsc /W0 /nologo /Od /FS /Zi /RTC1 /MDd /FdDebug\\vc143.pdb -I"C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v13.2/include" -I"C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v13.2/include" "-IC:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.2\\bin/../include" "-IC:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.2\\bin/../include/cccl"      -D "_MBCS" -D__CUDACC_VER_MAJOR__=13 -D__CUDACC_VER_MINOR__=2 -D__CUDACC_VER_BUILD__=78 -D__CUDA_API_VER_MAJOR__=13 -D__CUDA_API_VER_MINOR__=2 -D__NVCC_DIAG_PRAGMA_SUPPORT__=1 -D__CUDACC_DEVICE_ATOMIC_BUILTINS__=1 -FI "cuda_runtime.h" -Zi "C:\\Users\\denis\\OneDrive\\Desktop\\Facultate\\PDA\\Cuda vs OpenMP Project\\otsu-openmp-cuda\\build\\CMakeFiles\\4.3.3\\CompilerIdCUDA\\CMakeCUDACompilerId.cu" ]]
+        considering line: [  #$ cl.exe -D__NV_NO_HOST_COMPILER_CHECK=1 @"C:\\Users\\denis\\AppData\\Local\\Temp/tmpxft_00005358_00000000-10.res" > "C:/Users/denis/AppData/Local/Temp/tmpxft_00005358_00000000-9_CMakeCUDACompilerId.cpp1.ii" ]
+        considering line: [  CMakeCUDACompilerId.cu]
+        considering line: [  #$ erase C:\\Users\\denis\\AppData\\Local\\Temp/tmpxft_00005358_00000000-10.res]
+        considering line: [  #$ ""%CICC_PATH%\\cicc" --ms_c++14 --static-host-stub --device-hidden-visibility --microsoft_version=1944 --msvc_target_version=1944 --compiler_bindir "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/Tools/MSVC/14.44.35207/bin/HostX64/x64/../../../../../../.." --display_error_number --orig_src_file_name "C:/Users/denis/OneDrive/Desktop/Facultate/PDA/Cuda vs OpenMP Project/otsu-openmp-cuda/build/CMakeFiles/4.3.3/CompilerIdCUDA/CMakeCUDACompilerId.cu" --orig_src_path_name "C:\\Users\\denis\\OneDrive\\Desktop\\Facultate\\PDA\\Cuda vs OpenMP Project\\otsu-openmp-cuda\\build\\CMakeFiles\\4.3.3\\CompilerIdCUDA\\CMakeCUDACompilerId.cu" --allow_managed --debug_mode --sdk_dir "C:\\Program Files (x86)\\Windows Kits\\10"  -arch compute_75 -m64 --no-version-ident -ftz=0 -prec_div=1 -prec_sqrt=1 -fmad=1 --include_file_name "tmpxft_00005358_00000000-4_CMakeCUDACompilerId.fatbin.c"  -g -O0 -tused --module_id_file_name "C:/Users/denis/AppData/Local/Temp/tmpxft_00005358_00000000-5_CMakeCUDACompilerId.module_id" --gen_c_file_name "C:/Users/denis/AppData/Local/Temp/tmpxft_00005358_00000000-7_CMakeCUDACompilerId.cudafe1.c" --stub_file_name "C:/Users/denis/AppData/Local/Temp/tmpxft_00005358_00000000-7_CMakeCUDACompilerId.cudafe1.stub.c" --gen_device_file_name "C:/Users/denis/AppData/Local/Temp/tmpxft_00005358_00000000-7_CMakeCUDACompilerId.cudafe1.gpu"  "C:/Users/denis/AppData/Local/Temp/tmpxft_00005358_00000000-9_CMakeCUDACompilerId.cpp1.ii" -o "C:/Users/denis/AppData/Local/Temp/tmpxft_00005358_00000000-7_CMakeCUDACompilerId.ptx""]
+        considering line: [  #$ ptxas -arch=sm_75 -m64 -g --dont-merge-basicblocks --return-at-end "C:/Users/denis/AppData/Local/Temp/tmpxft_00005358_00000000-7_CMakeCUDACompilerId.ptx"  -o "C:/Users/denis/AppData/Local/Temp/tmpxft_00005358_00000000-11_CMakeCUDACompilerId.sm_75.cubin" ]
+        considering line: [  #$ fatbinary -64 --ident="C:/Users/denis/OneDrive/Desktop/Facultate/PDA/Cuda vs OpenMP Project/otsu-openmp-cuda/build/CMakeFiles/4.3.3/CompilerIdCUDA/CMakeCUDACompilerId.cu" --cmdline="-g --dont-merge-basicblocks --return-at-end " --cicc-cmdline="-ftz=0 -prec_div=1 -prec_sqrt=1 -fmad=1 " -g "--image3=kind=elf,sm=75,file=C:/Users/denis/AppData/Local/Temp/tmpxft_00005358_00000000-11_CMakeCUDACompilerId.sm_75.cubin" "--image3=kind=ptx,sm=75,file=C:/Users/denis/AppData/Local/Temp/tmpxft_00005358_00000000-7_CMakeCUDACompilerId.ptx" --embedded-fatbin="C:/Users/denis/AppData/Local/Temp/tmpxft_00005358_00000000-4_CMakeCUDACompilerId.fatbin.c" ]
+        considering line: [  #$ erase C:/Users/denis/AppData/Local/Temp/tmpxft_00005358_00000000-4_CMakeCUDACompilerId.fatbin]
+        considering line: [  #$ resource file C:\\Users\\denis\\AppData\\Local\\Temp/tmpxft_00005358_00000000-12.res: [-D__CUDA_ARCH__=750 -D__CUDA_ARCH_LIST__=750 -nologo -c -TP  -DCUDA_DOUBLE_MATH_FUNCTIONS -EHsc /EHsc /W0 /nologo /Od /FS /Zi /RTC1 /MDd /FdDebug\\vc143.pdb -I"C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v13.2/include" -I"C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v13.2/include" "-IC:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.2\\bin/../include" "-IC:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.2\\bin/../include/cccl"     -Zi "C:\\Users\\denis\\AppData\\Local\\Temp\\tmpxft_00005358_00000000-7_CMakeCUDACompilerId.cudafe1.cpp" ]]
+        considering line: [  #$ cl.exe @"C:\\Users\\denis\\AppData\\Local\\Temp/tmpxft_00005358_00000000-12.res" -Fo"C:/Users/denis/OneDrive/Desktop/Facultate/PDA/Cuda vs OpenMP Project/otsu-openmp-cuda/build/CMakeFiles/4.3.3/CompilerIdCUDA/CompilerIdCUDA/x64/Debug/CMakeCUDACompilerId.cu.obj" ]
+        considering line: [  tmpxft_00005358_00000000-7_CMakeCUDACompilerId.cudafe1.cpp]
+        considering line: [  #$ erase C:\\Users\\denis\\AppData\\Local\\Temp/tmpxft_00005358_00000000-12.res]
+        considering line: [Done Building Project "C:\\Users\\denis\\OneDrive\\Desktop\\Facultate\\PDA\\Cuda vs OpenMP Project\\otsu-openmp-cuda\\build\\CMakeFiles\\4.3.3\\CompilerIdCUDA\\CompilerIdCUDA.vcxproj" (CudaBuildCore target(s)).]
+        considering line: [Link:]
+        considering line: [  C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:".\\CompilerIdCUDA.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.2\\lib\\x64" cudart_static.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\\CompilerIdCUDA.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\\CompilerIdCUDA.lib" /MACHINE:X64 "C:\\Users\\denis\\OneDrive\\Desktop\\Facultate\\PDA\\Cuda vs OpenMP Project\\otsu-openmp-cuda\\build\\CMakeFiles\\4.3.3\\CompilerIdCUDA\\CompilerIdCUDA\\x64\\Debug\\CMakeCUDACompilerId.cu.obj"]
+          extracted link line: [link.exe /ERRORREPORT:QUEUE /OUT:".\\CompilerIdCUDA.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.2\\lib\\x64" cudart_static.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\\CompilerIdCUDA.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\\CompilerIdCUDA.lib" /MACHINE:X64 "C:\\Users\\denis\\OneDrive\\Desktop\\Facultate\\PDA\\Cuda vs OpenMP Project\\otsu-openmp-cuda\\build\\CMakeFiles\\4.3.3\\CompilerIdCUDA\\CompilerIdCUDA\\x64\\Debug\\CMakeCUDACompilerId.cu.obj"]
+        considering line: [     Creating library .\\CompilerIdCUDA.lib and object .\\CompilerIdCUDA.exp]
+        considering line: [LINK : warning LNK4098: defaultlib 'LIBCMT' conflicts with use of other libs]
+        considering line: [ use /NODEFAULTLIB:library [C:\\Users\\denis\\OneDrive\\Desktop\\Facultate\\PDA\\Cuda vs OpenMP Project\\otsu-openmp-cuda\\build\\CMakeFiles\\4.3.3\\CompilerIdCUDA\\CompilerIdCUDA.vcxproj]]
+        considering line: [  CompilerIdCUDA.vcxproj -> C:\\Users\\denis\\OneDrive\\Desktop\\Facultate\\PDA\\Cuda vs OpenMP Project\\otsu-openmp-cuda\\build\\CMakeFiles\\4.3.3\\CompilerIdCUDA\\CompilerIdCUDA.exe]
+        considering line: [PostBuildEvent:]
+        considering line: [  echo CMAKE_CUDA_COMPILER=C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.2\\bin\\nvcc.exe]
+        considering line: [  :VCEnd]
+        considering line: [  CMAKE_CUDA_COMPILER=C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.2\\bin\\nvcc.exe]
+        considering line: [FinalizeBuildStatus:]
+        considering line: [  Deleting file "Debug\\CompilerIdCUDA.tlog\\unsuccessfulbuild".]
+        considering line: [  Touching "Debug\\CompilerIdCUDA.tlog\\CompilerIdCUDA.lastbuildstate".]
+        considering line: [Done Building Project "C:\\Users\\denis\\OneDrive\\Desktop\\Facultate\\PDA\\Cuda vs OpenMP Project\\otsu-openmp-cuda\\build\\CMakeFiles\\4.3.3\\CompilerIdCUDA\\CompilerIdCUDA.vcxproj" (default targets).]
+        considering line: [Build succeeded.]
+        considering line: ["C:\\Users\\denis\\OneDrive\\Desktop\\Facultate\\PDA\\Cuda vs OpenMP Project\\otsu-openmp-cuda\\build\\CMakeFiles\\4.3.3\\CompilerIdCUDA\\CompilerIdCUDA.vcxproj" (default target) (1) ->]
+        considering line: [(Link target) -> ]
+        considering line: [  LINK : warning LNK4098: defaultlib 'LIBCMT' conflicts with use of other libs]
+        considering line: [ use /NODEFAULTLIB:library [C:\\Users\\denis\\OneDrive\\Desktop\\Facultate\\PDA\\Cuda vs OpenMP Project\\otsu-openmp-cuda\\build\\CMakeFiles\\4.3.3\\CompilerIdCUDA\\CompilerIdCUDA.vcxproj]]
+        considering line: [    1 Warning(s)]
+        considering line: [    0 Error(s)]
+        considering line: [Time Elapsed 00:00:02.04]
+        considering line: []
+      
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|link\\.exe|lld-link(\\.exe)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        link line: [cuda-fake-ld link.exe /ERRORREPORT:QUEUE /OUT:".\\CompilerIdCUDA.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.2\\lib\\x64" cudart_static.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\\CompilerIdCUDA.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\\CompilerIdCUDA.lib" /MACHINE:X64 "C:\\Users\\denis\\OneDrive\\Desktop\\Facultate\\PDA\\Cuda vs OpenMP Project\\otsu-openmp-cuda\\build\\CMakeFiles\\4.3.3\\CompilerIdCUDA\\CompilerIdCUDA\\x64\\Debug\\CMakeCUDACompilerId.cu.obj"]
+          arg [cuda-fake-ld] ==> ignore
+          arg [link.exe] ==> ignore
+          arg [/ERRORREPORT:QUEUE] ==> ignore
+          arg [/OUT:.\\CompilerIdCUDA.exe] ==> ignore
+          arg [/INCREMENTAL:NO] ==> ignore
+          arg [/NOLOGO] ==> ignore
+          arg [/LIBPATH:C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.2\\lib\\x64] ==> dir [C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.2\\lib\\x64]
+          arg [cudart_static.lib] ==> lib [cudart_static.lib]
+          arg [/MANIFEST] ==> ignore
+          arg [/MANIFESTUAC:level='asInvoker' uiAccess='false'] ==> ignore
+          arg [/manifest:embed] ==> ignore
+          arg [/PDB:.\\CompilerIdCUDA.pdb] ==> ignore
+          arg [/SUBSYSTEM:CONSOLE] ==> ignore
+          arg [/TLBID:1] ==> ignore
+          arg [/DYNAMICBASE] ==> ignore
+          arg [/NXCOMPAT] ==> ignore
+          arg [/IMPLIB:.\\CompilerIdCUDA.lib] ==> ignore MSVC link option
+          arg [/MACHINE:X64] ==> ignore
+          arg [C:\\Users\\denis\\OneDrive\\Desktop\\Facultate\\PDA\\Cuda vs OpenMP Project\\otsu-openmp-cuda\\build\\CMakeFiles\\4.3.3\\CompilerIdCUDA\\CompilerIdCUDA\\x64\\Debug\\CMakeCUDACompilerId.cu.obj] ==> ignore
+        collapse library dir [C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.2\\lib\\x64] ==> [C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v13.2/lib/x64]
+        implicit libs: [cudart_static.lib]
+        implicit objs: []
+        implicit dirs: [C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v13.2/lib/x64]
+        implicit fwks: []
+      
+      
+  -
+    kind: "find-v1"
+    backtrace:
       - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineRCCompiler.cmake:40 (find_program)"
       - "C:/Program Files/CMake/share/cmake-4.3/Modules/Platform/Windows-MSVC.cmake:592 (enable_language)"
       - "C:/Program Files/CMake/share/cmake-4.3/Modules/Platform/Windows-MSVC.cmake:565 (__windows_compiler_msvc_enable_rc)"
@@ -1102,9 +1693,10 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "C:/Users/denis/OneDrive/Desktop/Facultate/PDA/Cuda vs OpenMP Project/otsu-openmp-cuda/build/CMakeFiles/CMakeScratch/TryCompile-id63iv"
-      binary: "C:/Users/denis/OneDrive/Desktop/Facultate/PDA/Cuda vs OpenMP Project/otsu-openmp-cuda/build/CMakeFiles/CMakeScratch/TryCompile-id63iv"
+      source: "C:/Users/denis/OneDrive/Desktop/Facultate/PDA/Cuda vs OpenMP Project/otsu-openmp-cuda/build/CMakeFiles/CMakeScratch/TryCompile-boab26"
+      binary: "C:/Users/denis/OneDrive/Desktop/Facultate/PDA/Cuda vs OpenMP Project/otsu-openmp-cuda/build/CMakeFiles/CMakeScratch/TryCompile-boab26"
     cmakeVariables:
+      CMAKE_CUDA_ARCHITECTURES: "75"
       CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /EHsc"
       CMAKE_CXX_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
       CMAKE_CXX_SCAN_FOR_MODULES: "OFF"
@@ -1114,39 +1706,39 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/denis/OneDrive/Desktop/Facultate/PDA/Cuda vs OpenMP Project/otsu-openmp-cuda/build/CMakeFiles/CMakeScratch/TryCompile-id63iv'
+        Change Dir: 'C:/Users/denis/OneDrive/Desktop/Facultate/PDA/Cuda vs OpenMP Project/otsu-openmp-cuda/build/CMakeFiles/CMakeScratch/TryCompile-boab26'
         
-        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_f127c.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_de15a.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
         MSBuild version 17.14.40+3e7442088 for .NET Framework
-        Build started 5/23/2026 10:27:26 PM.
+        Build started 5/23/2026 11:28:37 PM.
         
-        Project "C:\\Users\\denis\\OneDrive\\Desktop\\Facultate\\PDA\\Cuda vs OpenMP Project\\otsu-openmp-cuda\\build\\CMakeFiles\\CMakeScratch\\TryCompile-id63iv\\cmTC_f127c.vcxproj" on node 1 (default targets).
+        Project "C:\\Users\\denis\\OneDrive\\Desktop\\Facultate\\PDA\\Cuda vs OpenMP Project\\otsu-openmp-cuda\\build\\CMakeFiles\\CMakeScratch\\TryCompile-boab26\\cmTC_de15a.vcxproj" on node 1 (default targets).
         PrepareForBuild:
           Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
-          Creating directory "C:\\Users\\denis\\OneDrive\\Desktop\\Facultate\\PDA\\Cuda vs OpenMP Project\\otsu-openmp-cuda\\build\\CMakeFiles\\CMakeScratch\\TryCompile-id63iv\\Debug\\".
-          Creating directory "cmTC_f127c.dir\\Debug\\cmTC_f127c.tlog\\".
+          Creating directory "C:\\Users\\denis\\OneDrive\\Desktop\\Facultate\\PDA\\Cuda vs OpenMP Project\\otsu-openmp-cuda\\build\\CMakeFiles\\CMakeScratch\\TryCompile-boab26\\Debug\\".
+          Creating directory "cmTC_de15a.dir\\Debug\\cmTC_de15a.tlog\\".
         InitializeBuildStatus:
-          Creating "cmTC_f127c.dir\\Debug\\cmTC_f127c.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
-          Touching "cmTC_f127c.dir\\Debug\\cmTC_f127c.tlog\\unsuccessfulbuild".
+          Creating "cmTC_de15a.dir\\Debug\\cmTC_de15a.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_de15a.dir\\Debug\\cmTC_de15a.tlog\\unsuccessfulbuild".
         ClCompile:
-          C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /Fo"cmTC_f127c.dir\\Debug\\\\" /Fd"cmTC_f127c.dir\\Debug\\vc143.pdb" /external:W1 /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.3\\Modules\\CMakeCXXCompilerABI.cpp"
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /Fo"cmTC_de15a.dir\\Debug\\\\" /Fd"cmTC_de15a.dir\\Debug\\vc143.pdb" /external:W1 /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.3\\Modules\\CMakeCXXCompilerABI.cpp"
           Microsoft (R) C/C++ Optimizing Compiler Version 19.44.35223 for x64
           Copyright (C) Microsoft Corporation.  All rights reserved.
-          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /Fo"cmTC_f127c.dir\\Debug\\\\" /Fd"cmTC_f127c.dir\\Debug\\vc143.pdb" /external:W1 /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.3\\Modules\\CMakeCXXCompilerABI.cpp"
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /Fo"cmTC_de15a.dir\\Debug\\\\" /Fd"cmTC_de15a.dir\\Debug\\vc143.pdb" /external:W1 /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.3\\Modules\\CMakeCXXCompilerABI.cpp"
           CMakeCXXCompilerABI.cpp
         Link:
-          C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\Users\\denis\\OneDrive\\Desktop\\Facultate\\PDA\\Cuda vs OpenMP Project\\otsu-openmp-cuda\\build\\CMakeFiles\\CMakeScratch\\TryCompile-id63iv\\Debug\\cmTC_f127c.exe" /INCREMENTAL /ILK:"cmTC_f127c.dir\\Debug\\cmTC_f127c.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/denis/OneDrive/Desktop/Facultate/PDA/Cuda vs OpenMP Project/otsu-openmp-cuda/build/CMakeFiles/CMakeScratch/TryCompile-id63iv/Debug/cmTC_f127c.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/Users/denis/OneDrive/Desktop/Facultate/PDA/Cuda vs OpenMP Project/otsu-openmp-cuda/build/CMakeFiles/CMakeScratch/TryCompile-id63iv/Debug/cmTC_f127c.lib" /MACHINE:X64  /machine:x64 cmTC_f127c.dir\\Debug\\CMakeCXXCompilerABI.obj
-          cmTC_f127c.vcxproj -> C:\\Users\\denis\\OneDrive\\Desktop\\Facultate\\PDA\\Cuda vs OpenMP Project\\otsu-openmp-cuda\\build\\CMakeFiles\\CMakeScratch\\TryCompile-id63iv\\Debug\\cmTC_f127c.exe
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\Users\\denis\\OneDrive\\Desktop\\Facultate\\PDA\\Cuda vs OpenMP Project\\otsu-openmp-cuda\\build\\CMakeFiles\\CMakeScratch\\TryCompile-boab26\\Debug\\cmTC_de15a.exe" /INCREMENTAL /ILK:"cmTC_de15a.dir\\Debug\\cmTC_de15a.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/denis/OneDrive/Desktop/Facultate/PDA/Cuda vs OpenMP Project/otsu-openmp-cuda/build/CMakeFiles/CMakeScratch/TryCompile-boab26/Debug/cmTC_de15a.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/Users/denis/OneDrive/Desktop/Facultate/PDA/Cuda vs OpenMP Project/otsu-openmp-cuda/build/CMakeFiles/CMakeScratch/TryCompile-boab26/Debug/cmTC_de15a.lib" /MACHINE:X64  /machine:x64 cmTC_de15a.dir\\Debug\\CMakeCXXCompilerABI.obj
+          cmTC_de15a.vcxproj -> C:\\Users\\denis\\OneDrive\\Desktop\\Facultate\\PDA\\Cuda vs OpenMP Project\\otsu-openmp-cuda\\build\\CMakeFiles\\CMakeScratch\\TryCompile-boab26\\Debug\\cmTC_de15a.exe
         FinalizeBuildStatus:
-          Deleting file "cmTC_f127c.dir\\Debug\\cmTC_f127c.tlog\\unsuccessfulbuild".
-          Touching "cmTC_f127c.dir\\Debug\\cmTC_f127c.tlog\\cmTC_f127c.lastbuildstate".
-        Done Building Project "C:\\Users\\denis\\OneDrive\\Desktop\\Facultate\\PDA\\Cuda vs OpenMP Project\\otsu-openmp-cuda\\build\\CMakeFiles\\CMakeScratch\\TryCompile-id63iv\\cmTC_f127c.vcxproj" (default targets).
+          Deleting file "cmTC_de15a.dir\\Debug\\cmTC_de15a.tlog\\unsuccessfulbuild".
+          Touching "cmTC_de15a.dir\\Debug\\cmTC_de15a.tlog\\cmTC_de15a.lastbuildstate".
+        Done Building Project "C:\\Users\\denis\\OneDrive\\Desktop\\Facultate\\PDA\\Cuda vs OpenMP Project\\otsu-openmp-cuda\\build\\CMakeFiles\\CMakeScratch\\TryCompile-boab26\\cmTC_de15a.vcxproj" (default targets).
         
         Build succeeded.
             0 Warning(s)
             0 Error(s)
         
-        Time Elapsed 00:00:00.39
+        Time Elapsed 00:00:00.44
         
       exitCode: 0
   -
@@ -1180,14 +1772,210 @@ events:
   -
     kind: "try_compile-v1"
     backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCompilerABI.cmake:83 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeTestCUDACompiler.cmake:19 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    checks:
+      - "Detecting CUDA compiler ABI info"
+    directories:
+      source: "C:/Users/denis/OneDrive/Desktop/Facultate/PDA/Cuda vs OpenMP Project/otsu-openmp-cuda/build/CMakeFiles/CMakeScratch/TryCompile-vweymx"
+      binary: "C:/Users/denis/OneDrive/Desktop/Facultate/PDA/Cuda vs OpenMP Project/otsu-openmp-cuda/build/CMakeFiles/CMakeScratch/TryCompile-vweymx"
+    cmakeVariables:
+      CMAKE_CUDA_ARCHITECTURES: "75"
+      CMAKE_CUDA_FLAGS: "-D_WINDOWS -Xcompiler=\" /EHsc\""
+      CMAKE_CUDA_FLAGS_DEBUG: "-Xcompiler=\" -Zi -Ob0 -Od /RTC1\""
+      CMAKE_CUDA_RUNTIME_LIBRARY: "Static"
+      CMAKE_CXX_STDLIB_MODULES_JSON: ""
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+    buildResult:
+      variable: "CMAKE_CUDA_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/denis/OneDrive/Desktop/Facultate/PDA/Cuda vs OpenMP Project/otsu-openmp-cuda/build/CMakeFiles/CMakeScratch/TryCompile-vweymx'
+        
+        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_838cf.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.14.40+3e7442088 for .NET Framework
+        Build started 5/23/2026 11:28:37 PM.
+        
+        Project "C:\\Users\\denis\\OneDrive\\Desktop\\Facultate\\PDA\\Cuda vs OpenMP Project\\otsu-openmp-cuda\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vweymx\\cmTC_838cf.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "C:\\Users\\denis\\OneDrive\\Desktop\\Facultate\\PDA\\Cuda vs OpenMP Project\\otsu-openmp-cuda\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vweymx\\Debug\\".
+          Creating directory "cmTC_838cf.dir\\Debug\\cmTC_838cf.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_838cf.dir\\Debug\\cmTC_838cf.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_838cf.dir\\Debug\\cmTC_838cf.tlog\\unsuccessfulbuild".
+        AddCudaCompileDeps:
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\cl.exe /E /nologo /showIncludes /TP /D__CUDACC__ /D__CUDACC_VER_MAJOR__=13 /D__CUDACC_VER_MINOR__=2 /D_WINDOWS /D_MBCS /DCMAKE_INTDIR="Debug" /D_MBCS /DCMAKE_INTDIR="Debug" /I"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.2\\bin\\x64" /I"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.2\\include" /I. /FIcuda_runtime.h /c "C:\\Program Files\\CMake\\share\\cmake-4.3\\Modules\\CMakeCUDACompilerABI.cu" 
+        Project "C:\\Users\\denis\\OneDrive\\Desktop\\Facultate\\PDA\\Cuda vs OpenMP Project\\otsu-openmp-cuda\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vweymx\\cmTC_838cf.vcxproj" (1) is building "C:\\Users\\denis\\OneDrive\\Desktop\\Facultate\\PDA\\Cuda vs OpenMP Project\\otsu-openmp-cuda\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vweymx\\cmTC_838cf.vcxproj" (1:2) on node 1 (CudaBuildCore target(s)).
+        CudaBuildCore:
+          Compiling CUDA source file ..\\..\\..\\..\\..\\..\\..\\..\\..\\..\\..\\..\\Program Files\\CMake\\share\\cmake-4.3\\Modules\\CMakeCUDACompilerABI.cu...
+          cmd.exe /C "C:\\Users\\denis\\AppData\\Local\\Temp\\tmp28f4e8c9cca043939b697fd434d682a2.cmd"
+          "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.2\\bin\\nvcc.exe"  --use-local-env -ccbin "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64" -x cu    -I"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.2\\include"     --keep-dir cmTC_838cf\\x64\\Debug  -maxrregcount=0    --machine 64 --compile -cudart static -forward-unknown-to-host-compiler --generate-code=arch=compute_75,code=[compute_75,sm_75] -Xcompiler="/EHsc -Zi -Ob0 -v" -g  -D_WINDOWS -D_MBCS -D"CMAKE_INTDIR=\\"Debug\\"" -D_MBCS -D"CMAKE_INTDIR=\\"Debug\\"" -Xcompiler "/EHsc /W1 /nologo /Od /FS /Zi /RTC1 /MDd " -Xcompiler "/FdcmTC_838cf.dir\\Debug\\vc143.pdb" -o cmTC_838cf.dir\\Debug\\CMakeCUDACompilerABI.obj "C:\\Program Files\\CMake\\share\\cmake-4.3\\Modules\\CMakeCUDACompilerABI.cu"
+          
+          C:\\Users\\denis\\OneDrive\\Desktop\\Facultate\\PDA\\Cuda vs OpenMP Project\\otsu-openmp-cuda\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vweymx>"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.2\\bin\\nvcc.exe"  --use-local-env -ccbin "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64" -x cu    -I"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.2\\include"     --keep-dir cmTC_838cf\\x64\\Debug  -maxrregcount=0    --machine 64 --compile -cudart static -forward-unknown-to-host-compiler --generate-code=arch=compute_75,code=[compute_75,sm_75] -Xcompiler="/EHsc -Zi -Ob0 -v" -g  -D_WINDOWS -D_MBCS -D"CMAKE_INTDIR=\\"Debug\\"" -D_MBCS -D"CMAKE_INTDIR=\\"Debug\\"" -Xcompiler "/EHsc /W1 /nologo /Od /FS /Zi /RTC1 /MDd " -Xcompiler "/FdcmTC_838cf.dir\\Debug\\vc143.pdb" -o cmTC_838cf.dir\\Debug\\CMakeCUDACompilerABI.obj "C:\\Program Files\\CMake\\share\\cmake-4.3\\Modules\\CMakeCUDACompilerABI.cu" 
+        cl : Command line warning D9002: ignoring unknown option '-v' [C:\\Users\\denis\\OneDrive\\Desktop\\Facultate\\PDA\\Cuda vs OpenMP Project\\otsu-openmp-cuda\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vweymx\\cmTC_838cf.vcxproj]
+          CMakeCUDACompilerABI.cu
+        cl : Command line warning D9002: ignoring unknown option '-v' [C:\\Users\\denis\\OneDrive\\Desktop\\Facultate\\PDA\\Cuda vs OpenMP Project\\otsu-openmp-cuda\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vweymx\\cmTC_838cf.vcxproj]
+          CMakeCUDACompilerABI.cu
+          CMakeCUDACompilerABI.cu
+        cl : Command line warning D9002: ignoring unknown option '-v' [C:\\Users\\denis\\OneDrive\\Desktop\\Facultate\\PDA\\Cuda vs OpenMP Project\\otsu-openmp-cuda\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vweymx\\cmTC_838cf.vcxproj]
+          tmpxft_00001c74_00000000-7_CMakeCUDACompilerABI.cudafe1.cpp
+        C:\\Program Files\\CMake\\share\\cmake-4.3\\Modules\\CMakeCompilerCUDAArch.h(10): warning C4305: 'return': truncation from 'int' to 'bool' [C:\\Users\\denis\\OneDrive\\Desktop\\Facultate\\PDA\\Cuda vs OpenMP Project\\otsu-openmp-cuda\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vweymx\\cmTC_838cf.vcxproj]
+        Done Building Project "C:\\Users\\denis\\OneDrive\\Desktop\\Facultate\\PDA\\Cuda vs OpenMP Project\\otsu-openmp-cuda\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vweymx\\cmTC_838cf.vcxproj" (CudaBuildCore target(s)).
+        Link:
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\Users\\denis\\OneDrive\\Desktop\\Facultate\\PDA\\Cuda vs OpenMP Project\\otsu-openmp-cuda\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vweymx\\Debug\\cmTC_838cf.exe" /INCREMENTAL /ILK:"cmTC_838cf.dir\\Debug\\cmTC_838cf.ilk" /NOLOGO /LIBPATH:"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.2\\lib\\x64" cudadevrt.lib cudart_static.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/denis/OneDrive/Desktop/Facultate/PDA/Cuda vs OpenMP Project/otsu-openmp-cuda/build/CMakeFiles/CMakeScratch/TryCompile-vweymx/Debug/cmTC_838cf.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/Users/denis/OneDrive/Desktop/Facultate/PDA/Cuda vs OpenMP Project/otsu-openmp-cuda/build/CMakeFiles/CMakeScratch/TryCompile-vweymx/Debug/cmTC_838cf.lib" /MACHINE:X64  /machine:x64 -v cmTC_838cf.dir\\Debug\\CMakeCUDACompilerABI.obj
+        LINK : warning LNK4044: unrecognized option '/v'; ignored [C:\\Users\\denis\\OneDrive\\Desktop\\Facultate\\PDA\\Cuda vs OpenMP Project\\otsu-openmp-cuda\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vweymx\\cmTC_838cf.vcxproj]
+             Creating library C:/Users/denis/OneDrive/Desktop/Facultate/PDA/Cuda vs OpenMP Project/otsu-openmp-cuda/build/CMakeFiles/CMakeScratch/TryCompile-vweymx/Debug/cmTC_838cf.lib and object C:/Users/denis/OneDrive/Desktop/Facultate/PDA/Cuda vs OpenMP Project/otsu-openmp-cuda/build/CMakeFiles/CMakeScratch/TryCompile-vweymx/Debug/cmTC_838cf.exp
+        LINK : warning LNK4098: defaultlib 'LIBCMT' conflicts with use of other libs; use /NODEFAULTLIB:library [C:\\Users\\denis\\OneDrive\\Desktop\\Facultate\\PDA\\Cuda vs OpenMP Project\\otsu-openmp-cuda\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vweymx\\cmTC_838cf.vcxproj]
+          cmTC_838cf.vcxproj -> C:\\Users\\denis\\OneDrive\\Desktop\\Facultate\\PDA\\Cuda vs OpenMP Project\\otsu-openmp-cuda\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vweymx\\Debug\\cmTC_838cf.exe
+        FinalizeBuildStatus:
+          Deleting file "cmTC_838cf.dir\\Debug\\cmTC_838cf.tlog\\unsuccessfulbuild".
+          Touching "cmTC_838cf.dir\\Debug\\cmTC_838cf.tlog\\cmTC_838cf.lastbuildstate".
+        Done Building Project "C:\\Users\\denis\\OneDrive\\Desktop\\Facultate\\PDA\\Cuda vs OpenMP Project\\otsu-openmp-cuda\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vweymx\\cmTC_838cf.vcxproj" (default targets).
+        
+        Build succeeded.
+        
+        "C:\\Users\\denis\\OneDrive\\Desktop\\Facultate\\PDA\\Cuda vs OpenMP Project\\otsu-openmp-cuda\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vweymx\\cmTC_838cf.vcxproj" (default target) (1) ->
+        "C:\\Users\\denis\\OneDrive\\Desktop\\Facultate\\PDA\\Cuda vs OpenMP Project\\otsu-openmp-cuda\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vweymx\\cmTC_838cf.vcxproj" (CudaBuildCore target) (1:2) ->
+        (CudaBuildCore target) -> 
+          cl : Command line warning D9002: ignoring unknown option '-v' [C:\\Users\\denis\\OneDrive\\Desktop\\Facultate\\PDA\\Cuda vs OpenMP Project\\otsu-openmp-cuda\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vweymx\\cmTC_838cf.vcxproj]
+          cl : Command line warning D9002: ignoring unknown option '-v' [C:\\Users\\denis\\OneDrive\\Desktop\\Facultate\\PDA\\Cuda vs OpenMP Project\\otsu-openmp-cuda\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vweymx\\cmTC_838cf.vcxproj]
+          cl : Command line warning D9002: ignoring unknown option '-v' [C:\\Users\\denis\\OneDrive\\Desktop\\Facultate\\PDA\\Cuda vs OpenMP Project\\otsu-openmp-cuda\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vweymx\\cmTC_838cf.vcxproj]
+          C:\\Program Files\\CMake\\share\\cmake-4.3\\Modules\\CMakeCompilerCUDAArch.h(10): warning C4305: 'return': truncation from 'int' to 'bool' [C:\\Users\\denis\\OneDrive\\Desktop\\Facultate\\PDA\\Cuda vs OpenMP Project\\otsu-openmp-cuda\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vweymx\\cmTC_838cf.vcxproj]
+        
+        
+        "C:\\Users\\denis\\OneDrive\\Desktop\\Facultate\\PDA\\Cuda vs OpenMP Project\\otsu-openmp-cuda\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vweymx\\cmTC_838cf.vcxproj" (default target) (1) ->
+        (Link target) -> 
+          LINK : warning LNK4044: unrecognized option '/v'; ignored [C:\\Users\\denis\\OneDrive\\Desktop\\Facultate\\PDA\\Cuda vs OpenMP Project\\otsu-openmp-cuda\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vweymx\\cmTC_838cf.vcxproj]
+          LINK : warning LNK4098: defaultlib 'LIBCMT' conflicts with use of other libs; use /NODEFAULTLIB:library [C:\\Users\\denis\\OneDrive\\Desktop\\Facultate\\PDA\\Cuda vs OpenMP Project\\otsu-openmp-cuda\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vweymx\\cmTC_838cf.vcxproj]
+        
+            6 Warning(s)
+            0 Error(s)
+        
+        Time Elapsed 00:00:01.84
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCompilerABI.cmake:217 (message)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeTestCUDACompiler.cmake:19 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Parsed CUDA implicit include dir info: rv=start
+        warn: unable to parse implicit include dirs!
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCompilerABI.cmake:253 (message)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeTestCUDACompiler.cmake:19 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Parsed CUDA implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|link\\.exe|lld-link(\\.exe)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|"|[0-9]+>[ 	-]*Build:[ 	0-9]+ ms[ 	]*)?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|link\\.exe|lld-link(\\.exe)?))("|,| |$)]
+        ignore line: [Change Dir: 'C:/Users/denis/OneDrive/Desktop/Facultate/PDA/Cuda vs OpenMP Project/otsu-openmp-cuda/build/CMakeFiles/CMakeScratch/TryCompile-vweymx']
+        ignore line: []
+        ignore line: [Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_838cf.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n]
+        ignore line: [MSBuild version 17.14.40+3e7442088 for .NET Framework]
+        ignore line: [Build started 5/23/2026 11:28:37 PM.]
+        ignore line: []
+        ignore line: [Project "C:\\Users\\denis\\OneDrive\\Desktop\\Facultate\\PDA\\Cuda vs OpenMP Project\\otsu-openmp-cuda\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vweymx\\cmTC_838cf.vcxproj" on node 1 (default targets).]
+        ignore line: [PrepareForBuild:]
+        ignore line: [  Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.]
+        ignore line: [  Creating directory "C:\\Users\\denis\\OneDrive\\Desktop\\Facultate\\PDA\\Cuda vs OpenMP Project\\otsu-openmp-cuda\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vweymx\\Debug\\".]
+        ignore line: [  Creating directory "cmTC_838cf.dir\\Debug\\cmTC_838cf.tlog\\".]
+        ignore line: [InitializeBuildStatus:]
+        ignore line: [  Creating "cmTC_838cf.dir\\Debug\\cmTC_838cf.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.]
+        ignore line: [  Touching "cmTC_838cf.dir\\Debug\\cmTC_838cf.tlog\\unsuccessfulbuild".]
+        ignore line: [AddCudaCompileDeps:]
+        ignore line: [  C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\cl.exe /E /nologo /showIncludes /TP /D__CUDACC__ /D__CUDACC_VER_MAJOR__=13 /D__CUDACC_VER_MINOR__=2 /D_WINDOWS /D_MBCS /DCMAKE_INTDIR="Debug" /D_MBCS /DCMAKE_INTDIR="Debug" /I"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.2\\bin\\x64" /I"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.2\\include" /I. /FIcuda_runtime.h /c "C:\\Program Files\\CMake\\share\\cmake-4.3\\Modules\\CMakeCUDACompilerABI.cu" ]
+        ignore line: [Project "C:\\Users\\denis\\OneDrive\\Desktop\\Facultate\\PDA\\Cuda vs OpenMP Project\\otsu-openmp-cuda\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vweymx\\cmTC_838cf.vcxproj" (1) is building "C:\\Users\\denis\\OneDrive\\Desktop\\Facultate\\PDA\\Cuda vs OpenMP Project\\otsu-openmp-cuda\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vweymx\\cmTC_838cf.vcxproj" (1:2) on node 1 (CudaBuildCore target(s)).]
+        ignore line: [CudaBuildCore:]
+        ignore line: [  Compiling CUDA source file ..\\..\\..\\..\\..\\..\\..\\..\\..\\..\\..\\..\\Program Files\\CMake\\share\\cmake-4.3\\Modules\\CMakeCUDACompilerABI.cu...]
+        ignore line: [  cmd.exe /C "C:\\Users\\denis\\AppData\\Local\\Temp\\tmp28f4e8c9cca043939b697fd434d682a2.cmd"]
+        ignore line: [  "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.2\\bin\\nvcc.exe"  --use-local-env -ccbin "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64" -x cu    -I"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.2\\include"     --keep-dir cmTC_838cf\\x64\\Debug  -maxrregcount=0    --machine 64 --compile -cudart static -forward-unknown-to-host-compiler --generate-code=arch=compute_75 code=[compute_75 sm_75] -Xcompiler="/EHsc -Zi -Ob0 -v" -g  -D_WINDOWS -D_MBCS -D"CMAKE_INTDIR=\\"Debug\\"" -D_MBCS -D"CMAKE_INTDIR=\\"Debug\\"" -Xcompiler "/EHsc /W1 /nologo /Od /FS /Zi /RTC1 /MDd " -Xcompiler "/FdcmTC_838cf.dir\\Debug\\vc143.pdb" -o cmTC_838cf.dir\\Debug\\CMakeCUDACompilerABI.obj "C:\\Program Files\\CMake\\share\\cmake-4.3\\Modules\\CMakeCUDACompilerABI.cu"]
+        ignore line: [  ]
+        ignore line: [  C:\\Users\\denis\\OneDrive\\Desktop\\Facultate\\PDA\\Cuda vs OpenMP Project\\otsu-openmp-cuda\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vweymx>"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.2\\bin\\nvcc.exe"  --use-local-env -ccbin "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64" -x cu    -I"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.2\\include"     --keep-dir cmTC_838cf\\x64\\Debug  -maxrregcount=0    --machine 64 --compile -cudart static -forward-unknown-to-host-compiler --generate-code=arch=compute_75 code=[compute_75 sm_75] -Xcompiler="/EHsc -Zi -Ob0 -v" -g  -D_WINDOWS -D_MBCS -D"CMAKE_INTDIR=\\"Debug\\"" -D_MBCS -D"CMAKE_INTDIR=\\"Debug\\"" -Xcompiler "/EHsc /W1 /nologo /Od /FS /Zi /RTC1 /MDd " -Xcompiler "/FdcmTC_838cf.dir\\Debug\\vc143.pdb" -o cmTC_838cf.dir\\Debug\\CMakeCUDACompilerABI.obj "C:\\Program Files\\CMake\\share\\cmake-4.3\\Modules\\CMakeCUDACompilerABI.cu" ]
+        ignore line: [cl : Command line warning D9002: ignoring unknown option '-v' [C:\\Users\\denis\\OneDrive\\Desktop\\Facultate\\PDA\\Cuda vs OpenMP Project\\otsu-openmp-cuda\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vweymx\\cmTC_838cf.vcxproj]]
+        ignore line: [  CMakeCUDACompilerABI.cu]
+        ignore line: [cl : Command line warning D9002: ignoring unknown option '-v' [C:\\Users\\denis\\OneDrive\\Desktop\\Facultate\\PDA\\Cuda vs OpenMP Project\\otsu-openmp-cuda\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vweymx\\cmTC_838cf.vcxproj]]
+        ignore line: [  CMakeCUDACompilerABI.cu]
+        ignore line: [  CMakeCUDACompilerABI.cu]
+        ignore line: [cl : Command line warning D9002: ignoring unknown option '-v' [C:\\Users\\denis\\OneDrive\\Desktop\\Facultate\\PDA\\Cuda vs OpenMP Project\\otsu-openmp-cuda\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vweymx\\cmTC_838cf.vcxproj]]
+        ignore line: [  tmpxft_00001c74_00000000-7_CMakeCUDACompilerABI.cudafe1.cpp]
+        ignore line: [C:\\Program Files\\CMake\\share\\cmake-4.3\\Modules\\CMakeCompilerCUDAArch.h(10): warning C4305: 'return': truncation from 'int' to 'bool' [C:\\Users\\denis\\OneDrive\\Desktop\\Facultate\\PDA\\Cuda vs OpenMP Project\\otsu-openmp-cuda\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vweymx\\cmTC_838cf.vcxproj]]
+        ignore line: [Done Building Project "C:\\Users\\denis\\OneDrive\\Desktop\\Facultate\\PDA\\Cuda vs OpenMP Project\\otsu-openmp-cuda\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vweymx\\cmTC_838cf.vcxproj" (CudaBuildCore target(s)).]
+        ignore line: [Link:]
+        ignore line: [  C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\Users\\denis\\OneDrive\\Desktop\\Facultate\\PDA\\Cuda vs OpenMP Project\\otsu-openmp-cuda\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vweymx\\Debug\\cmTC_838cf.exe" /INCREMENTAL /ILK:"cmTC_838cf.dir\\Debug\\cmTC_838cf.ilk" /NOLOGO /LIBPATH:"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.2\\lib\\x64" cudadevrt.lib cudart_static.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/denis/OneDrive/Desktop/Facultate/PDA/Cuda vs OpenMP Project/otsu-openmp-cuda/build/CMakeFiles/CMakeScratch/TryCompile-vweymx/Debug/cmTC_838cf.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/Users/denis/OneDrive/Desktop/Facultate/PDA/Cuda vs OpenMP Project/otsu-openmp-cuda/build/CMakeFiles/CMakeScratch/TryCompile-vweymx/Debug/cmTC_838cf.lib" /MACHINE:X64  /machine:x64 -v cmTC_838cf.dir\\Debug\\CMakeCUDACompilerABI.obj]
+        ignore line: [LINK : warning LNK4044: unrecognized option '/v']
+        ignore line: [ ignored [C:\\Users\\denis\\OneDrive\\Desktop\\Facultate\\PDA\\Cuda vs OpenMP Project\\otsu-openmp-cuda\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vweymx\\cmTC_838cf.vcxproj]]
+        ignore line: [     Creating library C:/Users/denis/OneDrive/Desktop/Facultate/PDA/Cuda vs OpenMP Project/otsu-openmp-cuda/build/CMakeFiles/CMakeScratch/TryCompile-vweymx/Debug/cmTC_838cf.lib and object C:/Users/denis/OneDrive/Desktop/Facultate/PDA/Cuda vs OpenMP Project/otsu-openmp-cuda/build/CMakeFiles/CMakeScratch/TryCompile-vweymx/Debug/cmTC_838cf.exp]
+        ignore line: [LINK : warning LNK4098: defaultlib 'LIBCMT' conflicts with use of other libs]
+        ignore line: [ use /NODEFAULTLIB:library [C:\\Users\\denis\\OneDrive\\Desktop\\Facultate\\PDA\\Cuda vs OpenMP Project\\otsu-openmp-cuda\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vweymx\\cmTC_838cf.vcxproj]]
+        ignore line: [  cmTC_838cf.vcxproj -> C:\\Users\\denis\\OneDrive\\Desktop\\Facultate\\PDA\\Cuda vs OpenMP Project\\otsu-openmp-cuda\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vweymx\\Debug\\cmTC_838cf.exe]
+        ignore line: [FinalizeBuildStatus:]
+        ignore line: [  Deleting file "cmTC_838cf.dir\\Debug\\cmTC_838cf.tlog\\unsuccessfulbuild".]
+        ignore line: [  Touching "cmTC_838cf.dir\\Debug\\cmTC_838cf.tlog\\cmTC_838cf.lastbuildstate".]
+        ignore line: [Done Building Project "C:\\Users\\denis\\OneDrive\\Desktop\\Facultate\\PDA\\Cuda vs OpenMP Project\\otsu-openmp-cuda\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vweymx\\cmTC_838cf.vcxproj" (default targets).]
+        ignore line: []
+        ignore line: [Build succeeded.]
+        ignore line: []
+        ignore line: ["C:\\Users\\denis\\OneDrive\\Desktop\\Facultate\\PDA\\Cuda vs OpenMP Project\\otsu-openmp-cuda\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vweymx\\cmTC_838cf.vcxproj" (default target) (1) ->]
+        ignore line: ["C:\\Users\\denis\\OneDrive\\Desktop\\Facultate\\PDA\\Cuda vs OpenMP Project\\otsu-openmp-cuda\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vweymx\\cmTC_838cf.vcxproj" (CudaBuildCore target) (1:2) ->]
+        ignore line: [(CudaBuildCore target) -> ]
+        ignore line: [  cl : Command line warning D9002: ignoring unknown option '-v' [C:\\Users\\denis\\OneDrive\\Desktop\\Facultate\\PDA\\Cuda vs OpenMP Project\\otsu-openmp-cuda\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vweymx\\cmTC_838cf.vcxproj]]
+        ignore line: [  cl : Command line warning D9002: ignoring unknown option '-v' [C:\\Users\\denis\\OneDrive\\Desktop\\Facultate\\PDA\\Cuda vs OpenMP Project\\otsu-openmp-cuda\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vweymx\\cmTC_838cf.vcxproj]]
+        ignore line: [  cl : Command line warning D9002: ignoring unknown option '-v' [C:\\Users\\denis\\OneDrive\\Desktop\\Facultate\\PDA\\Cuda vs OpenMP Project\\otsu-openmp-cuda\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vweymx\\cmTC_838cf.vcxproj]]
+        ignore line: [  C:\\Program Files\\CMake\\share\\cmake-4.3\\Modules\\CMakeCompilerCUDAArch.h(10): warning C4305: 'return': truncation from 'int' to 'bool' [C:\\Users\\denis\\OneDrive\\Desktop\\Facultate\\PDA\\Cuda vs OpenMP Project\\otsu-openmp-cuda\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vweymx\\cmTC_838cf.vcxproj]]
+        ignore line: []
+        ignore line: []
+        ignore line: ["C:\\Users\\denis\\OneDrive\\Desktop\\Facultate\\PDA\\Cuda vs OpenMP Project\\otsu-openmp-cuda\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vweymx\\cmTC_838cf.vcxproj" (default target) (1) ->]
+        ignore line: [(Link target) -> ]
+        ignore line: [  LINK : warning LNK4044: unrecognized option '/v']
+        ignore line: [ ignored [C:\\Users\\denis\\OneDrive\\Desktop\\Facultate\\PDA\\Cuda vs OpenMP Project\\otsu-openmp-cuda\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vweymx\\cmTC_838cf.vcxproj]]
+        ignore line: [  LINK : warning LNK4098: defaultlib 'LIBCMT' conflicts with use of other libs]
+        ignore line: [ use /NODEFAULTLIB:library [C:\\Users\\denis\\OneDrive\\Desktop\\Facultate\\PDA\\Cuda vs OpenMP Project\\otsu-openmp-cuda\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vweymx\\cmTC_838cf.vcxproj]]
+        ignore line: []
+        ignore line: [    6 Warning(s)]
+        ignore line: [    0 Error(s)]
+        ignore line: []
+        ignore line: [Time Elapsed 00:00:01.84]
+        ignore line: []
+        ignore line: []
+        linker tool for 'CUDA': C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/Tools/MSVC/14.44.35207/bin/HostX64/x64/link.exe
+        implicit libs: []
+        implicit objs: []
+        implicit dirs: []
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/Internal/CMakeDetermineLinkerId.cmake:38 (message)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCompilerABI.cmake:299 (cmake_determine_linker_id)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeTestCUDACompiler.cmake:19 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Running the CUDA compiler's linker: "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/Tools/MSVC/14.44.35207/bin/HostX64/x64/link.exe" "-v"
+      Microsoft (R) Incremental Linker Version 14.44.35223.0
+      Copyright (C) Microsoft Corporation.  All rights reserved.
+  -
+    kind: "try_compile-v1"
+    backtrace:
       - "C:/Program Files/CMake/share/cmake-4.3/Modules/FindOpenMP.cmake:333 (try_compile)"
       - "C:/Program Files/CMake/share/cmake-4.3/Modules/FindOpenMP.cmake:640 (_OPENMP_GET_FLAGS)"
-      - "CMakeLists.txt:8 (find_package)"
+      - "CMakeLists.txt:11 (find_package)"
     description: "Detecting CXX OpenMP compiler info"
     directories:
-      source: "C:/Users/denis/OneDrive/Desktop/Facultate/PDA/Cuda vs OpenMP Project/otsu-openmp-cuda/build/CMakeFiles/CMakeScratch/TryCompile-fxv61d"
-      binary: "C:/Users/denis/OneDrive/Desktop/Facultate/PDA/Cuda vs OpenMP Project/otsu-openmp-cuda/build/CMakeFiles/CMakeScratch/TryCompile-fxv61d"
+      source: "C:/Users/denis/OneDrive/Desktop/Facultate/PDA/Cuda vs OpenMP Project/otsu-openmp-cuda/build/CMakeFiles/CMakeScratch/TryCompile-upv0rg"
+      binary: "C:/Users/denis/OneDrive/Desktop/Facultate/PDA/Cuda vs OpenMP Project/otsu-openmp-cuda/build/CMakeFiles/CMakeScratch/TryCompile-upv0rg"
     cmakeVariables:
+      CMAKE_CUDA_ARCHITECTURES: "75"
       CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /EHsc"
       CMAKE_CXX_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
       CMAKE_CXX_STDLIB_MODULES_JSON: ""
@@ -1196,52 +1984,198 @@ events:
       variable: "OpenMP_COMPILE_RESULT_CXX_openmp"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/denis/OneDrive/Desktop/Facultate/PDA/Cuda vs OpenMP Project/otsu-openmp-cuda/build/CMakeFiles/CMakeScratch/TryCompile-fxv61d'
+        Change Dir: 'C:/Users/denis/OneDrive/Desktop/Facultate/PDA/Cuda vs OpenMP Project/otsu-openmp-cuda/build/CMakeFiles/CMakeScratch/TryCompile-upv0rg'
         
-        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_bf3fd.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_65b10.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
         MSBuild version 17.14.40+3e7442088 for .NET Framework
-        Build started 5/23/2026 10:27:26 PM.
+        Build started 5/23/2026 11:28:40 PM.
         
-        Project "C:\\Users\\denis\\OneDrive\\Desktop\\Facultate\\PDA\\Cuda vs OpenMP Project\\otsu-openmp-cuda\\build\\CMakeFiles\\CMakeScratch\\TryCompile-fxv61d\\cmTC_bf3fd.vcxproj" on node 1 (default targets).
+        Project "C:\\Users\\denis\\OneDrive\\Desktop\\Facultate\\PDA\\Cuda vs OpenMP Project\\otsu-openmp-cuda\\build\\CMakeFiles\\CMakeScratch\\TryCompile-upv0rg\\cmTC_65b10.vcxproj" on node 1 (default targets).
         PrepareForBuild:
           Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
-          Creating directory "C:\\Users\\denis\\OneDrive\\Desktop\\Facultate\\PDA\\Cuda vs OpenMP Project\\otsu-openmp-cuda\\build\\CMakeFiles\\CMakeScratch\\TryCompile-fxv61d\\Debug\\".
-          Creating directory "cmTC_bf3fd.dir\\Debug\\cmTC_bf3fd.tlog\\".
+          Creating directory "C:\\Users\\denis\\OneDrive\\Desktop\\Facultate\\PDA\\Cuda vs OpenMP Project\\otsu-openmp-cuda\\build\\CMakeFiles\\CMakeScratch\\TryCompile-upv0rg\\Debug\\".
+          Creating directory "cmTC_65b10.dir\\Debug\\cmTC_65b10.tlog\\".
         InitializeBuildStatus:
-          Creating "cmTC_bf3fd.dir\\Debug\\cmTC_bf3fd.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
-          Touching "cmTC_bf3fd.dir\\Debug\\cmTC_bf3fd.tlog\\unsuccessfulbuild".
+          Creating "cmTC_65b10.dir\\Debug\\cmTC_65b10.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_65b10.dir\\Debug\\cmTC_65b10.tlog\\unsuccessfulbuild".
         ClCompile:
-          C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /openmp /std:c++17 /Fo"cmTC_bf3fd.dir\\Debug\\\\" /Fd"cmTC_bf3fd.dir\\Debug\\vc143.pdb" /external:W1 /TP /errorReport:queue "C:\\Users\\denis\\OneDrive\\Desktop\\Facultate\\PDA\\Cuda vs OpenMP Project\\otsu-openmp-cuda\\build\\CMakeFiles\\CMakeScratch\\TryCompile-fxv61d\\OpenMPTryFlag.cpp"
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /openmp /std:c++17 /Fo"cmTC_65b10.dir\\Debug\\\\" /Fd"cmTC_65b10.dir\\Debug\\vc143.pdb" /external:W1 /TP /errorReport:queue "C:\\Users\\denis\\OneDrive\\Desktop\\Facultate\\PDA\\Cuda vs OpenMP Project\\otsu-openmp-cuda\\build\\CMakeFiles\\CMakeScratch\\TryCompile-upv0rg\\OpenMPTryFlag.cpp"
           Microsoft (R) C/C++ Optimizing Compiler Version 19.44.35223 for x64
           Copyright (C) Microsoft Corporation.  All rights reserved.
-          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /openmp /std:c++17 /Fo"cmTC_bf3fd.dir\\Debug\\\\" /Fd"cmTC_bf3fd.dir\\Debug\\vc143.pdb" /external:W1 /TP /errorReport:queue "C:\\Users\\denis\\OneDrive\\Desktop\\Facultate\\PDA\\Cuda vs OpenMP Project\\otsu-openmp-cuda\\build\\CMakeFiles\\CMakeScratch\\TryCompile-fxv61d\\OpenMPTryFlag.cpp"
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /openmp /std:c++17 /Fo"cmTC_65b10.dir\\Debug\\\\" /Fd"cmTC_65b10.dir\\Debug\\vc143.pdb" /external:W1 /TP /errorReport:queue "C:\\Users\\denis\\OneDrive\\Desktop\\Facultate\\PDA\\Cuda vs OpenMP Project\\otsu-openmp-cuda\\build\\CMakeFiles\\CMakeScratch\\TryCompile-upv0rg\\OpenMPTryFlag.cpp"
           OpenMPTryFlag.cpp
         Link:
-          C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\Users\\denis\\OneDrive\\Desktop\\Facultate\\PDA\\Cuda vs OpenMP Project\\otsu-openmp-cuda\\build\\CMakeFiles\\CMakeScratch\\TryCompile-fxv61d\\Debug\\cmTC_bf3fd.exe" /INCREMENTAL /ILK:"cmTC_bf3fd.dir\\Debug\\cmTC_bf3fd.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/denis/OneDrive/Desktop/Facultate/PDA/Cuda vs OpenMP Project/otsu-openmp-cuda/build/CMakeFiles/CMakeScratch/TryCompile-fxv61d/Debug/cmTC_bf3fd.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/Users/denis/OneDrive/Desktop/Facultate/PDA/Cuda vs OpenMP Project/otsu-openmp-cuda/build/CMakeFiles/CMakeScratch/TryCompile-fxv61d/Debug/cmTC_bf3fd.lib" /MACHINE:X64  /machine:x64 cmTC_bf3fd.dir\\Debug\\OpenMPTryFlag.obj
-          cmTC_bf3fd.vcxproj -> C:\\Users\\denis\\OneDrive\\Desktop\\Facultate\\PDA\\Cuda vs OpenMP Project\\otsu-openmp-cuda\\build\\CMakeFiles\\CMakeScratch\\TryCompile-fxv61d\\Debug\\cmTC_bf3fd.exe
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\Users\\denis\\OneDrive\\Desktop\\Facultate\\PDA\\Cuda vs OpenMP Project\\otsu-openmp-cuda\\build\\CMakeFiles\\CMakeScratch\\TryCompile-upv0rg\\Debug\\cmTC_65b10.exe" /INCREMENTAL /ILK:"cmTC_65b10.dir\\Debug\\cmTC_65b10.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/denis/OneDrive/Desktop/Facultate/PDA/Cuda vs OpenMP Project/otsu-openmp-cuda/build/CMakeFiles/CMakeScratch/TryCompile-upv0rg/Debug/cmTC_65b10.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/Users/denis/OneDrive/Desktop/Facultate/PDA/Cuda vs OpenMP Project/otsu-openmp-cuda/build/CMakeFiles/CMakeScratch/TryCompile-upv0rg/Debug/cmTC_65b10.lib" /MACHINE:X64  /machine:x64 cmTC_65b10.dir\\Debug\\OpenMPTryFlag.obj
+          cmTC_65b10.vcxproj -> C:\\Users\\denis\\OneDrive\\Desktop\\Facultate\\PDA\\Cuda vs OpenMP Project\\otsu-openmp-cuda\\build\\CMakeFiles\\CMakeScratch\\TryCompile-upv0rg\\Debug\\cmTC_65b10.exe
         FinalizeBuildStatus:
-          Deleting file "cmTC_bf3fd.dir\\Debug\\cmTC_bf3fd.tlog\\unsuccessfulbuild".
-          Touching "cmTC_bf3fd.dir\\Debug\\cmTC_bf3fd.tlog\\cmTC_bf3fd.lastbuildstate".
-        Done Building Project "C:\\Users\\denis\\OneDrive\\Desktop\\Facultate\\PDA\\Cuda vs OpenMP Project\\otsu-openmp-cuda\\build\\CMakeFiles\\CMakeScratch\\TryCompile-fxv61d\\cmTC_bf3fd.vcxproj" (default targets).
+          Deleting file "cmTC_65b10.dir\\Debug\\cmTC_65b10.tlog\\unsuccessfulbuild".
+          Touching "cmTC_65b10.dir\\Debug\\cmTC_65b10.tlog\\cmTC_65b10.lastbuildstate".
+        Done Building Project "C:\\Users\\denis\\OneDrive\\Desktop\\Facultate\\PDA\\Cuda vs OpenMP Project\\otsu-openmp-cuda\\build\\CMakeFiles\\CMakeScratch\\TryCompile-upv0rg\\cmTC_65b10.vcxproj" (default targets).
         
         Build succeeded.
             0 Warning(s)
             0 Error(s)
         
-        Time Elapsed 00:00:00.42
+        Time Elapsed 00:00:00.40
         
       exitCode: 0
   -
     kind: "try_compile-v1"
     backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/FindOpenMP.cmake:333 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/FindOpenMP.cmake:640 (_OPENMP_GET_FLAGS)"
+      - "CMakeLists.txt:11 (find_package)"
+    description: "Detecting CUDA OpenMP compiler info"
+    directories:
+      source: "C:/Users/denis/OneDrive/Desktop/Facultate/PDA/Cuda vs OpenMP Project/otsu-openmp-cuda/build/CMakeFiles/CMakeScratch/TryCompile-qu9596"
+      binary: "C:/Users/denis/OneDrive/Desktop/Facultate/PDA/Cuda vs OpenMP Project/otsu-openmp-cuda/build/CMakeFiles/CMakeScratch/TryCompile-qu9596"
+    cmakeVariables:
+      CMAKE_CUDA_ARCHITECTURES: "75"
+      CMAKE_CUDA_FLAGS: "-D_WINDOWS -Xcompiler=\" /EHsc\""
+      CMAKE_CUDA_FLAGS_DEBUG: "-Xcompiler=\" -Zi -Ob0 -Od /RTC1\""
+      CMAKE_CXX_STDLIB_MODULES_JSON: ""
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+    buildResult:
+      variable: "OpenMP_COMPILE_RESULT_CUDA_openmp"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/denis/OneDrive/Desktop/Facultate/PDA/Cuda vs OpenMP Project/otsu-openmp-cuda/build/CMakeFiles/CMakeScratch/TryCompile-qu9596'
+        
+        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_c5e0d.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.14.40+3e7442088 for .NET Framework
+        Build started 5/23/2026 11:28:40 PM.
+        
+        Project "C:\\Users\\denis\\OneDrive\\Desktop\\Facultate\\PDA\\Cuda vs OpenMP Project\\otsu-openmp-cuda\\build\\CMakeFiles\\CMakeScratch\\TryCompile-qu9596\\cmTC_c5e0d.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "C:\\Users\\denis\\OneDrive\\Desktop\\Facultate\\PDA\\Cuda vs OpenMP Project\\otsu-openmp-cuda\\build\\CMakeFiles\\CMakeScratch\\TryCompile-qu9596\\Debug\\".
+          Creating directory "cmTC_c5e0d.dir\\Debug\\cmTC_c5e0d.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_c5e0d.dir\\Debug\\cmTC_c5e0d.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_c5e0d.dir\\Debug\\cmTC_c5e0d.tlog\\unsuccessfulbuild".
+        AddCudaCompileDeps:
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\cl.exe /E /nologo /showIncludes /TP /D__CUDACC__ /D__CUDACC_VER_MAJOR__=13 /D__CUDACC_VER_MINOR__=2 /D_WINDOWS /D_MBCS /DCMAKE_INTDIR="Debug" /D_MBCS /DCMAKE_INTDIR="Debug" /I"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.2\\bin\\x64" /I"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.2\\include" /I. /FIcuda_runtime.h /c "C:\\Users\\denis\\OneDrive\\Desktop\\Facultate\\PDA\\Cuda vs OpenMP Project\\otsu-openmp-cuda\\build\\CMakeFiles\\CMakeScratch\\TryCompile-qu9596\\OpenMPTryFlag.cu" 
+        Project "C:\\Users\\denis\\OneDrive\\Desktop\\Facultate\\PDA\\Cuda vs OpenMP Project\\otsu-openmp-cuda\\build\\CMakeFiles\\CMakeScratch\\TryCompile-qu9596\\cmTC_c5e0d.vcxproj" (1) is building "C:\\Users\\denis\\OneDrive\\Desktop\\Facultate\\PDA\\Cuda vs OpenMP Project\\otsu-openmp-cuda\\build\\CMakeFiles\\CMakeScratch\\TryCompile-qu9596\\cmTC_c5e0d.vcxproj" (1:2) on node 1 (CudaBuildCore target(s)).
+        CudaBuildCore:
+          Compiling CUDA source file OpenMPTryFlag.cu...
+          cmd.exe /C "C:\\Users\\denis\\AppData\\Local\\Temp\\tmpd0727caad7b5446db3769ed525c8e988.cmd"
+          "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.2\\bin\\nvcc.exe"  --use-local-env -ccbin "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64" -x cu    -I"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.2\\include"     --keep-dir cmTC_c5e0d\\x64\\Debug  -maxrregcount=0    --machine 64 --compile -cudart static -forward-unknown-to-host-compiler -openmp -std=c++17 --generate-code=arch=compute_75,code=[compute_75,sm_75] -Xcompiler="/EHsc -Zi -Ob0" -g  -D_WINDOWS -D_MBCS -D"CMAKE_INTDIR=\\"Debug\\"" -D_MBCS -D"CMAKE_INTDIR=\\"Debug\\"" -Xcompiler "/EHsc /W1 /nologo /Od /FS /Zi /RTC1 /MDd " -Xcompiler "/FdcmTC_c5e0d.dir\\Debug\\vc143.pdb" -o cmTC_c5e0d.dir\\Debug\\OpenMPTryFlag.obj "C:\\Users\\denis\\OneDrive\\Desktop\\Facultate\\PDA\\Cuda vs OpenMP Project\\otsu-openmp-cuda\\build\\CMakeFiles\\CMakeScratch\\TryCompile-qu9596\\OpenMPTryFlag.cu"
+          
+          C:\\Users\\denis\\OneDrive\\Desktop\\Facultate\\PDA\\Cuda vs OpenMP Project\\otsu-openmp-cuda\\build\\CMakeFiles\\CMakeScratch\\TryCompile-qu9596>"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.2\\bin\\nvcc.exe"  --use-local-env -ccbin "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64" -x cu    -I"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.2\\include"     --keep-dir cmTC_c5e0d\\x64\\Debug  -maxrregcount=0    --machine 64 --compile -cudart static -forward-unknown-to-host-compiler -openmp -std=c++17 --generate-code=arch=compute_75,code=[compute_75,sm_75] -Xcompiler="/EHsc -Zi -Ob0" -g  -D_WINDOWS -D_MBCS -D"CMAKE_INTDIR=\\"Debug\\"" -D_MBCS -D"CMAKE_INTDIR=\\"Debug\\"" -Xcompiler "/EHsc /W1 /nologo /Od /FS /Zi /RTC1 /MDd " -Xcompiler "/FdcmTC_c5e0d.dir\\Debug\\vc143.pdb" -o cmTC_c5e0d.dir\\Debug\\OpenMPTryFlag.obj "C:\\Users\\denis\\OneDrive\\Desktop\\Facultate\\PDA\\Cuda vs OpenMP Project\\otsu-openmp-cuda\\build\\CMakeFiles\\CMakeScratch\\TryCompile-qu9596\\OpenMPTryFlag.cu" 
+          OpenMPTryFlag.cu
+          tmpxft_00003a98_00000000-7_OpenMPTryFlag.cudafe1.cpp
+        Done Building Project "C:\\Users\\denis\\OneDrive\\Desktop\\Facultate\\PDA\\Cuda vs OpenMP Project\\otsu-openmp-cuda\\build\\CMakeFiles\\CMakeScratch\\TryCompile-qu9596\\cmTC_c5e0d.vcxproj" (CudaBuildCore target(s)).
+        Link:
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\Users\\denis\\OneDrive\\Desktop\\Facultate\\PDA\\Cuda vs OpenMP Project\\otsu-openmp-cuda\\build\\CMakeFiles\\CMakeScratch\\TryCompile-qu9596\\Debug\\cmTC_c5e0d.exe" /INCREMENTAL /ILK:"cmTC_c5e0d.dir\\Debug\\cmTC_c5e0d.ilk" /NOLOGO /LIBPATH:"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.2\\lib\\x64" cudadevrt.lib cudart_static.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/denis/OneDrive/Desktop/Facultate/PDA/Cuda vs OpenMP Project/otsu-openmp-cuda/build/CMakeFiles/CMakeScratch/TryCompile-qu9596/Debug/cmTC_c5e0d.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/Users/denis/OneDrive/Desktop/Facultate/PDA/Cuda vs OpenMP Project/otsu-openmp-cuda/build/CMakeFiles/CMakeScratch/TryCompile-qu9596/Debug/cmTC_c5e0d.lib" /MACHINE:X64  /machine:x64 -v -openmp cmTC_c5e0d.dir\\Debug\\OpenMPTryFlag.obj
+        LINK : warning LNK4044: unrecognized option '/v'; ignored [C:\\Users\\denis\\OneDrive\\Desktop\\Facultate\\PDA\\Cuda vs OpenMP Project\\otsu-openmp-cuda\\build\\CMakeFiles\\CMakeScratch\\TryCompile-qu9596\\cmTC_c5e0d.vcxproj]
+        LINK : warning LNK4044: unrecognized option '/openmp'; ignored [C:\\Users\\denis\\OneDrive\\Desktop\\Facultate\\PDA\\Cuda vs OpenMP Project\\otsu-openmp-cuda\\build\\CMakeFiles\\CMakeScratch\\TryCompile-qu9596\\cmTC_c5e0d.vcxproj]
+             Creating library C:/Users/denis/OneDrive/Desktop/Facultate/PDA/Cuda vs OpenMP Project/otsu-openmp-cuda/build/CMakeFiles/CMakeScratch/TryCompile-qu9596/Debug/cmTC_c5e0d.lib and object C:/Users/denis/OneDrive/Desktop/Facultate/PDA/Cuda vs OpenMP Project/otsu-openmp-cuda/build/CMakeFiles/CMakeScratch/TryCompile-qu9596/Debug/cmTC_c5e0d.exp
+        LINK : warning LNK4098: defaultlib 'LIBCMT' conflicts with use of other libs; use /NODEFAULTLIB:library [C:\\Users\\denis\\OneDrive\\Desktop\\Facultate\\PDA\\Cuda vs OpenMP Project\\otsu-openmp-cuda\\build\\CMakeFiles\\CMakeScratch\\TryCompile-qu9596\\cmTC_c5e0d.vcxproj]
+          cmTC_c5e0d.vcxproj -> C:\\Users\\denis\\OneDrive\\Desktop\\Facultate\\PDA\\Cuda vs OpenMP Project\\otsu-openmp-cuda\\build\\CMakeFiles\\CMakeScratch\\TryCompile-qu9596\\Debug\\cmTC_c5e0d.exe
+        FinalizeBuildStatus:
+          Deleting file "cmTC_c5e0d.dir\\Debug\\cmTC_c5e0d.tlog\\unsuccessfulbuild".
+          Touching "cmTC_c5e0d.dir\\Debug\\cmTC_c5e0d.tlog\\cmTC_c5e0d.lastbuildstate".
+        Done Building Project "C:\\Users\\denis\\OneDrive\\Desktop\\Facultate\\PDA\\Cuda vs OpenMP Project\\otsu-openmp-cuda\\build\\CMakeFiles\\CMakeScratch\\TryCompile-qu9596\\cmTC_c5e0d.vcxproj" (default targets).
+        
+        Build succeeded.
+        
+        "C:\\Users\\denis\\OneDrive\\Desktop\\Facultate\\PDA\\Cuda vs OpenMP Project\\otsu-openmp-cuda\\build\\CMakeFiles\\CMakeScratch\\TryCompile-qu9596\\cmTC_c5e0d.vcxproj" (default target) (1) ->
+        (Link target) -> 
+          LINK : warning LNK4044: unrecognized option '/v'; ignored [C:\\Users\\denis\\OneDrive\\Desktop\\Facultate\\PDA\\Cuda vs OpenMP Project\\otsu-openmp-cuda\\build\\CMakeFiles\\CMakeScratch\\TryCompile-qu9596\\cmTC_c5e0d.vcxproj]
+          LINK : warning LNK4044: unrecognized option '/openmp'; ignored [C:\\Users\\denis\\OneDrive\\Desktop\\Facultate\\PDA\\Cuda vs OpenMP Project\\otsu-openmp-cuda\\build\\CMakeFiles\\CMakeScratch\\TryCompile-qu9596\\cmTC_c5e0d.vcxproj]
+          LINK : warning LNK4098: defaultlib 'LIBCMT' conflicts with use of other libs; use /NODEFAULTLIB:library [C:\\Users\\denis\\OneDrive\\Desktop\\Facultate\\PDA\\Cuda vs OpenMP Project\\otsu-openmp-cuda\\build\\CMakeFiles\\CMakeScratch\\TryCompile-qu9596\\cmTC_c5e0d.vcxproj]
+        
+            3 Warning(s)
+            0 Error(s)
+        
+        Time Elapsed 00:00:01.82
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/FindOpenMP.cmake:377 (message)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/FindOpenMP.cmake:640 (_OPENMP_GET_FLAGS)"
+      - "CMakeLists.txt:11 (find_package)"
+    message: |
+      Parsed CUDA OpenMP implicit link information from above output:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|link\\.exe|lld-link(\\.exe)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: 'C:/Users/denis/OneDrive/Desktop/Facultate/PDA/Cuda vs OpenMP Project/otsu-openmp-cuda/build/CMakeFiles/CMakeScratch/TryCompile-qu9596']
+        ignore line: []
+        ignore line: [Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_c5e0d.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n]
+        ignore line: [MSBuild version 17.14.40+3e7442088 for .NET Framework]
+        ignore line: [Build started 5/23/2026 11:28:40 PM.]
+        ignore line: []
+        ignore line: [Project "C:\\Users\\denis\\OneDrive\\Desktop\\Facultate\\PDA\\Cuda vs OpenMP Project\\otsu-openmp-cuda\\build\\CMakeFiles\\CMakeScratch\\TryCompile-qu9596\\cmTC_c5e0d.vcxproj" on node 1 (default targets).]
+        ignore line: [PrepareForBuild:]
+        ignore line: [  Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.]
+        ignore line: [  Creating directory "C:\\Users\\denis\\OneDrive\\Desktop\\Facultate\\PDA\\Cuda vs OpenMP Project\\otsu-openmp-cuda\\build\\CMakeFiles\\CMakeScratch\\TryCompile-qu9596\\Debug\\".]
+        ignore line: [  Creating directory "cmTC_c5e0d.dir\\Debug\\cmTC_c5e0d.tlog\\".]
+        ignore line: [InitializeBuildStatus:]
+        ignore line: [  Creating "cmTC_c5e0d.dir\\Debug\\cmTC_c5e0d.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.]
+        ignore line: [  Touching "cmTC_c5e0d.dir\\Debug\\cmTC_c5e0d.tlog\\unsuccessfulbuild".]
+        ignore line: [AddCudaCompileDeps:]
+        ignore line: [  C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\cl.exe /E /nologo /showIncludes /TP /D__CUDACC__ /D__CUDACC_VER_MAJOR__=13 /D__CUDACC_VER_MINOR__=2 /D_WINDOWS /D_MBCS /DCMAKE_INTDIR="Debug" /D_MBCS /DCMAKE_INTDIR="Debug" /I"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.2\\bin\\x64" /I"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.2\\include" /I. /FIcuda_runtime.h /c "C:\\Users\\denis\\OneDrive\\Desktop\\Facultate\\PDA\\Cuda vs OpenMP Project\\otsu-openmp-cuda\\build\\CMakeFiles\\CMakeScratch\\TryCompile-qu9596\\OpenMPTryFlag.cu" ]
+        ignore line: [Project "C:\\Users\\denis\\OneDrive\\Desktop\\Facultate\\PDA\\Cuda vs OpenMP Project\\otsu-openmp-cuda\\build\\CMakeFiles\\CMakeScratch\\TryCompile-qu9596\\cmTC_c5e0d.vcxproj" (1) is building "C:\\Users\\denis\\OneDrive\\Desktop\\Facultate\\PDA\\Cuda vs OpenMP Project\\otsu-openmp-cuda\\build\\CMakeFiles\\CMakeScratch\\TryCompile-qu9596\\cmTC_c5e0d.vcxproj" (1:2) on node 1 (CudaBuildCore target(s)).]
+        ignore line: [CudaBuildCore:]
+        ignore line: [  Compiling CUDA source file OpenMPTryFlag.cu...]
+        ignore line: [  cmd.exe /C "C:\\Users\\denis\\AppData\\Local\\Temp\\tmpd0727caad7b5446db3769ed525c8e988.cmd"]
+        ignore line: [  "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.2\\bin\\nvcc.exe"  --use-local-env -ccbin "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64" -x cu    -I"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.2\\include"     --keep-dir cmTC_c5e0d\\x64\\Debug  -maxrregcount=0    --machine 64 --compile -cudart static -forward-unknown-to-host-compiler -openmp -std=c++17 --generate-code=arch=compute_75 code=[compute_75 sm_75] -Xcompiler="/EHsc -Zi -Ob0" -g  -D_WINDOWS -D_MBCS -D"CMAKE_INTDIR=\\"Debug\\"" -D_MBCS -D"CMAKE_INTDIR=\\"Debug\\"" -Xcompiler "/EHsc /W1 /nologo /Od /FS /Zi /RTC1 /MDd " -Xcompiler "/FdcmTC_c5e0d.dir\\Debug\\vc143.pdb" -o cmTC_c5e0d.dir\\Debug\\OpenMPTryFlag.obj "C:\\Users\\denis\\OneDrive\\Desktop\\Facultate\\PDA\\Cuda vs OpenMP Project\\otsu-openmp-cuda\\build\\CMakeFiles\\CMakeScratch\\TryCompile-qu9596\\OpenMPTryFlag.cu"]
+        ignore line: [  ]
+        ignore line: [  C:\\Users\\denis\\OneDrive\\Desktop\\Facultate\\PDA\\Cuda vs OpenMP Project\\otsu-openmp-cuda\\build\\CMakeFiles\\CMakeScratch\\TryCompile-qu9596>"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.2\\bin\\nvcc.exe"  --use-local-env -ccbin "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64" -x cu    -I"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.2\\include"     --keep-dir cmTC_c5e0d\\x64\\Debug  -maxrregcount=0    --machine 64 --compile -cudart static -forward-unknown-to-host-compiler -openmp -std=c++17 --generate-code=arch=compute_75 code=[compute_75 sm_75] -Xcompiler="/EHsc -Zi -Ob0" -g  -D_WINDOWS -D_MBCS -D"CMAKE_INTDIR=\\"Debug\\"" -D_MBCS -D"CMAKE_INTDIR=\\"Debug\\"" -Xcompiler "/EHsc /W1 /nologo /Od /FS /Zi /RTC1 /MDd " -Xcompiler "/FdcmTC_c5e0d.dir\\Debug\\vc143.pdb" -o cmTC_c5e0d.dir\\Debug\\OpenMPTryFlag.obj "C:\\Users\\denis\\OneDrive\\Desktop\\Facultate\\PDA\\Cuda vs OpenMP Project\\otsu-openmp-cuda\\build\\CMakeFiles\\CMakeScratch\\TryCompile-qu9596\\OpenMPTryFlag.cu" ]
+        ignore line: [  OpenMPTryFlag.cu]
+        ignore line: [  tmpxft_00003a98_00000000-7_OpenMPTryFlag.cudafe1.cpp]
+        ignore line: [Done Building Project "C:\\Users\\denis\\OneDrive\\Desktop\\Facultate\\PDA\\Cuda vs OpenMP Project\\otsu-openmp-cuda\\build\\CMakeFiles\\CMakeScratch\\TryCompile-qu9596\\cmTC_c5e0d.vcxproj" (CudaBuildCore target(s)).]
+        ignore line: [Link:]
+        ignore line: [  C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\Users\\denis\\OneDrive\\Desktop\\Facultate\\PDA\\Cuda vs OpenMP Project\\otsu-openmp-cuda\\build\\CMakeFiles\\CMakeScratch\\TryCompile-qu9596\\Debug\\cmTC_c5e0d.exe" /INCREMENTAL /ILK:"cmTC_c5e0d.dir\\Debug\\cmTC_c5e0d.ilk" /NOLOGO /LIBPATH:"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.2\\lib\\x64" cudadevrt.lib cudart_static.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/denis/OneDrive/Desktop/Facultate/PDA/Cuda vs OpenMP Project/otsu-openmp-cuda/build/CMakeFiles/CMakeScratch/TryCompile-qu9596/Debug/cmTC_c5e0d.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/Users/denis/OneDrive/Desktop/Facultate/PDA/Cuda vs OpenMP Project/otsu-openmp-cuda/build/CMakeFiles/CMakeScratch/TryCompile-qu9596/Debug/cmTC_c5e0d.lib" /MACHINE:X64  /machine:x64 -v -openmp cmTC_c5e0d.dir\\Debug\\OpenMPTryFlag.obj]
+        ignore line: [LINK : warning LNK4044: unrecognized option '/v']
+        ignore line: [ ignored [C:\\Users\\denis\\OneDrive\\Desktop\\Facultate\\PDA\\Cuda vs OpenMP Project\\otsu-openmp-cuda\\build\\CMakeFiles\\CMakeScratch\\TryCompile-qu9596\\cmTC_c5e0d.vcxproj]]
+        ignore line: [LINK : warning LNK4044: unrecognized option '/openmp']
+        ignore line: [ ignored [C:\\Users\\denis\\OneDrive\\Desktop\\Facultate\\PDA\\Cuda vs OpenMP Project\\otsu-openmp-cuda\\build\\CMakeFiles\\CMakeScratch\\TryCompile-qu9596\\cmTC_c5e0d.vcxproj]]
+        ignore line: [     Creating library C:/Users/denis/OneDrive/Desktop/Facultate/PDA/Cuda vs OpenMP Project/otsu-openmp-cuda/build/CMakeFiles/CMakeScratch/TryCompile-qu9596/Debug/cmTC_c5e0d.lib and object C:/Users/denis/OneDrive/Desktop/Facultate/PDA/Cuda vs OpenMP Project/otsu-openmp-cuda/build/CMakeFiles/CMakeScratch/TryCompile-qu9596/Debug/cmTC_c5e0d.exp]
+        ignore line: [LINK : warning LNK4098: defaultlib 'LIBCMT' conflicts with use of other libs]
+        ignore line: [ use /NODEFAULTLIB:library [C:\\Users\\denis\\OneDrive\\Desktop\\Facultate\\PDA\\Cuda vs OpenMP Project\\otsu-openmp-cuda\\build\\CMakeFiles\\CMakeScratch\\TryCompile-qu9596\\cmTC_c5e0d.vcxproj]]
+        ignore line: [  cmTC_c5e0d.vcxproj -> C:\\Users\\denis\\OneDrive\\Desktop\\Facultate\\PDA\\Cuda vs OpenMP Project\\otsu-openmp-cuda\\build\\CMakeFiles\\CMakeScratch\\TryCompile-qu9596\\Debug\\cmTC_c5e0d.exe]
+        ignore line: [FinalizeBuildStatus:]
+        ignore line: [  Deleting file "cmTC_c5e0d.dir\\Debug\\cmTC_c5e0d.tlog\\unsuccessfulbuild".]
+        ignore line: [  Touching "cmTC_c5e0d.dir\\Debug\\cmTC_c5e0d.tlog\\cmTC_c5e0d.lastbuildstate".]
+        ignore line: [Done Building Project "C:\\Users\\denis\\OneDrive\\Desktop\\Facultate\\PDA\\Cuda vs OpenMP Project\\otsu-openmp-cuda\\build\\CMakeFiles\\CMakeScratch\\TryCompile-qu9596\\cmTC_c5e0d.vcxproj" (default targets).]
+        ignore line: []
+        ignore line: [Build succeeded.]
+        ignore line: []
+        ignore line: ["C:\\Users\\denis\\OneDrive\\Desktop\\Facultate\\PDA\\Cuda vs OpenMP Project\\otsu-openmp-cuda\\build\\CMakeFiles\\CMakeScratch\\TryCompile-qu9596\\cmTC_c5e0d.vcxproj" (default target) (1) ->]
+        ignore line: [(Link target) -> ]
+        ignore line: [  LINK : warning LNK4044: unrecognized option '/v']
+        ignore line: [ ignored [C:\\Users\\denis\\OneDrive\\Desktop\\Facultate\\PDA\\Cuda vs OpenMP Project\\otsu-openmp-cuda\\build\\CMakeFiles\\CMakeScratch\\TryCompile-qu9596\\cmTC_c5e0d.vcxproj]]
+        ignore line: [  LINK : warning LNK4044: unrecognized option '/openmp']
+        ignore line: [ ignored [C:\\Users\\denis\\OneDrive\\Desktop\\Facultate\\PDA\\Cuda vs OpenMP Project\\otsu-openmp-cuda\\build\\CMakeFiles\\CMakeScratch\\TryCompile-qu9596\\cmTC_c5e0d.vcxproj]]
+        ignore line: [  LINK : warning LNK4098: defaultlib 'LIBCMT' conflicts with use of other libs]
+        ignore line: [ use /NODEFAULTLIB:library [C:\\Users\\denis\\OneDrive\\Desktop\\Facultate\\PDA\\Cuda vs OpenMP Project\\otsu-openmp-cuda\\build\\CMakeFiles\\CMakeScratch\\TryCompile-qu9596\\cmTC_c5e0d.vcxproj]]
+        ignore line: []
+        ignore line: [    3 Warning(s)]
+        ignore line: [    0 Error(s)]
+        ignore line: []
+        ignore line: [Time Elapsed 00:00:01.82]
+        ignore line: []
+        ignore line: []
+        implicit libs: []
+        implicit objs: []
+        implicit dirs: []
+        implicit fwks: []
+      
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
       - "C:/Program Files/CMake/share/cmake-4.3/Modules/FindOpenMP.cmake:574 (try_compile)"
       - "C:/Program Files/CMake/share/cmake-4.3/Modules/FindOpenMP.cmake:714 (_OPENMP_GET_SPEC_DATE)"
-      - "CMakeLists.txt:8 (find_package)"
+      - "CMakeLists.txt:11 (find_package)"
     description: "Detecting CXX OpenMP version"
     directories:
-      source: "C:/Users/denis/OneDrive/Desktop/Facultate/PDA/Cuda vs OpenMP Project/otsu-openmp-cuda/build/CMakeFiles/CMakeScratch/TryCompile-a3rtvi"
-      binary: "C:/Users/denis/OneDrive/Desktop/Facultate/PDA/Cuda vs OpenMP Project/otsu-openmp-cuda/build/CMakeFiles/CMakeScratch/TryCompile-a3rtvi"
+      source: "C:/Users/denis/OneDrive/Desktop/Facultate/PDA/Cuda vs OpenMP Project/otsu-openmp-cuda/build/CMakeFiles/CMakeScratch/TryCompile-7demvf"
+      binary: "C:/Users/denis/OneDrive/Desktop/Facultate/PDA/Cuda vs OpenMP Project/otsu-openmp-cuda/build/CMakeFiles/CMakeScratch/TryCompile-7demvf"
     cmakeVariables:
+      CMAKE_CUDA_ARCHITECTURES: "75"
       CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /EHsc"
       CMAKE_CXX_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
       CMAKE_CXX_STDLIB_MODULES_JSON: ""
@@ -1250,39 +2184,107 @@ events:
       variable: "OpenMP_SPECTEST_CXX_"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/denis/OneDrive/Desktop/Facultate/PDA/Cuda vs OpenMP Project/otsu-openmp-cuda/build/CMakeFiles/CMakeScratch/TryCompile-a3rtvi'
+        Change Dir: 'C:/Users/denis/OneDrive/Desktop/Facultate/PDA/Cuda vs OpenMP Project/otsu-openmp-cuda/build/CMakeFiles/CMakeScratch/TryCompile-7demvf'
         
-        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_921b2.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_544cb.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
         MSBuild version 17.14.40+3e7442088 for .NET Framework
-        Build started 5/23/2026 10:27:27 PM.
+        Build started 5/23/2026 11:28:42 PM.
         
-        Project "C:\\Users\\denis\\OneDrive\\Desktop\\Facultate\\PDA\\Cuda vs OpenMP Project\\otsu-openmp-cuda\\build\\CMakeFiles\\CMakeScratch\\TryCompile-a3rtvi\\cmTC_921b2.vcxproj" on node 1 (default targets).
+        Project "C:\\Users\\denis\\OneDrive\\Desktop\\Facultate\\PDA\\Cuda vs OpenMP Project\\otsu-openmp-cuda\\build\\CMakeFiles\\CMakeScratch\\TryCompile-7demvf\\cmTC_544cb.vcxproj" on node 1 (default targets).
         PrepareForBuild:
           Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
-          Creating directory "C:\\Users\\denis\\OneDrive\\Desktop\\Facultate\\PDA\\Cuda vs OpenMP Project\\otsu-openmp-cuda\\build\\CMakeFiles\\CMakeScratch\\TryCompile-a3rtvi\\Debug\\".
-          Creating directory "cmTC_921b2.dir\\Debug\\cmTC_921b2.tlog\\".
+          Creating directory "C:\\Users\\denis\\OneDrive\\Desktop\\Facultate\\PDA\\Cuda vs OpenMP Project\\otsu-openmp-cuda\\build\\CMakeFiles\\CMakeScratch\\TryCompile-7demvf\\Debug\\".
+          Creating directory "cmTC_544cb.dir\\Debug\\cmTC_544cb.tlog\\".
         InitializeBuildStatus:
-          Creating "cmTC_921b2.dir\\Debug\\cmTC_921b2.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
-          Touching "cmTC_921b2.dir\\Debug\\cmTC_921b2.tlog\\unsuccessfulbuild".
+          Creating "cmTC_544cb.dir\\Debug\\cmTC_544cb.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_544cb.dir\\Debug\\cmTC_544cb.tlog\\unsuccessfulbuild".
         ClCompile:
-          C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /openmp /std:c++17 /Fo"cmTC_921b2.dir\\Debug\\\\" /Fd"cmTC_921b2.dir\\Debug\\vc143.pdb" /external:W1 /TP /errorReport:queue "C:\\Users\\denis\\OneDrive\\Desktop\\Facultate\\PDA\\Cuda vs OpenMP Project\\otsu-openmp-cuda\\build\\CMakeFiles\\CMakeScratch\\TryCompile-a3rtvi\\OpenMPCheckVersion.cpp"
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /openmp /std:c++17 /Fo"cmTC_544cb.dir\\Debug\\\\" /Fd"cmTC_544cb.dir\\Debug\\vc143.pdb" /external:W1 /TP /errorReport:queue "C:\\Users\\denis\\OneDrive\\Desktop\\Facultate\\PDA\\Cuda vs OpenMP Project\\otsu-openmp-cuda\\build\\CMakeFiles\\CMakeScratch\\TryCompile-7demvf\\OpenMPCheckVersion.cpp"
           Microsoft (R) C/C++ Optimizing Compiler Version 19.44.35223 for x64
           Copyright (C) Microsoft Corporation.  All rights reserved.
-          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /openmp /std:c++17 /Fo"cmTC_921b2.dir\\Debug\\\\" /Fd"cmTC_921b2.dir\\Debug\\vc143.pdb" /external:W1 /TP /errorReport:queue "C:\\Users\\denis\\OneDrive\\Desktop\\Facultate\\PDA\\Cuda vs OpenMP Project\\otsu-openmp-cuda\\build\\CMakeFiles\\CMakeScratch\\TryCompile-a3rtvi\\OpenMPCheckVersion.cpp"
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /openmp /std:c++17 /Fo"cmTC_544cb.dir\\Debug\\\\" /Fd"cmTC_544cb.dir\\Debug\\vc143.pdb" /external:W1 /TP /errorReport:queue "C:\\Users\\denis\\OneDrive\\Desktop\\Facultate\\PDA\\Cuda vs OpenMP Project\\otsu-openmp-cuda\\build\\CMakeFiles\\CMakeScratch\\TryCompile-7demvf\\OpenMPCheckVersion.cpp"
           OpenMPCheckVersion.cpp
         Link:
-          C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\Users\\denis\\OneDrive\\Desktop\\Facultate\\PDA\\Cuda vs OpenMP Project\\otsu-openmp-cuda\\build\\CMakeFiles\\CMakeScratch\\TryCompile-a3rtvi\\Debug\\cmTC_921b2.exe" /INCREMENTAL /ILK:"cmTC_921b2.dir\\Debug\\cmTC_921b2.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/denis/OneDrive/Desktop/Facultate/PDA/Cuda vs OpenMP Project/otsu-openmp-cuda/build/CMakeFiles/CMakeScratch/TryCompile-a3rtvi/Debug/cmTC_921b2.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/Users/denis/OneDrive/Desktop/Facultate/PDA/Cuda vs OpenMP Project/otsu-openmp-cuda/build/CMakeFiles/CMakeScratch/TryCompile-a3rtvi/Debug/cmTC_921b2.lib" /MACHINE:X64  /machine:x64 cmTC_921b2.dir\\Debug\\OpenMPCheckVersion.obj
-          cmTC_921b2.vcxproj -> C:\\Users\\denis\\OneDrive\\Desktop\\Facultate\\PDA\\Cuda vs OpenMP Project\\otsu-openmp-cuda\\build\\CMakeFiles\\CMakeScratch\\TryCompile-a3rtvi\\Debug\\cmTC_921b2.exe
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\Users\\denis\\OneDrive\\Desktop\\Facultate\\PDA\\Cuda vs OpenMP Project\\otsu-openmp-cuda\\build\\CMakeFiles\\CMakeScratch\\TryCompile-7demvf\\Debug\\cmTC_544cb.exe" /INCREMENTAL /ILK:"cmTC_544cb.dir\\Debug\\cmTC_544cb.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/denis/OneDrive/Desktop/Facultate/PDA/Cuda vs OpenMP Project/otsu-openmp-cuda/build/CMakeFiles/CMakeScratch/TryCompile-7demvf/Debug/cmTC_544cb.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/Users/denis/OneDrive/Desktop/Facultate/PDA/Cuda vs OpenMP Project/otsu-openmp-cuda/build/CMakeFiles/CMakeScratch/TryCompile-7demvf/Debug/cmTC_544cb.lib" /MACHINE:X64  /machine:x64 cmTC_544cb.dir\\Debug\\OpenMPCheckVersion.obj
+          cmTC_544cb.vcxproj -> C:\\Users\\denis\\OneDrive\\Desktop\\Facultate\\PDA\\Cuda vs OpenMP Project\\otsu-openmp-cuda\\build\\CMakeFiles\\CMakeScratch\\TryCompile-7demvf\\Debug\\cmTC_544cb.exe
         FinalizeBuildStatus:
-          Deleting file "cmTC_921b2.dir\\Debug\\cmTC_921b2.tlog\\unsuccessfulbuild".
-          Touching "cmTC_921b2.dir\\Debug\\cmTC_921b2.tlog\\cmTC_921b2.lastbuildstate".
-        Done Building Project "C:\\Users\\denis\\OneDrive\\Desktop\\Facultate\\PDA\\Cuda vs OpenMP Project\\otsu-openmp-cuda\\build\\CMakeFiles\\CMakeScratch\\TryCompile-a3rtvi\\cmTC_921b2.vcxproj" (default targets).
+          Deleting file "cmTC_544cb.dir\\Debug\\cmTC_544cb.tlog\\unsuccessfulbuild".
+          Touching "cmTC_544cb.dir\\Debug\\cmTC_544cb.tlog\\cmTC_544cb.lastbuildstate".
+        Done Building Project "C:\\Users\\denis\\OneDrive\\Desktop\\Facultate\\PDA\\Cuda vs OpenMP Project\\otsu-openmp-cuda\\build\\CMakeFiles\\CMakeScratch\\TryCompile-7demvf\\cmTC_544cb.vcxproj" (default targets).
         
         Build succeeded.
             0 Warning(s)
             0 Error(s)
         
-        Time Elapsed 00:00:00.45
+        Time Elapsed 00:00:00.44
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/FindOpenMP.cmake:574 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/FindOpenMP.cmake:714 (_OPENMP_GET_SPEC_DATE)"
+      - "CMakeLists.txt:11 (find_package)"
+    description: "Detecting CUDA OpenMP version"
+    directories:
+      source: "C:/Users/denis/OneDrive/Desktop/Facultate/PDA/Cuda vs OpenMP Project/otsu-openmp-cuda/build/CMakeFiles/CMakeScratch/TryCompile-oq80at"
+      binary: "C:/Users/denis/OneDrive/Desktop/Facultate/PDA/Cuda vs OpenMP Project/otsu-openmp-cuda/build/CMakeFiles/CMakeScratch/TryCompile-oq80at"
+    cmakeVariables:
+      CMAKE_CUDA_ARCHITECTURES: "75"
+      CMAKE_CUDA_FLAGS: "-D_WINDOWS -Xcompiler=\" /EHsc\""
+      CMAKE_CUDA_FLAGS_DEBUG: "-Xcompiler=\" -Zi -Ob0 -Od /RTC1\""
+      CMAKE_CXX_STDLIB_MODULES_JSON: ""
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+    buildResult:
+      variable: "OpenMP_SPECTEST_CUDA_"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/denis/OneDrive/Desktop/Facultate/PDA/Cuda vs OpenMP Project/otsu-openmp-cuda/build/CMakeFiles/CMakeScratch/TryCompile-oq80at'
+        
+        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_1ac9a.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.14.40+3e7442088 for .NET Framework
+        Build started 5/23/2026 11:28:43 PM.
+        
+        Project "C:\\Users\\denis\\OneDrive\\Desktop\\Facultate\\PDA\\Cuda vs OpenMP Project\\otsu-openmp-cuda\\build\\CMakeFiles\\CMakeScratch\\TryCompile-oq80at\\cmTC_1ac9a.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "C:\\Users\\denis\\OneDrive\\Desktop\\Facultate\\PDA\\Cuda vs OpenMP Project\\otsu-openmp-cuda\\build\\CMakeFiles\\CMakeScratch\\TryCompile-oq80at\\Debug\\".
+          Creating directory "cmTC_1ac9a.dir\\Debug\\cmTC_1ac9a.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_1ac9a.dir\\Debug\\cmTC_1ac9a.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_1ac9a.dir\\Debug\\cmTC_1ac9a.tlog\\unsuccessfulbuild".
+        AddCudaCompileDeps:
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\cl.exe /E /nologo /showIncludes /TP /D__CUDACC__ /D__CUDACC_VER_MAJOR__=13 /D__CUDACC_VER_MINOR__=2 /D_WINDOWS /D_MBCS /DCMAKE_INTDIR="Debug" /D_MBCS /DCMAKE_INTDIR="Debug" /I"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.2\\bin\\x64" /I"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.2\\include" /I. /FIcuda_runtime.h /c "C:\\Users\\denis\\OneDrive\\Desktop\\Facultate\\PDA\\Cuda vs OpenMP Project\\otsu-openmp-cuda\\build\\CMakeFiles\\CMakeScratch\\TryCompile-oq80at\\OpenMPCheckVersion.cu" 
+        Project "C:\\Users\\denis\\OneDrive\\Desktop\\Facultate\\PDA\\Cuda vs OpenMP Project\\otsu-openmp-cuda\\build\\CMakeFiles\\CMakeScratch\\TryCompile-oq80at\\cmTC_1ac9a.vcxproj" (1) is building "C:\\Users\\denis\\OneDrive\\Desktop\\Facultate\\PDA\\Cuda vs OpenMP Project\\otsu-openmp-cuda\\build\\CMakeFiles\\CMakeScratch\\TryCompile-oq80at\\cmTC_1ac9a.vcxproj" (1:2) on node 1 (CudaBuildCore target(s)).
+        CudaBuildCore:
+          Compiling CUDA source file OpenMPCheckVersion.cu...
+          cmd.exe /C "C:\\Users\\denis\\AppData\\Local\\Temp\\tmpa732e7034bab49c1a7ac348d678210d6.cmd"
+          "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.2\\bin\\nvcc.exe"  --use-local-env -ccbin "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64" -x cu    -I"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.2\\include"     --keep-dir cmTC_1ac9a\\x64\\Debug  -maxrregcount=0    --machine 64 --compile -cudart static -forward-unknown-to-host-compiler -openmp -std=c++17 --generate-code=arch=compute_75,code=[compute_75,sm_75] -Xcompiler="/EHsc -Zi -Ob0" -g  -D_WINDOWS -D_MBCS -D"CMAKE_INTDIR=\\"Debug\\"" -D_MBCS -D"CMAKE_INTDIR=\\"Debug\\"" -Xcompiler "/EHsc /W1 /nologo /Od /FS /Zi /RTC1 /MDd " -Xcompiler "/FdcmTC_1ac9a.dir\\Debug\\vc143.pdb" -o cmTC_1ac9a.dir\\Debug\\OpenMPCheckVersion.obj "C:\\Users\\denis\\OneDrive\\Desktop\\Facultate\\PDA\\Cuda vs OpenMP Project\\otsu-openmp-cuda\\build\\CMakeFiles\\CMakeScratch\\TryCompile-oq80at\\OpenMPCheckVersion.cu"
+          
+          C:\\Users\\denis\\OneDrive\\Desktop\\Facultate\\PDA\\Cuda vs OpenMP Project\\otsu-openmp-cuda\\build\\CMakeFiles\\CMakeScratch\\TryCompile-oq80at>"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.2\\bin\\nvcc.exe"  --use-local-env -ccbin "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64" -x cu    -I"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.2\\include"     --keep-dir cmTC_1ac9a\\x64\\Debug  -maxrregcount=0    --machine 64 --compile -cudart static -forward-unknown-to-host-compiler -openmp -std=c++17 --generate-code=arch=compute_75,code=[compute_75,sm_75] -Xcompiler="/EHsc -Zi -Ob0" -g  -D_WINDOWS -D_MBCS -D"CMAKE_INTDIR=\\"Debug\\"" -D_MBCS -D"CMAKE_INTDIR=\\"Debug\\"" -Xcompiler "/EHsc /W1 /nologo /Od /FS /Zi /RTC1 /MDd " -Xcompiler "/FdcmTC_1ac9a.dir\\Debug\\vc143.pdb" -o cmTC_1ac9a.dir\\Debug\\OpenMPCheckVersion.obj "C:\\Users\\denis\\OneDrive\\Desktop\\Facultate\\PDA\\Cuda vs OpenMP Project\\otsu-openmp-cuda\\build\\CMakeFiles\\CMakeScratch\\TryCompile-oq80at\\OpenMPCheckVersion.cu" 
+          OpenMPCheckVersion.cu
+          tmpxft_00003de8_00000000-7_OpenMPCheckVersion.cudafe1.cpp
+        Done Building Project "C:\\Users\\denis\\OneDrive\\Desktop\\Facultate\\PDA\\Cuda vs OpenMP Project\\otsu-openmp-cuda\\build\\CMakeFiles\\CMakeScratch\\TryCompile-oq80at\\cmTC_1ac9a.vcxproj" (CudaBuildCore target(s)).
+        Link:
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\Users\\denis\\OneDrive\\Desktop\\Facultate\\PDA\\Cuda vs OpenMP Project\\otsu-openmp-cuda\\build\\CMakeFiles\\CMakeScratch\\TryCompile-oq80at\\Debug\\cmTC_1ac9a.exe" /INCREMENTAL /ILK:"cmTC_1ac9a.dir\\Debug\\cmTC_1ac9a.ilk" /NOLOGO /LIBPATH:"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.2\\lib\\x64" cudadevrt.lib cudart_static.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/denis/OneDrive/Desktop/Facultate/PDA/Cuda vs OpenMP Project/otsu-openmp-cuda/build/CMakeFiles/CMakeScratch/TryCompile-oq80at/Debug/cmTC_1ac9a.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/Users/denis/OneDrive/Desktop/Facultate/PDA/Cuda vs OpenMP Project/otsu-openmp-cuda/build/CMakeFiles/CMakeScratch/TryCompile-oq80at/Debug/cmTC_1ac9a.lib" /MACHINE:X64  /machine:x64 cmTC_1ac9a.dir\\Debug\\OpenMPCheckVersion.obj
+             Creating library C:/Users/denis/OneDrive/Desktop/Facultate/PDA/Cuda vs OpenMP Project/otsu-openmp-cuda/build/CMakeFiles/CMakeScratch/TryCompile-oq80at/Debug/cmTC_1ac9a.lib and object C:/Users/denis/OneDrive/Desktop/Facultate/PDA/Cuda vs OpenMP Project/otsu-openmp-cuda/build/CMakeFiles/CMakeScratch/TryCompile-oq80at/Debug/cmTC_1ac9a.exp
+        LINK : warning LNK4098: defaultlib 'LIBCMT' conflicts with use of other libs; use /NODEFAULTLIB:library [C:\\Users\\denis\\OneDrive\\Desktop\\Facultate\\PDA\\Cuda vs OpenMP Project\\otsu-openmp-cuda\\build\\CMakeFiles\\CMakeScratch\\TryCompile-oq80at\\cmTC_1ac9a.vcxproj]
+          cmTC_1ac9a.vcxproj -> C:\\Users\\denis\\OneDrive\\Desktop\\Facultate\\PDA\\Cuda vs OpenMP Project\\otsu-openmp-cuda\\build\\CMakeFiles\\CMakeScratch\\TryCompile-oq80at\\Debug\\cmTC_1ac9a.exe
+        FinalizeBuildStatus:
+          Deleting file "cmTC_1ac9a.dir\\Debug\\cmTC_1ac9a.tlog\\unsuccessfulbuild".
+          Touching "cmTC_1ac9a.dir\\Debug\\cmTC_1ac9a.tlog\\cmTC_1ac9a.lastbuildstate".
+        Done Building Project "C:\\Users\\denis\\OneDrive\\Desktop\\Facultate\\PDA\\Cuda vs OpenMP Project\\otsu-openmp-cuda\\build\\CMakeFiles\\CMakeScratch\\TryCompile-oq80at\\cmTC_1ac9a.vcxproj" (default targets).
+        
+        Build succeeded.
+        
+        "C:\\Users\\denis\\OneDrive\\Desktop\\Facultate\\PDA\\Cuda vs OpenMP Project\\otsu-openmp-cuda\\build\\CMakeFiles\\CMakeScratch\\TryCompile-oq80at\\cmTC_1ac9a.vcxproj" (default target) (1) ->
+        (Link target) -> 
+          LINK : warning LNK4098: defaultlib 'LIBCMT' conflicts with use of other libs; use /NODEFAULTLIB:library [C:\\Users\\denis\\OneDrive\\Desktop\\Facultate\\PDA\\Cuda vs OpenMP Project\\otsu-openmp-cuda\\build\\CMakeFiles\\CMakeScratch\\TryCompile-oq80at\\cmTC_1ac9a.vcxproj]
+        
+            1 Warning(s)
+            0 Error(s)
+        
+        Time Elapsed 00:00:01.82
         
       exitCode: 0
 ...

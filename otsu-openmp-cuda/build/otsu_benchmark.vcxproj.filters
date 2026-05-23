@@ -6,6 +6,11 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
+    <CudaCompile Include="..\src\otsu_cuda.cu">
+      <Filter>Source Files</Filter>
+    </CudaCompile>
+  </ItemGroup>
+  <ItemGroup>
     <CustomBuild Include="C:\Users\denis\OneDrive\Desktop\Facultate\PDA\Cuda vs OpenMP Project\otsu-openmp-cuda\CMakeLists.txt" />
   </ItemGroup>
   <ItemGroup>
