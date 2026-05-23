@@ -1,0 +1,3 @@
+C:/Users/denis/OneDrive/Desktop/Facultate/PDA/Cuda vs OpenMP Project/otsu-openmp-cuda/build/CMakeFiles/otsu_benchmark.dir
+C:/Users/denis/OneDrive/Desktop/Facultate/PDA/Cuda vs OpenMP Project/otsu-openmp-cuda/build/CMakeFiles/ALL_BUILD.dir
+C:/Users/denis/OneDrive/Desktop/Facultate/PDA/Cuda vs OpenMP Project/otsu-openmp-cuda/build/CMakeFiles/ZERO_CHECK.dir

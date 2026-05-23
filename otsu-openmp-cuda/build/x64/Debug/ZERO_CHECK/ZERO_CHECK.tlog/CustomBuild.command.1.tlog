@@ -1,0 +1,10 @@
+^C:\USERS\DENIS\ONEDRIVE\DESKTOP\FACULTATE\PDA\CUDA VS OPENMP PROJECT\OTSU-OPENMP-CUDA\BUILD\CMAKEFILES\ACE41F386C02FBAB61B8D28108AD9C05\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/denis/OneDrive/Desktop/Facultate/PDA/Cuda vs OpenMP Project/otsu-openmp-cuda" "-BC:/Users/denis/OneDrive/Desktop/Facultate/PDA/Cuda vs OpenMP Project/otsu-openmp-cuda/build" --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file "C:/Users/denis/OneDrive/Desktop/Facultate/PDA/Cuda vs OpenMP Project/otsu-openmp-cuda/build/OtsuOpenMPCUDA.sln"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
