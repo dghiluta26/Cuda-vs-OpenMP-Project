@@ -8,6 +8,9 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CUDA_STANDARD 17)
 set(CMAKE_CUDA_STANDARD_REQUIRED ON)
 
+# RTX 4060 = compute capability 8.9
+set(CMAKE_CUDA_ARCHITECTURES 89)
+
 find_package(OpenMP REQUIRED)
 
 add_executable(otsu_benchmark

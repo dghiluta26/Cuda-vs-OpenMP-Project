@@ -8,7 +8,22 @@
 #include <iomanip>
 #include <omp.h>
 
-extern "C" void testCudaFromCpp();
+extern "C" void computeHistogramCUDA(
+    const unsigned char* hostImage,
+    int size,
+    unsigned int* hostHistogram,
+    float* kernelTimeMs,
+    float* totalTimeMs
+);
+
+extern "C" void applyThresholdCUDA(
+    const unsigned char* hostInput,
+    unsigned char* hostOutput,
+    int size,
+    int threshold,
+    float* kernelTimeMs,
+    float* totalTimeMs
+);
 
 namespace fs = std::filesystem;
 
@@ -334,12 +349,15 @@ void processImage(
 
     std::vector<unsigned int> histogramSequential;
     std::vector<unsigned int> histogramOpenMP;
+    std::vector<unsigned int> histogramCUDA(256, 0);
 
     int thresholdSequential = 0;
     int thresholdOpenMP = 0;
+    int thresholdCUDA = 0;
 
     std::vector<unsigned char> outputSequentialPixels;
     std::vector<unsigned char> outputOpenMPPixels;
+    std::vector<unsigned char> outputCUDAPixels(inputImage.pixels.size());
 
     // -----------------------------
     // Sequential version
@@ -382,28 +400,90 @@ void processImage(
         openmpThresholdingTime;
 
     // -----------------------------
+    // CUDA version
+    // -----------------------------
+    float cudaHistogramKernelTime = 0.0f;
+    float cudaHistogramTotalTime = 0.0f;
+
+    computeHistogramCUDA(
+        inputImage.pixels.data(),
+        totalPixels,
+        histogramCUDA.data(),
+        &cudaHistogramKernelTime,
+        &cudaHistogramTotalTime
+    );
+
+    double cudaOtsuTime = measureTimeMs([&]() {
+        thresholdCUDA = computeOtsuThreshold(histogramCUDA, totalPixels);
+    });
+
+    float cudaThresholdKernelTime = 0.0f;
+    float cudaThresholdTotalTime = 0.0f;
+
+    applyThresholdCUDA(
+        inputImage.pixels.data(),
+        outputCUDAPixels.data(),
+        totalPixels,
+        thresholdCUDA,
+        &cudaThresholdKernelTime,
+        &cudaThresholdTotalTime
+    );
+
+    double cudaTotalTime =
+        cudaHistogramTotalTime +
+        cudaOtsuTime +
+        cudaThresholdTotalTime;
+
+    // -----------------------------
     // Validation
     // -----------------------------
-    bool sameHistogram = compareHistograms(histogramSequential, histogramOpenMP);
-    bool sameThreshold = thresholdSequential == thresholdOpenMP;
-    bool sameOutput = compareImages(outputSequentialPixels, outputOpenMPPixels);
+    bool sameOpenMPHistogram = compareHistograms(histogramSequential, histogramOpenMP);
+    bool sameOpenMPThreshold = thresholdSequential == thresholdOpenMP;
+    bool sameOpenMPOutput = compareImages(outputSequentialPixels, outputOpenMPPixels);
 
-    std::cout << "Sequential total time: " << sequentialTotalTime << " ms" << std::endl;
+    bool sameCUDAHistogram = compareHistograms(histogramSequential, histogramCUDA);
+    bool sameCUDAThreshold = thresholdSequential == thresholdCUDA;
+    bool sameCUDAOutput = compareImages(outputSequentialPixels, outputCUDAPixels);
+
+    std::cout << "\nSequential total time: " << sequentialTotalTime << " ms" << std::endl;
+
     std::cout << "OpenMP total time:     " << openmpTotalTime << " ms" << std::endl;
-
     if (openmpTotalTime > 0) {
-        std::cout << "Speedup: " << sequentialTotalTime / openmpTotalTime << "x" << std::endl;
+        std::cout << "OpenMP speedup:        " << sequentialTotalTime / openmpTotalTime << "x" << std::endl;
     }
 
-    std::cout << "Sequential Otsu threshold: " << thresholdSequential << std::endl;
-    std::cout << "OpenMP Otsu threshold:     " << thresholdOpenMP << std::endl;
+    std::cout << "CUDA total time:       " << cudaTotalTime << " ms" << std::endl;
+    if (cudaTotalTime > 0) {
+        std::cout << "CUDA speedup:          " << sequentialTotalTime / cudaTotalTime << "x" << std::endl;
+    }
 
-    std::cout << "Same histogram: " << (sameHistogram ? "YES" : "NO") << std::endl;
-    std::cout << "Same threshold: " << (sameThreshold ? "YES" : "NO") << std::endl;
-    std::cout << "Same output:    " << (sameOutput ? "YES" : "NO") << std::endl;
+    std::cout << "\nCUDA detailed times:" << std::endl;
+    std::cout << "CUDA histogram kernel time:    " << cudaHistogramKernelTime << " ms" << std::endl;
+    std::cout << "CUDA histogram total time:     " << cudaHistogramTotalTime << " ms" << std::endl;
+    std::cout << "CUDA threshold kernel time:    " << cudaThresholdKernelTime << " ms" << std::endl;
+    std::cout << "CUDA threshold total time:     " << cudaThresholdTotalTime << " ms" << std::endl;
 
-    if (!sameHistogram || !sameThreshold || !sameOutput) {
-        throw std::runtime_error("Validation failed for image: " + imageName);
+    std::cout << "\nOtsu thresholds:" << std::endl;
+    std::cout << "Sequential: " << thresholdSequential << std::endl;
+    std::cout << "OpenMP:     " << thresholdOpenMP << std::endl;
+    std::cout << "CUDA:       " << thresholdCUDA << std::endl;
+
+    std::cout << "\nOpenMP validation:" << std::endl;
+    std::cout << "Same histogram: " << (sameOpenMPHistogram ? "YES" : "NO") << std::endl;
+    std::cout << "Same threshold: " << (sameOpenMPThreshold ? "YES" : "NO") << std::endl;
+    std::cout << "Same output:    " << (sameOpenMPOutput ? "YES" : "NO") << std::endl;
+
+    std::cout << "\nCUDA validation:" << std::endl;
+    std::cout << "Same histogram: " << (sameCUDAHistogram ? "YES" : "NO") << std::endl;
+    std::cout << "Same threshold: " << (sameCUDAThreshold ? "YES" : "NO") << std::endl;
+    std::cout << "Same output:    " << (sameCUDAOutput ? "YES" : "NO") << std::endl;
+
+    if (!sameOpenMPHistogram || !sameOpenMPThreshold || !sameOpenMPOutput) {
+        throw std::runtime_error("OpenMP validation failed for image: " + imageName);
+    }
+
+    if (!sameCUDAHistogram || !sameCUDAThreshold || !sameCUDAOutput) {
+        throw std::runtime_error("CUDA validation failed for image: " + imageName);
     }
 
     // -----------------------------
@@ -411,27 +491,36 @@ void processImage(
     // -----------------------------
     fs::create_directories("output/sequential");
     fs::create_directories("output/openmp");
+    fs::create_directories("output/cuda");
+
+    std::string baseName = fs::path(inputPath).stem().string();
 
     std::string sequentialOutputPath =
-        "output/sequential/" + fs::path(inputPath).stem().string() + "_sequential.pgm";
+        "output/sequential/" + baseName + "_sequential.pgm";
 
     std::string openmpOutputPath =
-        "output/openmp/" + fs::path(inputPath).stem().string() + "_openmp.pgm";
+        "output/openmp/" + baseName + "_openmp.pgm";
 
-    Image sequentialOutputImage{
+    std::string cudaOutputPath =
+        "output/cuda/" + baseName + "_cuda.pgm";
+
+    savePGM(sequentialOutputPath, Image{
         inputImage.width,
         inputImage.height,
         outputSequentialPixels
-    };
+    });
 
-    Image openmpOutputImage{
+    savePGM(openmpOutputPath, Image{
         inputImage.width,
         inputImage.height,
         outputOpenMPPixels
-    };
+    });
 
-    savePGM(sequentialOutputPath, sequentialOutputImage);
-    savePGM(openmpOutputPath, openmpOutputImage);
+    savePGM(cudaOutputPath, Image{
+        inputImage.width,
+        inputImage.height,
+        outputCUDAPixels
+    });
 
     // -----------------------------
     // Store benchmark results
@@ -451,10 +540,9 @@ void processImage(
         thresholdSequential
     });
 
-    double speedup = 0.0;
-
+    double openmpSpeedup = 0.0;
     if (openmpTotalTime > 0) {
-        speedup = sequentialTotalTime / openmpTotalTime;
+        openmpSpeedup = sequentialTotalTime / openmpTotalTime;
     }
 
     results.push_back(BenchmarkResult{
@@ -468,8 +556,28 @@ void processImage(
         openmpOtsuTime,
         openmpThresholdingTime,
         openmpTotalTime,
-        speedup,
+        openmpSpeedup,
         thresholdOpenMP
+    });
+
+    double cudaSpeedup = 0.0;
+    if (cudaTotalTime > 0) {
+        cudaSpeedup = sequentialTotalTime / cudaTotalTime;
+    }
+
+    results.push_back(BenchmarkResult{
+        imageName,
+        inputImage.width,
+        inputImage.height,
+        totalPixels,
+        "cuda",
+        0,
+        cudaHistogramTotalTime,
+        cudaOtsuTime,
+        cudaThresholdTotalTime,
+        cudaTotalTime,
+        cudaSpeedup,
+        thresholdCUDA
     });
 }
 
@@ -479,7 +587,7 @@ void processImage(
 int main() {
     try {
         std::cout << "Otsu OpenMP CUDA benchmark started!" << std::endl;
-        testCudaFromCpp();
+       
 
         fs::create_directories("results");
 
