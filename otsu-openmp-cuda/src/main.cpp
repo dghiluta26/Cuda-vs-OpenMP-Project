@@ -1,12 +1,11 @@
-#include <iostream>
-#include <vector>
 #include <chrono>
-#include <fstream>
-#include <string>
-#include <stdexcept>
 #include <filesystem>
+#include <fstream>
 #include <iomanip>
-#include <omp.h>
+#include <iostream>
+#include <stdexcept>
+#include <string>
+#include <vector>
 
 namespace fs = std::filesystem;
 
@@ -31,9 +30,6 @@ struct BenchmarkResult {
     int otsuThreshold;
 };
 
-// ---------------------------------------------------------
-// Load PGM image - supports P5 binary grayscale PGM
-// ---------------------------------------------------------
 Image loadPGM(const std::string& filePath) {
     std::ifstream file(filePath, std::ios::binary);
 
@@ -70,9 +66,6 @@ Image loadPGM(const std::string& filePath) {
     return Image{width, height, pixels};
 }
 
-// ---------------------------------------------------------
-// Save PGM image
-// ---------------------------------------------------------
 void savePGM(const std::string& filePath, const Image& image) {
     std::ofstream file(filePath, std::ios::binary);
 
@@ -83,64 +76,21 @@ void savePGM(const std::string& filePath, const Image& image) {
     file << "P5\n";
     file << image.width << " " << image.height << "\n";
     file << "255\n";
-
     file.write(reinterpret_cast<const char*>(image.pixels.data()), image.pixels.size());
 }
 
-// ---------------------------------------------------------
-// Sequential histogram
-// ---------------------------------------------------------
 std::vector<unsigned int> computeHistogramSequential(
     const std::vector<unsigned char>& image
 ) {
     std::vector<unsigned int> histogram(256, 0);
 
     for (size_t i = 0; i < image.size(); i++) {
-        unsigned char pixel = image[i];
-        histogram[pixel]++;
+        histogram[image[i]]++;
     }
 
     return histogram;
 }
 
-// ---------------------------------------------------------
-// OpenMP histogram
-// ---------------------------------------------------------
-std::vector<unsigned int> computeHistogramOpenMP(
-    const std::vector<unsigned char>& image
-) {
-    int numberOfThreads = omp_get_max_threads();
-
-    std::vector<std::vector<unsigned int>> localHistograms(
-        numberOfThreads,
-        std::vector<unsigned int>(256, 0)
-    );
-
-    #pragma omp parallel
-    {
-        int threadId = omp_get_thread_num();
-
-        #pragma omp for
-        for (long long i = 0; i < static_cast<long long>(image.size()); i++) {
-            unsigned char pixel = image[i];
-            localHistograms[threadId][pixel]++;
-        }
-    }
-
-    std::vector<unsigned int> finalHistogram(256, 0);
-
-    for (int thread = 0; thread < numberOfThreads; thread++) {
-        for (int value = 0; value < 256; value++) {
-            finalHistogram[value] += localHistograms[thread][value];
-        }
-    }
-
-    return finalHistogram;
-}
-
-// ---------------------------------------------------------
-// Otsu threshold calculation
-// ---------------------------------------------------------
 int computeOtsuThreshold(
     const std::vector<unsigned int>& histogram,
     int totalPixels
@@ -153,10 +103,8 @@ int computeOtsuThreshold(
 
     double sumBackground = 0.0;
     int weightBackground = 0;
-    int weightForeground = 0;
-
-    double maxBetweenClassVariance = 0.0;
     int bestThreshold = 0;
+    double maxBetweenClassVariance = 0.0;
 
     for (int threshold = 0; threshold < 256; threshold++) {
         weightBackground += histogram[threshold];
@@ -165,7 +113,7 @@ int computeOtsuThreshold(
             continue;
         }
 
-        weightForeground = totalPixels - weightBackground;
+        int weightForeground = totalPixels - weightBackground;
 
         if (weightForeground == 0) {
             break;
@@ -175,7 +123,6 @@ int computeOtsuThreshold(
 
         double meanBackground = sumBackground / weightBackground;
         double meanForeground = (sumTotal - sumBackground) / weightForeground;
-
         double difference = meanBackground - meanForeground;
 
         double betweenClassVariance =
@@ -190,9 +137,6 @@ int computeOtsuThreshold(
     return bestThreshold;
 }
 
-// ---------------------------------------------------------
-// Sequential thresholding
-// ---------------------------------------------------------
 std::vector<unsigned char> applyThresholdSequential(
     const std::vector<unsigned char>& image,
     int threshold
@@ -206,81 +150,16 @@ std::vector<unsigned char> applyThresholdSequential(
     return output;
 }
 
-// ---------------------------------------------------------
-// OpenMP thresholding
-// ---------------------------------------------------------
-std::vector<unsigned char> applyThresholdOpenMP(
-    const std::vector<unsigned char>& image,
-    int threshold
-) {
-    std::vector<unsigned char> output(image.size());
-
-    #pragma omp parallel for
-    for (long long i = 0; i < static_cast<long long>(image.size()); i++) {
-        output[i] = image[i] > threshold ? 255 : 0;
-    }
-
-    return output;
-}
-
-// ---------------------------------------------------------
-// Measure execution time
-// ---------------------------------------------------------
 template <typename Function>
 double measureTimeMs(Function functionToMeasure) {
     auto start = std::chrono::high_resolution_clock::now();
-
     functionToMeasure();
-
     auto end = std::chrono::high_resolution_clock::now();
 
     std::chrono::duration<double, std::milli> duration = end - start;
     return duration.count();
 }
 
-// ---------------------------------------------------------
-// Compare histograms
-// ---------------------------------------------------------
-bool compareHistograms(
-    const std::vector<unsigned int>& first,
-    const std::vector<unsigned int>& second
-) {
-    if (first.size() != second.size()) {
-        return false;
-    }
-
-    for (size_t i = 0; i < first.size(); i++) {
-        if (first[i] != second[i]) {
-            return false;
-        }
-    }
-
-    return true;
-}
-
-// ---------------------------------------------------------
-// Compare images
-// ---------------------------------------------------------
-bool compareImages(
-    const std::vector<unsigned char>& first,
-    const std::vector<unsigned char>& second
-) {
-    if (first.size() != second.size()) {
-        return false;
-    }
-
-    for (size_t i = 0; i < first.size(); i++) {
-        if (first[i] != second[i]) {
-            return false;
-        }
-    }
-
-    return true;
-}
-
-// ---------------------------------------------------------
-// Write benchmark results to CSV
-// ---------------------------------------------------------
 void writeResultsToCSV(
     const std::string& filePath,
     const std::vector<BenchmarkResult>& results
@@ -312,9 +191,6 @@ void writeResultsToCSV(
     }
 }
 
-// ---------------------------------------------------------
-// Process one image
-// ---------------------------------------------------------
 void processImage(
     const std::string& inputPath,
     std::vector<BenchmarkResult>& results
@@ -322,118 +198,44 @@ void processImage(
     std::cout << "\nProcessing image: " << inputPath << std::endl;
 
     Image inputImage = loadPGM(inputPath);
-
     int totalPixels = static_cast<int>(inputImage.pixels.size());
     std::string imageName = fs::path(inputPath).filename().string();
 
     std::cout << "Image size: " << inputImage.width << " x " << inputImage.height << std::endl;
     std::cout << "Total pixels: " << totalPixels << std::endl;
-    std::cout << "OpenMP max threads: " << omp_get_max_threads() << std::endl;
 
-    std::vector<unsigned int> histogramSequential;
-    std::vector<unsigned int> histogramOpenMP;
+    std::vector<unsigned int> histogram;
+    int threshold = 0;
+    std::vector<unsigned char> outputPixels;
 
-    int thresholdSequential = 0;
-    int thresholdOpenMP = 0;
-
-    std::vector<unsigned char> outputSequentialPixels;
-    std::vector<unsigned char> outputOpenMPPixels;
-
-    // -----------------------------
-    // Sequential version
-    // -----------------------------
-    double sequentialHistogramTime = measureTimeMs([&]() {
-        histogramSequential = computeHistogramSequential(inputImage.pixels);
+    double histogramTime = measureTimeMs([&]() {
+        histogram = computeHistogramSequential(inputImage.pixels);
     });
 
-    double sequentialOtsuTime = measureTimeMs([&]() {
-        thresholdSequential = computeOtsuThreshold(histogramSequential, totalPixels);
+    double otsuTime = measureTimeMs([&]() {
+        threshold = computeOtsuThreshold(histogram, totalPixels);
     });
 
-    double sequentialThresholdingTime = measureTimeMs([&]() {
-        outputSequentialPixels = applyThresholdSequential(inputImage.pixels, thresholdSequential);
+    double thresholdingTime = measureTimeMs([&]() {
+        outputPixels = applyThresholdSequential(inputImage.pixels, threshold);
     });
 
-    double sequentialTotalTime =
-        sequentialHistogramTime +
-        sequentialOtsuTime +
-        sequentialThresholdingTime;
+    double totalTime = histogramTime + otsuTime + thresholdingTime;
 
-    // -----------------------------
-    // OpenMP version
-    // -----------------------------
-    double openmpHistogramTime = measureTimeMs([&]() {
-        histogramOpenMP = computeHistogramOpenMP(inputImage.pixels);
-    });
+    std::cout << "Sequential total time: " << totalTime << " ms" << std::endl;
+    std::cout << "Otsu threshold: " << threshold << std::endl;
 
-    double openmpOtsuTime = measureTimeMs([&]() {
-        thresholdOpenMP = computeOtsuThreshold(histogramOpenMP, totalPixels);
-    });
-
-    double openmpThresholdingTime = measureTimeMs([&]() {
-        outputOpenMPPixels = applyThresholdOpenMP(inputImage.pixels, thresholdOpenMP);
-    });
-
-    double openmpTotalTime =
-        openmpHistogramTime +
-        openmpOtsuTime +
-        openmpThresholdingTime;
-
-    // -----------------------------
-    // Validation
-    // -----------------------------
-    bool sameHistogram = compareHistograms(histogramSequential, histogramOpenMP);
-    bool sameThreshold = thresholdSequential == thresholdOpenMP;
-    bool sameOutput = compareImages(outputSequentialPixels, outputOpenMPPixels);
-
-    std::cout << "Sequential total time: " << sequentialTotalTime << " ms" << std::endl;
-    std::cout << "OpenMP total time:     " << openmpTotalTime << " ms" << std::endl;
-
-    if (openmpTotalTime > 0) {
-        std::cout << "Speedup: " << sequentialTotalTime / openmpTotalTime << "x" << std::endl;
-    }
-
-    std::cout << "Sequential Otsu threshold: " << thresholdSequential << std::endl;
-    std::cout << "OpenMP Otsu threshold:     " << thresholdOpenMP << std::endl;
-
-    std::cout << "Same histogram: " << (sameHistogram ? "YES" : "NO") << std::endl;
-    std::cout << "Same threshold: " << (sameThreshold ? "YES" : "NO") << std::endl;
-    std::cout << "Same output:    " << (sameOutput ? "YES" : "NO") << std::endl;
-
-    if (!sameHistogram || !sameThreshold || !sameOutput) {
-        throw std::runtime_error("Validation failed for image: " + imageName);
-    }
-
-    // -----------------------------
-    // Save output images
-    // -----------------------------
     fs::create_directories("output/sequential");
-    fs::create_directories("output/openmp");
 
-    std::string sequentialOutputPath =
+    std::string outputPath =
         "output/sequential/" + fs::path(inputPath).stem().string() + "_sequential.pgm";
 
-    std::string openmpOutputPath =
-        "output/openmp/" + fs::path(inputPath).stem().string() + "_openmp.pgm";
-
-    Image sequentialOutputImage{
+    savePGM(outputPath, Image{
         inputImage.width,
         inputImage.height,
-        outputSequentialPixels
-    };
+        outputPixels
+    });
 
-    Image openmpOutputImage{
-        inputImage.width,
-        inputImage.height,
-        outputOpenMPPixels
-    };
-
-    savePGM(sequentialOutputPath, sequentialOutputImage);
-    savePGM(openmpOutputPath, openmpOutputImage);
-
-    // -----------------------------
-    // Store benchmark results
-    // -----------------------------
     results.push_back(BenchmarkResult{
         imageName,
         inputImage.width,
@@ -441,42 +243,18 @@ void processImage(
         totalPixels,
         "sequential",
         1,
-        sequentialHistogramTime,
-        sequentialOtsuTime,
-        sequentialThresholdingTime,
-        sequentialTotalTime,
+        histogramTime,
+        otsuTime,
+        thresholdingTime,
+        totalTime,
         1.0,
-        thresholdSequential
-    });
-
-    double speedup = 0.0;
-
-    if (openmpTotalTime > 0) {
-        speedup = sequentialTotalTime / openmpTotalTime;
-    }
-
-    results.push_back(BenchmarkResult{
-        imageName,
-        inputImage.width,
-        inputImage.height,
-        totalPixels,
-        "openmp",
-        omp_get_max_threads(),
-        openmpHistogramTime,
-        openmpOtsuTime,
-        openmpThresholdingTime,
-        openmpTotalTime,
-        speedup,
-        thresholdOpenMP
+        threshold
     });
 }
 
-// ---------------------------------------------------------
-// Main
-// ---------------------------------------------------------
 int main() {
     try {
-        std::cout << "Otsu OpenMP CUDA benchmark started!" << std::endl;
+        std::cout << "Otsu sequential benchmark started!" << std::endl;
 
         fs::create_directories("results");
 
