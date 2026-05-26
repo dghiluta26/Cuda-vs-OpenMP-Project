@@ -97,7 +97,7 @@ CMAKE_PROJECT_DESCRIPTION:STATIC=
 CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=OtsuOpenMPCUDA
+CMAKE_PROJECT_NAME:STATIC=OtsuOpenMP
 
 //Value Computed by CMake
 CMAKE_PROJECT_SPDX_LICENSE:STATIC=
@@ -187,6 +187,15 @@ OtsuOpenMPCUDA_IS_TOP_LEVEL:STATIC=ON
 
 //Value Computed by CMake
 OtsuOpenMPCUDA_SOURCE_DIR:STATIC=C:/Users/denis/OneDrive/Desktop/Facultate/PDA/Cuda vs OpenMP Project/otsu-openmp-cuda
+
+//Value Computed by CMake
+OtsuOpenMP_BINARY_DIR:STATIC=C:/Users/denis/OneDrive/Desktop/Facultate/PDA/Cuda vs OpenMP Project/otsu-openmp-cuda/build
+
+//Value Computed by CMake
+OtsuOpenMP_IS_TOP_LEVEL:STATIC=ON
+
+//Value Computed by CMake
+OtsuOpenMP_SOURCE_DIR:STATIC=C:/Users/denis/OneDrive/Desktop/Facultate/PDA/Cuda vs OpenMP Project/otsu-openmp-cuda
 
 
 ########################

@@ -476,7 +476,7 @@ void processImage(
 // ---------------------------------------------------------
 int main() {
     try {
-        std::cout << "Otsu OpenMP CUDA benchmark started!" << std::endl;
+        std::cout << "Otsu OpenMP benchmark started!" << std::endl;
 
         fs::create_directories("results");
 
