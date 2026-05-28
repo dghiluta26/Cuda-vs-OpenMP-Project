@@ -16,9 +16,9 @@
         }                                                                        \
     } while (0)
 
-// ---------------------------------------------------------
+
 // CUDA kernel: compute histogram using shared memory
-// ---------------------------------------------------------
+
 __global__ void histogramKernel(
     const unsigned char* image,
     int size,
@@ -50,9 +50,8 @@ __global__ void histogramKernel(
     }
 }
 
-// ---------------------------------------------------------
 // CUDA kernel: apply binary thresholding
-// ---------------------------------------------------------
+
 __global__ void thresholdKernel(
     const unsigned char* input,
     unsigned char* output,
@@ -68,9 +67,9 @@ __global__ void thresholdKernel(
     }
 }
 
-// ---------------------------------------------------------
+
 // C++ callable wrapper: CUDA histogram
-// ---------------------------------------------------------
+
 extern "C" void computeHistogramCUDA(
     const unsigned char* hostImage,
     int size,
@@ -145,9 +144,8 @@ extern "C" void computeHistogramCUDA(
     CUDA_CHECK(cudaFree(deviceHistogram));
 }
 
-// ---------------------------------------------------------
 // C++ callable wrapper: CUDA thresholding
-// ---------------------------------------------------------
+
 extern "C" void applyThresholdCUDA(
     const unsigned char* hostInput,
     unsigned char* hostOutput,

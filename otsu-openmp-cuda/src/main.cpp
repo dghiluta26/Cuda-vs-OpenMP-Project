@@ -48,9 +48,9 @@ struct BenchmarkResult {
     int otsuThreshold;
 };
 
-// ---------------------------------------------------------
+
 // Load PGM image - supports P5 binary grayscale PGM
-// ---------------------------------------------------------
+
 Image loadPGM(const std::string& filePath) {
     std::ifstream file(filePath, std::ios::binary);
 
@@ -87,9 +87,9 @@ Image loadPGM(const std::string& filePath) {
     return Image{width, height, pixels};
 }
 
-// ---------------------------------------------------------
+
 // Save PGM image
-// ---------------------------------------------------------
+
 void savePGM(const std::string& filePath, const Image& image) {
     std::ofstream file(filePath, std::ios::binary);
 
@@ -104,9 +104,9 @@ void savePGM(const std::string& filePath, const Image& image) {
     file.write(reinterpret_cast<const char*>(image.pixels.data()), image.pixels.size());
 }
 
-// ---------------------------------------------------------
+
 // Sequential histogram
-// ---------------------------------------------------------
+
 std::vector<unsigned int> computeHistogramSequential(
     const std::vector<unsigned char>& image
 ) {
@@ -120,9 +120,9 @@ std::vector<unsigned int> computeHistogramSequential(
     return histogram;
 }
 
-// ---------------------------------------------------------
+
 // OpenMP histogram
-// ---------------------------------------------------------
+
 std::vector<unsigned int> computeHistogramOpenMP(
     const std::vector<unsigned char>& image
 ) {
@@ -155,9 +155,9 @@ std::vector<unsigned int> computeHistogramOpenMP(
     return finalHistogram;
 }
 
-// ---------------------------------------------------------
+
 // Otsu threshold calculation
-// ---------------------------------------------------------
+
 int computeOtsuThreshold(
     const std::vector<unsigned int>& histogram,
     int totalPixels
@@ -207,9 +207,9 @@ int computeOtsuThreshold(
     return bestThreshold;
 }
 
-// ---------------------------------------------------------
+
 // Sequential thresholding
-// ---------------------------------------------------------
+
 std::vector<unsigned char> applyThresholdSequential(
     const std::vector<unsigned char>& image,
     int threshold
@@ -223,9 +223,9 @@ std::vector<unsigned char> applyThresholdSequential(
     return output;
 }
 
-// ---------------------------------------------------------
+
 // OpenMP thresholding
-// ---------------------------------------------------------
+
 std::vector<unsigned char> applyThresholdOpenMP(
     const std::vector<unsigned char>& image,
     int threshold
@@ -240,9 +240,9 @@ std::vector<unsigned char> applyThresholdOpenMP(
     return output;
 }
 
-// ---------------------------------------------------------
+
 // Measure execution time
-// ---------------------------------------------------------
+
 template <typename Function>
 double measureTimeMs(Function functionToMeasure) {
     auto start = std::chrono::high_resolution_clock::now();
@@ -255,9 +255,9 @@ double measureTimeMs(Function functionToMeasure) {
     return duration.count();
 }
 
-// ---------------------------------------------------------
+
 // Compare histograms
-// ---------------------------------------------------------
+
 bool compareHistograms(
     const std::vector<unsigned int>& first,
     const std::vector<unsigned int>& second
@@ -275,9 +275,9 @@ bool compareHistograms(
     return true;
 }
 
-// ---------------------------------------------------------
+
 // Compare images
-// ---------------------------------------------------------
+
 bool compareImages(
     const std::vector<unsigned char>& first,
     const std::vector<unsigned char>& second
@@ -295,9 +295,9 @@ bool compareImages(
     return true;
 }
 
-// ---------------------------------------------------------
+
 // Write benchmark results to CSV
-// ---------------------------------------------------------
+
 void writeResultsToCSV(
     const std::string& filePath,
     const std::vector<BenchmarkResult>& results
@@ -329,9 +329,9 @@ void writeResultsToCSV(
     }
 }
 
-// ---------------------------------------------------------
+
 // Process one image
-// ---------------------------------------------------------
+
 void processImage(
     const std::string& inputPath,
     std::vector<BenchmarkResult>& results
@@ -359,9 +359,9 @@ void processImage(
     std::vector<unsigned char> outputOpenMPPixels;
     std::vector<unsigned char> outputCUDAPixels(inputImage.pixels.size());
 
-    // -----------------------------
+
     // Sequential version
-    // -----------------------------
+  
     double sequentialHistogramTime = measureTimeMs([&]() {
         histogramSequential = computeHistogramSequential(inputImage.pixels);
     });
@@ -379,9 +379,9 @@ void processImage(
         sequentialOtsuTime +
         sequentialThresholdingTime;
 
-    // -----------------------------
+   
     // OpenMP version
-    // -----------------------------
+   
     double openmpHistogramTime = measureTimeMs([&]() {
         histogramOpenMP = computeHistogramOpenMP(inputImage.pixels);
     });
@@ -399,9 +399,9 @@ void processImage(
         openmpOtsuTime +
         openmpThresholdingTime;
 
-    // -----------------------------
+
     // CUDA version
-    // -----------------------------
+
     float cudaHistogramKernelTime = 0.0f;
     float cudaHistogramTotalTime = 0.0f;
 
@@ -434,9 +434,9 @@ void processImage(
         cudaOtsuTime +
         cudaThresholdTotalTime;
 
-    // -----------------------------
+
     // Validation
-    // -----------------------------
+  
     bool sameOpenMPHistogram = compareHistograms(histogramSequential, histogramOpenMP);
     bool sameOpenMPThreshold = thresholdSequential == thresholdOpenMP;
     bool sameOpenMPOutput = compareImages(outputSequentialPixels, outputOpenMPPixels);
@@ -486,9 +486,9 @@ void processImage(
         throw std::runtime_error("CUDA validation failed for image: " + imageName);
     }
 
-    // -----------------------------
+  
     // Save output images
-    // -----------------------------
+   
     fs::create_directories("output/sequential");
     fs::create_directories("output/openmp");
     fs::create_directories("output/cuda");
@@ -522,9 +522,9 @@ void processImage(
         outputCUDAPixels
     });
 
-    // -----------------------------
+    
     // Store benchmark results
-    // -----------------------------
+
     results.push_back(BenchmarkResult{
         imageName,
         inputImage.width,
@@ -581,9 +581,9 @@ void processImage(
     });
 }
 
-// ---------------------------------------------------------
+
 // Main
-// ---------------------------------------------------------
+
 int main() {
     try {
         std::cout << "Otsu OpenMP CUDA benchmark started!" << std::endl;
